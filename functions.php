@@ -110,3 +110,57 @@ function ct2021_register_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'ct2021_register_styles');
+
+// /*
+//     ===================================
+//     Breadcrumbs
+//     ===================================
+// */
+
+function ct2021_get_breadcrumbs() {
+
+	if (is_home()) {
+		echo 'the leaflet newsletter';
+	}
+	if (is_single() && get_post_type() ==='post') {
+		echo 'the leaflet newsletter';
+			if (is_single()) {
+				echo " &nbsp;&nbsp;&#62;&nbsp;&nbsp; ";
+				echo the_title();
+			}
+	}
+	if (is_archive() && post_type_archive_title() === 'Resource') {
+		echo 'resources';
+	}
+	if (is_single() && get_post_type() === 'resources') {
+		echo 'resource';
+			if (is_single()) {
+				echo " &nbsp;&nbsp;&#62;&nbsp;&nbsp; ";
+				echo the_title();
+			}
+	}
+	if (get_post_type() === 'trees') {
+		
+	}
+}
+
+
+// /*
+//     ===================================
+//     Class Manipulation Filters
+//     ===================================
+// */
+add_filter('get_custom_logo', 'ct2021_replace_logo_classes');
+
+function ct2021_replace_logo_classes( $html ) {
+	$html = str_replace( 'custom-logo-link', 'header__logo-anchor', $html);
+	$html = str_replace( 'custom-logo', 'header__logo', $html);
+	return $html;
+}
+
+add_filter('wp_nav_menu', 'ct2021_replace_header_menu_div_wrapper_class');
+
+function ct2021_replace_header_menu_div_wrapper_class( $html ) {
+	$html = str_replace('menu-main-navigation-container', 'Nav__container', $html);
+	return $html;
+}
