@@ -1,4 +1,5 @@
 <?php
+
 // /*
 // ===================================
 // Theme Supports
@@ -164,3 +165,134 @@ function ct2021_replace_header_menu_div_wrapper_class( $html ) {
 	$html = str_replace('menu-main-navigation-container', 'Nav__container', $html);
 	return $html;
 }
+
+// /*
+//     ===================================
+//     Register Fields
+//     ===================================
+// */
+
+function ct2021_acf_add_local_field_groups() {
+
+	acf_add_local_field_group(array(
+		'key' => 'group_5ff605b755888',
+		'title' => 'Home Page Pics',
+		'fields' => array(
+			array(
+				'key' => 'field_5ff605f4b61ca',
+				'label' => 'Home Page MAIN Photo',
+				'name' => 'home_page_main_photo',
+				'type' => 'image',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'return_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+				'min_width' => '',
+				'min_height' => '',
+				'min_size' => '',
+				'max_width' => '',
+				'max_height' => '',
+				'max_size' => '',
+				'mime_types' => 'png, jpg, gif',
+			),
+			array(
+				'key' => 'field_5ff60652b61cb',
+				'label' => 'Home Page RESTORE Photo',
+				'name' => 'home_page_restore_photo',
+				'type' => 'image',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'return_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+				'min_width' => '',
+				'min_height' => '',
+				'min_size' => '',
+				'max_width' => '',
+				'max_height' => '',
+				'max_size' => '',
+				'mime_types' => 'jpg, png, gif',
+			),
+			array(
+				'key' => 'field_5ff606adb61cc',
+				'label' => 'Home Page ENHANCE Photo',
+				'name' => 'home_page_enhance_photo',
+				'type' => 'image',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'return_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+				'min_width' => '',
+				'min_height' => '',
+				'min_size' => '',
+				'max_width' => '',
+				'max_height' => '',
+				'max_size' => '',
+				'mime_types' => '',
+			),
+			array(
+				'key' => 'field_5ff606c9b61cd',
+				'label' => 'Home Page PROTECT Photo',
+				'name' => 'home_page_protect_photo',
+				'type' => 'image',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'return_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+				'min_width' => '',
+				'min_height' => '',
+				'min_size' => '',
+				'max_width' => '',
+				'max_height' => '',
+				'max_size' => '',
+				'mime_types' => 'jpg, png, gif',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'page_type',
+					'operator' => '==',
+					'value' => 'front_page',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+	));
+	}
+
+add_action('acf/init', 'ct2021_acf_add_local_field_groups');
