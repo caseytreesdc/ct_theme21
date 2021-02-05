@@ -26,7 +26,7 @@
             <p class="bold-text">RESTORE ENHANCE + PROTECT</p>
             <p>the tree canopy of Washington, DC.</p>
         </div>
-        <!-- begin get udpdates iframe MODULE-->
+        <!-- begin get udpdates iframe MODULE CURRENTLY HIDDEN-->
         <iframe
             class="get-updates__iframe"
             src="https://tfaforms.com/4865291"
@@ -57,7 +57,7 @@
             WITH OUR DISTRICT PARTNERS AND THOUSANDS OF LOCAL VOLUNTEERS,
         </p>
         <p class="main__page-2-section-2-p">
-            WE <a class="plant-link grey-highlight" href="">PLANT 3,000+ TREES</a> EVERY YEAR TO
+            WE <a class="grey-highlight" href="/plant/">PLANT 3,000+ TREES</a> EVERY YEAR TO
             REACH OUR
         </p>
         <p class="main__page-2-section-2-p">
@@ -80,7 +80,7 @@
         </p>
         <p class="main__page-3-section-2-p">
             THE
-            <span class="grey-highlight">TECHNICAL SKILLS + KNOWLEDGE</span> TO
+            <a href="/resources-list/" class="grey-highlight">TECHNICAL SKILLS + KNOWLEDGE</a> TO
             FOSTER
         </p>
         <p class="main__page-3-section-2-p">

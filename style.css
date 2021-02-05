@@ -15,6 +15,35 @@ Tags: featured-images twig timber accessible classic-editor advanced-custom-fiel
 (C) 2021 Casey Trees
 */
 
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+	1. 	Document Setup
+	2. 	Header
+	3. 	Home Page
+	4. 	Site Header
+	5. 	Menu Modal
+	6. 	Search Modal
+	7. 	Page Templates
+		a. 	Template: Cover Template
+		c. 	Template: Full Width
+	8.  Post: Archive
+	9.  Post: Single
+	10. Blocks
+	11. Entry Content
+	12. Comments
+	13. Site Pagination
+	14. Error 404
+	15. Widgets
+	16. Site Footer
+	17. Media Queries
+----------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*	1. Document Setup
+/* -------------------------------------------------------------------------- */
+
 :root {
     /* colors */
     --black: #000000;
@@ -40,6 +69,10 @@ html,
 body {
     margin: 0;
 }
+
+/* -------------------------------------------------------------------------- */
+/*	2. Header - see also functions.php:151 - Class Manipulation Filters
+/* -------------------------------------------------------------------------- */
 
 .header__container {
     /* the 1% margin prevents the  header nav skew from exceeding the window width */
@@ -80,6 +113,7 @@ header li a {
     color: var(--coffee);
     padding: 3px 2vw;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 header li a:hover,
@@ -91,6 +125,10 @@ header li a:focus {
 header li p {
     margin: 3px 0;
 }
+
+/* -------------------------------------------------------------------------- */
+/*	3. Home Page
+/* -------------------------------------------------------------------------- */
 
 main h2 {
     margin: 0;
@@ -106,13 +144,6 @@ main a {
     text-decoration: underline;
 }
 
-main a:hover,
-main a:focus {
-    color: var(--moss);
-    background: none;
-
-}
-
 .bold-text {
     font-weight: bold;
 }
@@ -125,7 +156,6 @@ main a:focus {
     background-position-x: center;
     background-position: bottom;
     background-repeat: no-repeat;
-
     height: 60vh;
     text-align: right;
 }
@@ -143,16 +173,15 @@ main a:focus {
 .main__page-1-section-2 {
     height: 20vh;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    ;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
-/* 
+
 .get-updates__iframe {
     opacity: 0;
-} */
+}
 
 .motto {
     padding: 100px 0 0 100px;
@@ -163,7 +192,7 @@ main a:focus {
 }
 
 .main__page-1-section-3 {
-    background: var(--moss);
+    background: var(--paper);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,7 +202,7 @@ main a:focus {
 
 .main__page-1-section-3-p {
     font-family: var(--zeitung);
-    color: var(--paper);
+    color: var(--coffee);
     letter-spacing: 3px;
 }
 
@@ -182,16 +211,12 @@ main a:focus {
     transform: rotate(45deg);
     height: 30px;
     width: 30px;
-    border-bottom: solid var(--paper) 3px;
-    border-right: solid var(--paper) 3px;
+    border-bottom: solid var(--cobalt) 3px;
+    border-right: solid var(--cobalt) 3px;
 }
 
 .grey-highlight {
     background: var(--silver);
-}
-
-.moss-highlight {
-    background: var(--moss);
 }
 
 .main__page-2 {
@@ -199,7 +224,8 @@ main a:focus {
 }
 
 .main__page-3 {
-    background: var(--orange);
+    background: var(--paper);
+
 }
 
 .main__page-4 {
@@ -213,7 +239,11 @@ main a:focus {
 }
 
 .main__page-2-section-1-h2 {
-    color: var(--moss);
+    color: var(--paarl);
+}
+
+.main__page-3-section-1-h2 {
+    color: var(--orange);
 }
 
 .main__page-2-section-2,
@@ -241,7 +271,6 @@ main a:focus {
 .main__page-3-section-3-img,
 .main__page-4-section-3-img {
     width: 100%;
-    filter: grayscale(100%);
     opacity: 0.8;
     align-self: center;
 }
