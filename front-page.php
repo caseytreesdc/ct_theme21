@@ -29,7 +29,7 @@
             <p class="bold-text">RESTORE ENHANCE + PROTECT</p>
             <p>the tree canopy of Washington, DC.</p>
         </div>
-        <!-- begin get udpdates iframe MODULE CURRENTLY HIDDEN-->
+        <!-- begin get udpdates iframe MODULE CURRENTLY HIDDEN IN STYLESHEET FOR TYPEFORM-->
         <iframe
             class="get-updates__iframe"
             src="https://tfaforms.com/4865291"
@@ -132,7 +132,29 @@
         <img class="main__page-4-section-3-img" src="<? echo get_field('home_page_protect_photo');?>" />
         </section>
     </div>
-    </main>
     <!-- end main page-4 MODULE-->
+    <!-- begin main page-5 MODULE-->
+    <div class="main__page-5">
+        <h2 class="main__page-5-section-1-h2">When communities have access <br />
+            to mature & healthy trees, <br />
+            <span class="cobalt-text">the benefits are endless</span>.</h2>
+        <div>
+            <p class="main__page-5-section-2-p">
+                HERE ARE A FEW OF OUR FAVORITES:
+            </p>
+            <div class="main__page-5-section-icons">
+                <?php get_template_part('svgs/inline', 'grid') ?>
+                <?php get_template_part('svgs/inline', 'megaphone') ?>
+                <?php get_template_part('svgs/inline', 'document') ?>
+                <?php get_template_part('svgs/inline', 'wateringcan') ?>
+                <?php get_template_part('svgs/inline', 'tape') ?>
+                <?php get_template_part('svgs/inline', 'shovel') ?>
+                <?php get_template_part('svgs/inline', 'house') ?>
+            </div>
+        </div>
+    </div>
+    <!-- end main page-4 MODULE-->
+    </main>
+    <!-- begin main MODULE -->
 
 <?php get_footer(); ?>
