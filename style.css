@@ -20,24 +20,9 @@ Tags: featured-images twig timber accessible classic-editor advanced-custom-fiel
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 	1. 	Document Setup
-	2. 	Header
+	2. 	Site Header
 	3. 	Home Page
-	4. 	Site Header
-	5. 	Menu Modal
-	6. 	Search Modal
-	7. 	Page Templates
-		a. 	Template: Cover Template
-		c. 	Template: Full Width
-	8.  Post: Archive
-	9.  Post: Single
-	10. Blocks
-	11. Entry Content
-	12. Comments
-	13. Site Pagination
-	14. Error 404
-	15. Widgets
-	16. Site Footer
-	17. Media Queries
+
 ----------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
@@ -144,6 +129,11 @@ main a {
     text-decoration: underline;
 }
 
+main a:hover,
+main a:focus {
+    background: none;
+}
+
 .bold-text {
     font-weight: bold;
 }
@@ -219,17 +209,10 @@ main a {
     background: var(--silver);
 }
 
-.main__page-2 {
-    background: var(--paper);
-}
-
-.main__page-3 {
-    background: var(--paper);
-
-}
-
+.main__page-2,
+.main__page-3,
 .main__page-4 {
-    background: var(--paarl);
+    background: var(--paper);
 }
 
 .main__page-2-section-1-h2,
@@ -242,20 +225,64 @@ main a {
     color: var(--paarl);
 }
 
+.main__page-2-section-2-a:hover,
+.main__page-2-section-2-a:focus {
+    color: var(--paarl);
+}
+
 .main__page-3-section-1-h2 {
     color: var(--orange);
+}
+
+.main__page-3-section-2-a:hover,
+.main__page-3-section-2-a:focus {
+    color: var(--orange);
+}
+
+.main__page-4-section-1-h2 {
+    color: var(--moss);
+}
+
+.main__page-4-section-2-a:hover,
+.main__page-4-section-2-a:focus {
+    color: var(--moss);
 }
 
 .main__page-2-section-2,
 .main__page-3-section-2,
 .main__page-4-section-2 {
-    height: 25vh;
-    padding: 25px 50px 50px 50px;
+    padding: 25px;
     text-align: right;
     font-family: var(--zeitung);
     color: var(--coffee);
     letter-spacing: 3px;
     line-height: 2em;
+}
+
+.main__page-icons {
+    width: 100px;
+    height: auto;
+    padding: 0 5px;
+}
+
+.main__page-2-section-icons svg {
+    fill: var(--paarl);
+}
+
+.main__page-3-section-icons svg {
+    fill: var(--orange);
+}
+
+.main__page-4-section-icons svg {
+    fill: var(--moss);
+}
+
+.main__page-2-section-icons,
+.main__page-3-section-icons,
+.main__page-4-section-icons {
+    padding: 0px 25px 25px 25px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .main__page-2-section-3,

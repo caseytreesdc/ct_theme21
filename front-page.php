@@ -57,12 +57,17 @@
             WITH OUR DISTRICT PARTNERS AND THOUSANDS OF LOCAL VOLUNTEERS,
         </p>
         <p class="main__page-2-section-2-p">
-            WE <a class="grey-highlight" href="/plant/">PLANT 3,000+ TREES</a> EVERY YEAR TO
+            WE <a class="grey-highlight main__page-2-section-2-a" href="/plant/">PLANT 3,000+ TREES</a> EVERY YEAR TO
             REACH OUR
         </p>
         <p class="main__page-2-section-2-p">
             COLLECTIVE GOAL OF 40% TREE CANOPY BY 2032.
         </p>
+        </section>
+        <section class="main__page-2-section-icons">
+            <?php get_template_part('svgs/inline', 'house') ?>
+            <?php get_template_part('svgs/inline', 'shovel') ?>
+            <?php get_template_part('svgs/inline', 'megaphone') ?>
         </section>
         <section class="main__page-2-section-3">
         <img class="main__page-2-section-3-img" src="<? echo get_field('home_page_restore_photo');?>" />
@@ -80,12 +85,17 @@
         </p>
         <p class="main__page-3-section-2-p">
             THE
-            <a href="/resources-list/" class="grey-highlight">TECHNICAL SKILLS + KNOWLEDGE</a> TO
+            <a href="/resources-list/" class="main__page-3-section-2-a grey-highlight">TECHNICAL SKILLS + KNOWLEDGE</a> TO
             FOSTER
         </p>
         <p class="main__page-3-section-2-p">
             A HEALTHY, MATURE TREE CANOPY IN DC.
         </p>
+        </section>
+        <section class="main__page-3-section-icons">
+            <?php get_template_part('svgs/inline', 'house') ?>
+            <?php get_template_part('svgs/inline', 'shovel') ?>
+            <?php get_template_part('svgs/inline', 'megaphone') ?>
         </section>
         <section class="main__page-3-section-3">
         <img class="main__page-3-section-3-img" src="<? echo get_field('home_page_enhance_photo');?>" />
@@ -100,13 +110,18 @@
         <section class="main__page-4-section-2">
         <p class="main__page-4-section-2-p">
             THIS IS WHERE WE WILL DISCUSS
-            <span class="grey-highlight">ADVOCACY ACTIONS</span> AND
+            <a href="/resources-list/" class="main__page-4-section-2-a grey-highlight">ADVOCACY ACTIONS</a> AND
         </p>
         <p class="main__page-4-section-2-p">
-            <span class="grey-highlight">CONSERVATION INITIATIVES</span> THAT HELP
+            <a href="/resources-list/" class="main__page-4-section-2-a grey-highlight">CONSERVATION INITIATIVES</a> THAT HELP
             US
         </p>
         <p class="main__page-4-section-2-p">PROTECT US.</p>
+        </section>
+        <section class="main__page-4-section-icons">
+            <?php get_template_part('svgs/inline', 'house') ?>
+            <?php get_template_part('svgs/inline', 'shovel') ?>
+            <?php get_template_part('svgs/inline', 'megaphone') ?>
         </section>
         <section class="main__page-4-section-3">
         <img class="main__page-4-section-3-img" src="<? echo get_field('home_page_protect_photo');?>" />
