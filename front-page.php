@@ -94,8 +94,10 @@
         </section>
         <section class="main__page-3-section-icons">
             <?php get_template_part('svgs/inline', 'house') ?>
-            <?php get_template_part('svgs/inline', 'shovel') ?>
+            <?php get_template_part('svgs/inline', 'wateringcan') ?>
+            <?php get_template_part('svgs/inline', 'tape') ?>
             <?php get_template_part('svgs/inline', 'megaphone') ?>
+            <?php get_template_part('svgs/inline', 'document') ?>
         </section>
         <section class="main__page-3-section-3">
         <img class="main__page-3-section-3-img" src="<? echo get_field('home_page_enhance_photo');?>" />
@@ -119,9 +121,9 @@
         <p class="main__page-4-section-2-p">PROTECT US.</p>
         </section>
         <section class="main__page-4-section-icons">
-            <?php get_template_part('svgs/inline', 'house') ?>
-            <?php get_template_part('svgs/inline', 'shovel') ?>
+            <?php get_template_part('svgs/inline', 'grid') ?>
             <?php get_template_part('svgs/inline', 'megaphone') ?>
+            <?php get_template_part('svgs/inline', 'document') ?>
         </section>
         <section class="main__page-4-section-3">
         <img class="main__page-4-section-3-img" src="<? echo get_field('home_page_protect_photo');?>" />
