@@ -2,16 +2,19 @@
     <!-- begin main MODULE -->
     <main>
     <!-- being main page-1 MODULE -->
-    <div style="
+    <div class="main__page-1">
+        <!-- begin main masthead section MODULE-->
+        <section 
+        style="
             background: linear-gradient(
-                rgba(123, 158, 129, 0.3),
-                rgba(123, 158, 129, 0.3)
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 1)
             ),
             url(<? echo get_field('home_page_main_photo');?>);
         "
-        class="main__page-1">
-        <!-- begin main masthead section MODULE-->
-        <section
         class="main__page-1-section-1">
         <h2 class="main__page-1-section-1-h2">
             Empowering communities <br />
