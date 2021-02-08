@@ -75,9 +75,9 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: 0 8px 6px -6px var(--grey);
+    -moz-box-shadow: 0 8px 6px -6px var(--grey);
+    box-shadow: 0 8px 6px -6px var(--grey);
 }
 
 .header__logo-anchor {
@@ -374,12 +374,177 @@ main a:focus {
 }
 
 .Plant__page-1-section-3-p {
+    font-size: 20px;
     color: var(--coffee);
     font-weight: bold;
 }
 
 .Plant__page-1-section-3-a {
     color: var(--cobalt)
+}
+
+.Plant__page-2,
+.Plant__page-3,
+.Plant__page-4,
+.Plant__page-5 {
+    margin: 40px 30px;
+}
+
+.Plant__page-2-text-and-image,
+.Plant__page-3-text-and-image,
+.Plant__page-4-text-and-image,
+.Plant__page-5-text-and-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Plant__page-2-text,
+.Plant__page-2-image,
+.Plant__page-3-text,
+.Plant__page-3-image,
+.Plant__page-4-text,
+.Plant__page-4-image,
+.Plant__page-5-text,
+.Plant__page-5-image {
+    width: 40%;
+}
+/* 
+.Plant__page-2-image,
+.Plant__page-3-image,
+.Plant__page-4-image,
+.Plant__page-5-image {
+    background-size: contain;
+} */
+
+.Plant__page-2-text-h2 {
+    font-size: 56px;
+    font-family: var(--cronos);
+    color: var(--cobalt);
+}
+
+.Plant__page-2-text-p {
+    font-size: 20px;
+    color: var(--coffee);
+}
+
+.Plant__page-2-text-a {
+    font-size: 20px;
+    font-family: var(--cronos);
+    color: var(--cobalt);
+    font-weight: bold;
+}
+
+.Plant__page-2-links {
+    padding: 30px;
+    font-family: var(--zeitung);
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Plant__page-2-links-a {
+    color: var(--coffee);
+    padding: 20px 40px;
+}
+
+.Plant__page-2-links-a:hover {
+    color: var(--cobalt);
+    background: var(--silver);
+}
+
+.Plant-page-3-text {
+    text-align: right;
+}
+
+.Plant__page-3-text-h2 {
+    font-size: 56px;
+    font-family: var(--cronos);
+    color: var(--moss);
+    text-align: right;
+}
+
+.Plant__page-3-text-p {
+    font-size: 20px;
+    color: var(--coffee);
+    text-align: right;
+}
+
+.Plant__page-3-text-p-a {
+    font-family: var(--zeitung);
+    color: var(--coffee);
+    padding: 10px 30px;
+}
+
+.Plant__page-3-text-p-a:hover {
+    color: var(--moss);
+    background: var(--silver);
+}
+
+.Plant__page-4-text-h2 {
+    font-size: 56px;
+    font-family: var(--cronos);
+    color: var(--orange);
+}
+
+.Plant__page-4-text-p {
+    font-size: 20px;
+    color: var(--coffee);
+}
+
+.Plant__page-4-text-a {
+    font-size: 20px;
+    font-family: var(--cronos);
+    color: var(--cobalt);
+    font-weight: bold;
+}
+
+.Plant__page-4-links {
+    padding: 30px;
+    font-family: var(--zeitung);
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Plant__page-4-links-a {
+    color: var(--coffee);
+    padding: 20px 40px;
+}
+
+.Plant__page-4-links-a:hover {
+    color: var(--orange);
+    background: var(--silver);
+}
+
+.Plant-page-5-text {
+    text-align: right;
+}
+
+.Plant__page-5-text-h2 {
+    font-size: 56px;
+    font-family: var(--cronos);
+    color: var(--paarl);
+    text-align: right;
+}
+
+.Plant__page-5-text-p {
+    font-size: 20px;
+    color: var(--coffee);
+    text-align: right;
+}
+
+.Plant__page-5-text-p-a {
+    font-family: var(--zeitung);
+    color: var(--coffee);
+    padding: 10px 30px;
+}
+
+.Plant__page-5-text-p-a:hover {
+    color: var(--paarl);
+    background: var(--silver);
 }
 
 /* -------------------------------------------------------------------------- */
