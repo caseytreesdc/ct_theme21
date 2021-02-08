@@ -21,7 +21,8 @@ Tags: featured-images twig timber accessible classic-editor advanced-custom-fiel
 ----------------------------------------------------------------
 	1. 	Document Setup
 	2. 	Site Header
-	3. 	Home Page
+    3. 	Home Page
+    4.  Plant Page
 
 ----------------------------------------------------------------------------- */
 
@@ -55,6 +56,15 @@ body {
     margin: 0;
 }
 
+p,
+li {
+    font-family: var(--lato);
+}
+
+h1 {
+    font-family: var(--cronos);
+}
+
 /* -------------------------------------------------------------------------- */
 /*	2. Header - see also functions.php:151 - Class Manipulation Filters
 /* -------------------------------------------------------------------------- */
@@ -65,6 +75,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 .header__logo-anchor {
@@ -262,7 +275,18 @@ main a:focus {
     line-height: 2em;
 }
 
-.main__page-icons {
+.main__page-2-section-icons,
+.main__page-3-section-icons,
+.main__page-4-section-icons {
+    padding: 0px 25px 25px 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main__page-2-section-icons svg,
+.main__page-3-section-icons svg,
+.main__page-4-section-icons svg,
+.main__page-5-section-icons svg {
     width: 100px;
     height: auto;
     padding: 0 5px;
@@ -280,13 +304,7 @@ main a:focus {
     fill: var(--moss);
 }
 
-.main__page-2-section-icons,
-.main__page-3-section-icons,
-.main__page-4-section-icons {
-    padding: 0px 25px 25px 25px;
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 .main__page-2-section-3,
 .main__page-3-section-3,
@@ -321,6 +339,52 @@ main a:focus {
 .main__page-5-section-icons {
     padding: 0 0 0 75px;
 }
+
+/* -------------------------------------------------------------------------- */
+/*	4. Plant Page
+/* -------------------------------------------------------------------------- */
+.Plant {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Plant__page-1-section-1-h1 {
+    color: var(--coffee);
+    font-size: 56px;
+    max-width: 700px;
+}
+
+.Plant__page-1-section-2-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.Plant__page-1-section-2-icons svg {
+    fill: var(--coffee);
+    width: 15vw;
+}
+
+.Plant__page-1-section-2-p {
+    font-family: var(--zeitung);
+    letter-spacing: 2px;
+}
+
+.Plant__page-1-section-3-p {
+    color: var(--coffee);
+    font-weight: bold;
+}
+
+.Plant__page-1-section-3-a {
+    color: var(--cobalt)
+}
+
+/* -------------------------------------------------------------------------- */
+/*	
+/* -------------------------------------------------------------------------- */
 
 .screen-reader-text {
     /* pagination heading from function */
@@ -406,54 +470,6 @@ main a:focus {
 
 .Archive__post {
     max-width: 600px;
-}
-
-.footer__container {
-    background: var(--silver);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 25px;
-}
-
-.footer__column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer__logo {
-    height: 130px;
-    opacity: 1;
-}
-
-.footer__logo:hover {
-    opacity: 0.4;
-}
-
-.footer-link {
-    text-decoration: none;
-    color: var(--cobalt);
-    font-family: var(--lato);
-    font-size: 17px;
-    margin: 3px;
-}
-
-.footer-link:hover {
-    color: var(--coffee);
-}
-
-.footer__button {
-    font-family: var(--zeitung);
-    text-decoration: none;
-    color: var(--silver);
-    text-align: center;
-    padding: 20px 40px;
-    background: var(--cobalt);
-}
-
-.footer__button:hover {
-    background: rgba(65, 104, 172, 0.6);
 }
 
 @media (max-width: 576px) {
