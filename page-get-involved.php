@@ -1,41 +1,30 @@
 <?php get_header(); ?>
-<div class="Breadcrumbs">
-  <a class="Breadcrumbs__anchor" href="https://www.google.com/"
-    ><p class="Breadcrumbs__text"><?php ct2021_get_breadcrumbs(); ?></p></a
-  >
+<div class="Get__page-1">
+  <h1 class="Get__page-1-h1">Get involved with Casey Trees!</h1>
+  <div class="Get__page-1-icons">
+    <div class="Get__page-1-icon-w-text cobalt-svg">
+      <?php get_template_part('svgs/inline', 'home') ?>
+      <p class="Get__page-1-p">PLANTING EVENT</p>
+    </div>
+    <div class="Get__page-1-icon-w-text forest-svg">
+      <?php get_template_part('svgs/inline', 'wateringcan') ?>
+      <p class="Get__page-1-p">CARE EVENT</p>
+    </div>
+    <div class="Get__page-1-icon-w-text moss-svg">
+      <?php get_template_part('svgs/inline', 'tape') ?>
+      <p class="Get__page-1-p">WORKSHOP</p>
+    </div>
+    <div class="Get__page-1-icon-w-text orange-svg">
+      <?php get_template_part('svgs/inline', 'megaphone') ?>
+      <p class="Get__page-1-p">ONLINE</p>
+    </div>
+    <div class="Get__page-1-icon-w-text paarl-svg">
+      <?php get_template_part('svgs/inline', 'document') ?>
+      <p class="Get__page-1-p">YOUTH</p>
+    </div>
+    <div class="Get__page-1-icon-w-text coffee-svg">
+      <?php get_template_part('svgs/inline', 'plus') ?>
+    </div>
+  </div>
 </div>
-<?php 
-    if( have_posts() ) {
-        while( have_posts() ) {
-            the_post();
-            printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );
-            ?><h2>
-                <a href="<?php the_permalink();?>"><?php the_title();?></a>
-            </h2>
-            <p><?php echo get_the_date(); ?> by <?php echo get_field('author');?> </p>       
-            <?php 
-                $image = get_field('image');
-                $size = 'full'; // (thumbnail, medium, large, full or custom size)
-                if( $image ) {
-                    echo wp_get_attachment_image( $image, $size );
-                }
-            ?>
-            <?php echo get_the_category_list(); ?>
-            <?php the_content();?>
-            <?php 
-
-            $fields = get_fields();
-            
-            if( $fields ): ?>
-                <ul>
-                    <?php foreach( $fields as $name => $value ): ?>
-                        <li><b><?php echo $name; ?></b> <?php echo $value; ?></li>
-                    <?php endforeach; ?>
-                </ul>
-
-            <?php endif; ?>
-            <?php
-        }
-    }
-?>
 <?php get_footer(); ?>

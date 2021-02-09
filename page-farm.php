@@ -33,7 +33,7 @@
   <div class="Farm__page-4-icons">
     <div class="Farm__page-4-icon-w-text">
       <?php get_template_part('svgs/inline', 'house') ?>
-      <p class="Farm__page-4-p">SUSTAINIBILITY</p>
+      <p class="Farm__page-4-p">SUSTAINABILITY</p>
     </div>
     <div class="Farm__page-4-icon-w-text">
       <?php get_template_part('svgs/inline', 'grid') ?>
@@ -45,13 +45,13 @@
     </div>
     <div class="Farm__page-4-icon-w-text">
       <?php get_template_part('svgs/inline', 'tape') ?>
-      <p class="Farm__page-4-p">AVAILIBILITY & REQUESTS</p>
+      <p class="Farm__page-4-p">AVAILABILITY & REQUESTS</p>
     </div>
   </div>
   <div class="Farm__page-5">
     <div class="Farm__page-5-text-and-image">
       <div class="Farm__page-5-text">
-        <h2 class="Farm__page-5-text-h2">Sustainibility</h2>
+        <h2 class="Farm__page-5-text-h2">Sustainability</h2>
         <p class="Plant__page-2-text-p">
           Our vision is the production of sustainably grown, high quality trees
           to help communities meet their tree canopy goals. Along with

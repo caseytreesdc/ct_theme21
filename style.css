@@ -93,7 +93,7 @@ h1, h2, h3 {
 }
 
 .Nav__container {
-    transform: skew(-20deg);
+    /* transform: skew(-20deg); */
 }
 
 .Nav__ul {
@@ -127,14 +127,21 @@ header li p {
     margin: 3px 0;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.cobalt-text {
+    color: var(--cobalt)
+}
+
 /* -------------------------------------------------------------------------- */
 /*	3. Home Page
 /* -------------------------------------------------------------------------- */
-
-main h2 {
-    margin: 0;
-    font-family: var(--cronos);
-}
 
 main section p {
     margin: 0;
@@ -151,18 +158,6 @@ main a:focus {
     background: none;
 }
 
-.bold-text {
-    font-weight: bold;
-}
-
-.italic-text {
-    font-style: italic;
-}
-
-.cobalt-text {
-    color: var(--cobalt)
-}
-
 .main__page-1-section-1 {
     background-repeat: no-repeat;
     height: 65vh;
@@ -171,7 +166,9 @@ main a:focus {
 }
 
 .main__page-1-section-1-h2 {
-    padding: 25px 50px 0 0;
+    margin: 0;
+    font-family: var(--cronos);
+    padding: 40px 150px 0 0;
     font-size: 56px;
     color: var(--coffee);
 }
@@ -184,13 +181,12 @@ main a:focus {
     justify-content: space-between;
 }
 
-
 .get-updates__iframe {
     opacity: 0;
 }
 
 .motto {
-    padding: 100px 0 0 100px;
+    padding: 100px 0 0 150px;
     font-family: var(--zeitung);
     font-size: 18px;
     color: var(--coffee);
@@ -232,12 +228,28 @@ main a:focus {
     background: var(--paper);
 }
 
+.main__page-2-section-1,
+.main__page-2-section-2,
+.main__page-2-section-icons, 
+.main__page-3-section-1,
+.main__page-3-section-2,
+.main__page-3-section-icons, 
+.main__page-3-section-1,
+.main__page-3-section-2,
+.main__page-3-section-icons,
+.main__page-4-section-1,
+.main__page-4-section-2,
+.main__page-4-section-icons,
+.main__page-5 {
+    width: 70vw;
+    margin: 5vh auto;
+}
 .main__page-2-section-1-h2,
 .main__page-3-section-1-h2,
 .main__page-4-section-1-h2,
 .main__page-5-section-1-h2 {
     font-size: 80px;
-    padding: 75px 50px 25px 75px;
+    margin: 0 0 40px 0;
 }
 
 .main__page-2-section-1-h2 {
@@ -270,7 +282,6 @@ main a:focus {
 .main__page-2-section-2,
 .main__page-3-section-2,
 .main__page-4-section-2 {
-    padding: 25px;
     text-align: right;
     font-family: var(--zeitung);
     color: var(--coffee);
@@ -281,7 +292,6 @@ main a:focus {
 .main__page-2-section-icons,
 .main__page-3-section-icons,
 .main__page-4-section-icons {
-    padding: 0px 25px 25px 25px;
     display: flex;
     justify-content: flex-end;
 }
@@ -307,8 +317,6 @@ main a:focus {
     fill: var(--moss);
 }
 
-
-
 .main__page-2-section-3,
 .main__page-3-section-3,
 .main__page-4-section-3 {
@@ -333,15 +341,11 @@ main a:focus {
 }
 
 .main__page-5-section-2-p {
-    padding: 0px 0 10px 75px;
     font-family: var(--zeitung);
     color: var(--coffee);
     letter-spacing: 3px;
 }
 
-.main__page-5-section-icons {
-    padding: 0 0 0 75px;
-}
 
 /* -------------------------------------------------------------------------- */
 /*	4. Plant Page
@@ -790,6 +794,15 @@ main a:focus {
 .About__page-2-link-module-a-p:hover {
     background: rgba(44, 16, 16, .7);
 }
+
+.Get__page-1 {
+    margin: 40px;
+}
+/* -------------------------------------------------------------------------- */
+/*	7.  Get Involved Page
+/* -------------------------------------------------------------------------- */
+
+
 
 /* -------------------------------------------------------------------------- */
 /*	
