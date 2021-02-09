@@ -598,6 +598,47 @@ main a:focus {
     object-fit: none;
 }
 
+.Farm__page-2 {
+    margin: 40px;
+}
+
+.Farm__page-2-p {
+    font-size: 20px;
+}
+
+.Farm__page-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Farm__page-3-h3 {
+    font-family: var(--zeitung);
+    font-weight: normal;
+    margin: 0;
+}
+.Farm__page-4-icon-w-text {
+    max-width: 23vw;
+}
+.Farm__page-4-icons {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.Farm__page-4-icons svg {
+    fill: var(--coffee);
+    width: 15vw;
+}
+
+.Farm__page-4-p {
+    font-family: var(--zeitung);
+    letter-spacing: 2px;
+}
+
 /* -------------------------------------------------------------------------- */
 /*	
 /* -------------------------------------------------------------------------- */
