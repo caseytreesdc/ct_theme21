@@ -48,5 +48,62 @@
       <p class="Farm__page-4-p">AVAILIBILITY & REQUESTS</p>
     </div>
   </div>
+  <div class="Farm__page-5">
+    <div class="Farm__page-5-text-and-image">
+      <div class="Farm__page-5-text">
+        <h2 class="Farm__page-5-text-h2">Sustainibility</h2>
+        <p class="Plant__page-2-text-p">
+          Our vision is the production of sustainably grown, high quality trees
+          to help communities meet their tree canopy goals. Along with
+          meticulous care we provide to our soils by feeding the microflora
+          using organic-based inputs, all our trees are grown in-ground using
+          rootbags, which encourages greater fine root production than
+          traditional balled and burlapped trees. More fine roots mean better
+          water and nutrient exchange and better chances of survival
+          post-planting. Rootbag-grown trees also use less soil than their
+          balled and burlapped counterparts, reducing environmental impacts and
+          transportation costs, and simplifying planting.
+        </p>
+      </div>
+      <div
+        class="Farm__page-5-image"
+        style="
+          background: url(https://caseytrees.org/wp-content/uploads/2020/11/farm2020-email.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      ></div>
+    </div>
+  </div>
+  <div class="Farm__page-6">
+    <div class="Farm__page-6-text-and-image">
+      <div
+        class="Farm__page-6-image"
+        style="
+          background:
+            url(https://caseytrees.org/wp-content/uploads/2020/12/match-email.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      ></div>
+      <div class="Farm__page-6-text">
+        <h2 class="Farm__page-6-text-h2">Partnership with DC</h2>
+        <div class="Farm__page-6-text-logos">
+        <?php get_template_part('svgs/inline', 'wBlackLogo') ?>
+        <?php get_template_part('svgs/inline', 'ddot') ?>
+        </div>
+        <p class="Plant__page-3-text-p">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem ssim qui blandit praesent luptatum zzril delenit augue duis
+          dolore te feugait nulla facilisi.Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 <?php get_footer(); ?>

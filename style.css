@@ -24,6 +24,8 @@ Tags: featured-images twig timber accessible classic-editor advanced-custom-fiel
     3. 	Home Page
     4.  Plant Page
     5.  Farm Page
+    6.  About Us Page
+    7.  Get Involved Page
 
 ----------------------------------------------------------------------------- */
 
@@ -62,7 +64,7 @@ li {
     font-family: var(--lato);
 }
 
-h1 {
+h1, h2, h3 {
     font-family: var(--cronos);
 }
 
@@ -97,7 +99,7 @@ h1 {
 .Nav__ul {
     list-style-type: none;
     padding: 10px;
-    font-family: var(--zeitung);
+    font-family: var(--cronos);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -618,11 +620,13 @@ main a:focus {
     font-weight: normal;
     margin: 0;
 }
+
 .Farm__page-4-icon-w-text {
     max-width: 23vw;
 }
+
 .Farm__page-4-icons {
-    margin-top: 5vh;
+    margin: 5vh auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -637,6 +641,154 @@ main a:focus {
 .Farm__page-4-p {
     font-family: var(--zeitung);
     letter-spacing: 2px;
+}
+
+.Farm__page-5,
+.Farm__page-6 {
+    margin: 40px 30px;
+}
+
+.Farm__page-5-text-and-image,
+.Farm__page-6-text-and-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Farm__page-5-text,
+.Farm__page-5-image,
+.Farm__page-6-text,
+.Farm__page-6-image {
+    width: 40%
+}
+
+.Farm__page-5-text-h2 {
+    font-size: 56px;
+    font-family: var(--cronos);
+    color: var(--forest);
+}
+
+.Farm__page-6-text-h2 {
+    text-align: right;
+    font-size: 56px;
+    font-family: var(--cronos);
+    color: var(--forest);
+}
+
+.Farm__page-6-text-logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Farm__page-6-text-logos svg {
+    width: 40%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	6. About Us
+/* -------------------------------------------------------------------------- */
+.About__page-1 {
+    margin: 40px;
+}
+
+.About__page-1-h1 {
+    color: var(--coffee);
+    font-size: 56px;
+}
+
+.About__page-1-p {
+    color: var(--coffee);
+    font-family: var(--lato);
+    font-size: 20px;
+}
+
+.About__page-1-rings {
+    display: flex;
+    justify-content: center;
+}
+
+.About__page-1-rings svg {
+    width: 600px;
+}
+
+.About__page-1-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.About__page-1-link-module {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.About__page-1-link-module-h2 {
+    margin: 0;
+    font-family: var(--cronos);
+    font-size: 35px;
+    font-weight: normal;    
+    color: var(--coffee);
+}
+
+.About__page-1-link-module-p {
+    font-family: var(--lato);
+    font-size: 18px;
+    color: var(--coffee);
+}
+
+.About__page-1-link-module-a {
+    text-decoration: none;
+    background: var(--cobalt);
+}
+
+.About__page-1-link-module-a:hover, 
+.About__page-1-link-module-a:focus {
+    background: rgba(55, 104, 178, .8);
+}
+
+.About__page-1-link-module-a-p {
+    text-align: center;
+    font-family: var(--zeitung);
+    color: var(--paper);
+    letter-spacing: 2px;
+}
+
+.About__page-2 {
+    height: 500px;
+}
+
+.About__page-2-link-module {
+    padding: 60px;
+}
+
+.About__page-2-link-module-h2 {
+    margin: 0;
+    font-family: var(--cronos);
+    font-size: 36px;
+    color: var(--paper);
+    font-weight: normal;
+}
+
+
+.About__page-2-link-module-a {
+    text-decoration: none;
+}
+
+.About__page-2-link-module-a-p {
+    width: 200px;
+    padding: 14px;
+    font-family: var(--zeitung);
+    background: var(--coffee);
+    color: var(--paper);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.About__page-2-link-module-a-p:hover {
+    background: rgba(44, 16, 16, .7);
 }
 
 /* -------------------------------------------------------------------------- */
