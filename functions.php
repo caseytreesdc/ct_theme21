@@ -114,6 +114,17 @@ add_action('wp_enqueue_scripts', 'ct2021_register_styles');
 
 // /*
 //     ===================================
+//     Register Scripts
+//     ===================================
+// */
+function ct2021_register_scripts() {
+	wp_enqueue_script('hide-empty-p-tags', get_template_directory_uri(). '/hideEmptyPTags.js');
+}
+
+add_action('wp_enqueue_scripts', 'ct2021_register_scripts');
+
+// /*
+//     ===================================
 //     Breadcrumbs
 //     ===================================
 // */

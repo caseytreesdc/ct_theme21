@@ -73,6 +73,11 @@ h3 {
     font-family: var(--cronos);
 }
 
+.hidden {
+    display: none
+}
+
+
 /* -------------------------------------------------------------------------- */
 /*	2. Header - see also functions.php:151 - Class Manipulation Filters
 /* -------------------------------------------------------------------------- */
@@ -945,15 +950,79 @@ main a:focus {
 /* -------------------------------------------------------------------------- */
 /*	9.  Leaflet - single post
 /* -------------------------------------------------------------------------- */
-.Leaflet {
-    width: 70vw;
+.Leaflet__loop {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
 }
 
-.Leaflet__h1 {
+.Leaflet__loop-h1 {
     font-family: var(--zeitung);
     font-weight: normal;
     font-size: 20px;
+    margin: 50px 0;
 }
+
+.Leaflet .attachment-full {
+    width: 100%;
+    height: auto;
+}
+
+.Leaflet__loop-meta {
+    background: var(--yellow);
+    font-family: var(--zeitung);
+    color: var(--coffee);
+    text-transform: uppercase;
+    padding: 12px 30px;
+    margin: 0;
+    width: max-content
+}
+
+.Leaflet__loop-title {
+    font-size: 50px;
+    color: var(--coffee);
+    font-weight: normal;
+    margin: 16px 0 0 0;
+}
+
+.Leaflet__loop-content p {
+    font-size: 16px;
+    margin: 40px 0;
+}
+
+.Leaflet__loop-content a {
+    color: var(--cobalt);
+}
+
+.Leaflet__loop-content a:hover,
+.Leaflet__loop-content a:focus {
+    color: var(--paper);
+    background: var(--cobalt);
+    text-decoration-color: var(--coffee);
+}
+
+div.alignleft,
+img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+div.alignright,
+img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.wp-caption img {
+    display: flex;
+    margin: 0;
+}
+
+p.wp-caption-text {
+    color: red;
+}
+
 /* -------------------------------------------------------------------------- */
 /*	
 /* -------------------------------------------------------------------------- */
@@ -982,7 +1051,7 @@ main a:focus {
         display: flex;
         flex-direction: column;
     }
-    
+
     .header-logo {
         width: 340px;
         margin: 10px;
