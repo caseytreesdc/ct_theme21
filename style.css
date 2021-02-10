@@ -10,7 +10,7 @@ Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Casey Trees 2021
-Tags: featured-images twig timber accessible classic-editor advanced-custom-fields
+Tags: featured-images accessible classic-editor advanced-custom-fields
 
 (C) 2021 Casey Trees
 */
@@ -19,13 +19,16 @@ Tags: featured-images twig timber accessible classic-editor advanced-custom-fiel
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-	1. 	Document Setup
+
+    1. 	Document Setup
 	2. 	Site Header
     3. 	Home Page
     4.  Plant Page
     5.  Farm Page
     6.  About Us Page
     7.  Get Involved Page
+    8.  Archive Page - lists Leaflet posts
+    9.  Leaflet - single Leaflet post
 
 ----------------------------------------------------------------------------- */
 
@@ -64,7 +67,9 @@ li {
     font-family: var(--lato);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--cronos);
 }
 
@@ -92,14 +97,13 @@ h1, h2, h3 {
     height: auto;
 }
 
-.Nav__container {
-    /* transform: skew(-20deg); */
-}
+/* .Nav__container {
+    transform: skew(-20deg);
+} */
 
 .Nav__ul {
     list-style-type: none;
     padding: 10px;
-    font-family: var(--cronos);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -125,6 +129,7 @@ header li a:focus {
 
 header li p {
     margin: 3px 0;
+    font-family: var(--zeitung);
 }
 
 .bold-text {
@@ -230,10 +235,10 @@ main a:focus {
 
 .main__page-2-section-1,
 .main__page-2-section-2,
-.main__page-2-section-icons, 
+.main__page-2-section-icons,
 .main__page-3-section-1,
 .main__page-3-section-2,
-.main__page-3-section-icons, 
+.main__page-3-section-icons,
 .main__page-3-section-1,
 .main__page-3-section-2,
 .main__page-3-section-icons,
@@ -244,6 +249,7 @@ main a:focus {
     width: 70vw;
     margin: 5vh auto;
 }
+
 .main__page-2-section-1-h2,
 .main__page-3-section-1-h2,
 .main__page-4-section-1-h2,
@@ -351,10 +357,8 @@ main a:focus {
 /*	4. Plant Page
 /* -------------------------------------------------------------------------- */
 .Plant {
-    margin: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .Plant__page-1-section-1-h1 {
@@ -394,7 +398,7 @@ main a:focus {
 .Plant__page-3,
 .Plant__page-4,
 .Plant__page-5 {
-    margin: 40px 30px;
+    margin: 30px 0;
 }
 
 .Plant__page-2-text-and-image,
@@ -403,7 +407,7 @@ main a:focus {
 .Plant__page-5-text-and-image {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .Plant__page-2-text,
@@ -414,7 +418,7 @@ main a:focus {
 .Plant__page-4-image,
 .Plant__page-5-text,
 .Plant__page-5-image {
-    width: 40%;
+    width: 45%;
 }
 
 /* 
@@ -444,7 +448,7 @@ main a:focus {
 }
 
 .Plant__page-2-links {
-    padding: 30px;
+    padding: 50px;
     font-family: var(--zeitung);
     letter-spacing: 3px;
     display: flex;
@@ -454,7 +458,6 @@ main a:focus {
 
 .Plant__page-2-links-a {
     color: var(--coffee);
-    padding: 20px 40px;
 }
 
 .Plant__page-2-links-a:hover {
@@ -480,9 +483,9 @@ main a:focus {
 }
 
 .Plant__page-3-text-p-a {
+    font-size: 16px;
     font-family: var(--zeitung);
     color: var(--coffee);
-    padding: 10px 30px;
 }
 
 .Plant__page-3-text-p-a:hover {
@@ -509,7 +512,7 @@ main a:focus {
 }
 
 .Plant__page-4-links {
-    padding: 30px;
+    padding: 20px;
     font-family: var(--zeitung);
     letter-spacing: 3px;
     display: flex;
@@ -518,8 +521,9 @@ main a:focus {
 }
 
 .Plant__page-4-links-a {
+    padding: 30px;
     color: var(--coffee);
-    padding: 20px 40px;
+
 }
 
 .Plant__page-4-links-a:hover {
@@ -545,9 +549,10 @@ main a:focus {
 }
 
 .Plant__page-5-text-p-a {
+    font-size: 16px;
     font-family: var(--zeitung);
     color: var(--coffee);
-    padding: 10px 30px;
+
 }
 
 .Plant__page-5-text-p-a:hover {
@@ -733,7 +738,7 @@ main a:focus {
     margin: 0;
     font-family: var(--cronos);
     font-size: 35px;
-    font-weight: normal;    
+    font-weight: normal;
     color: var(--coffee);
 }
 
@@ -748,7 +753,7 @@ main a:focus {
     background: var(--cobalt);
 }
 
-.About__page-1-link-module-a:hover, 
+.About__page-1-link-module-a:hover,
 .About__page-1-link-module-a:focus {
     background: rgba(55, 104, 178, .8);
 }
@@ -795,37 +800,80 @@ main a:focus {
     background: rgba(44, 16, 16, .7);
 }
 
-.Get__page-1 {
-    margin: 40px;
-}
 /* -------------------------------------------------------------------------- */
 /*	7.  Get Involved Page
 /* -------------------------------------------------------------------------- */
 
 
+.Get__page-1 {
+    margin: 40px 150px;
+}
+
+.Get__page-1-h1 {
+    font-size: 56px;
+    color: var(--coffee);
+}
+
+.Get__page-1-p {
+    font-size: 20px;
+    color: var(--coffee);
+    width: 70vw;
+}
+
+.Get__page-1-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Get__page-1-icon-w-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10vw;
+    margin: 30px 0;
+}
+
+.Get__page-1-icon-p {
+    font-family: var(--zeitung);
+    letter-spacing: 3px;
+    color: #2c1010;
+    text-align: center;
+}
+
+.Get__page-1-icons svg {}
+
+.cobalt-svg svg {
+    fill: var(--cobalt);
+}
+
+.forest-svg svg {
+    fill: var(--forest);
+}
+
+.moss-svg svg {
+    fill: var(--moss);
+}
+
+.orange-svg svg {
+    fill: var(--orange);
+}
+
+.paarl-svg svg {
+    fill: var(--paarl);
+}
+
+.coffee-svg svg {
+    fill: var(--coffee);
+}
 
 /* -------------------------------------------------------------------------- */
-/*	
+/*	8.  Archive Page - Leaflet posts
 /* -------------------------------------------------------------------------- */
-
 .screen-reader-text {
     /* pagination heading from function */
     display: none;
-}
-
-.Breadcrumbs {
-    background: var(--coffee);
-}
-
-.Breadcrumbs__anchor {
-    text-decoration: none;
-}
-
-.Breadcrumbs__text {
-    text-transform: lowercase;
-    font-family: var(--zeitung);
-    color: var(--paper);
-    padding: 8px 24px;
 }
 
 .Archive__home {
@@ -894,12 +942,47 @@ main a:focus {
     max-width: 600px;
 }
 
+/* -------------------------------------------------------------------------- */
+/*	9.  Leaflet - single post
+/* -------------------------------------------------------------------------- */
+.Leaflet {
+    width: 70vw;
+}
+
+.Leaflet__h1 {
+    font-family: var(--zeitung);
+    font-weight: normal;
+    font-size: 20px;
+}
+/* -------------------------------------------------------------------------- */
+/*	
+/* -------------------------------------------------------------------------- */
+
+.Breadcrumbs {
+    background: var(--coffee);
+}
+
+.Breadcrumbs__anchor {
+    text-decoration: none;
+}
+
+.Breadcrumbs__text {
+    text-transform: lowercase;
+    font-family: var(--zeitung);
+    color: var(--paper);
+    padding: 8px 24px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	
+/* -------------------------------------------------------------------------- */
+
 @media (max-width: 576px) {
     .header__container {
         display: flex;
         flex-direction: column;
     }
-
+    
     .header-logo {
         width: 340px;
         margin: 10px;

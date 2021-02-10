@@ -1,9 +1,4 @@
 <?php get_header(); ?> 
-<div class="Breadcrumbs">
-  <a class="Breadcrumbs__anchor" href="https://www.google.com/"
-    ><p class="Breadcrumbs__text"><?php ct2021_get_breadcrumbs(); ?></p></a
-  >
-</div>
 <div class="Archive__home">
     <div class="Archive__posts-list">
         <?php 

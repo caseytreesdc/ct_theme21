@@ -1,15 +1,11 @@
 <?php get_header(); ?>
-<div class="Breadcrumbs">
-  <a class="Breadcrumbs__anchor" href="https://www.google.com/"
-    ><p class="Breadcrumbs__text"><?php ct2021_get_breadcrumbs(); ?></p></a
-  >
-</div>
-
 <div class="Archive__home">
     <div class="Archive__posts-list">
         <?php 
+            $postCount = 0;
             if( have_posts() ) {
                 while( have_posts() ) {
+                    $postCount++;
                     the_post();?>
                     <div class="Archive__post">
                         <h3>
@@ -28,6 +24,7 @@
                             src="<?php echo $imageSrc ?>"
                             alt=""
                         />
+                        <p><?php echo $postCount; ?></p>
                         <hr>
                     </div>
                 <?php

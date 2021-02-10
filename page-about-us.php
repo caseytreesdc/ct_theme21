@@ -6,7 +6,7 @@
       nation’s capital.
     </h1>
     <p class="About__page-1-p">
-      Hover over the rings to learn how Casey Trees came to be. (notYet)
+      Hover over the rings to learn how Casey Trees came to be.
     </p>
   </div>
   <div class="About__page-1-rings">
