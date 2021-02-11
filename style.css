@@ -126,10 +126,6 @@ h3 {
     margin: 0 30px;
 }
 
-header li {
-    display: flex;
-}
-
 header li a {
     color: var(--coffee);
     padding: 3px 2vw;
@@ -143,9 +139,51 @@ header li a:focus {
     color: var(--paper);
 }
 
+/* .top-level-link:hover {
+    background: var(--cobalt);
+    color: var(--paper);
+} */
+
 header li p {
+    font-size: 18px;
     margin: 3px 0;
     font-family: var(--zeitung);
+}
+
+.Nav__ul li {
+    position: relative;
+}
+
+.Nav__ul ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: max-content;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(229, 230, 229, 1));
+    /* border-top: solid 2px var(--coffee); */
+    /* border-bottom: solid 10px var(--coffee); */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+ul li:hover>ul,
+ul li:focus>ul {
+    display: block;
+}
+
+li ul li {
+    /* border-bottom: solid var(--coffee) 1px; */
+}
+
+li ul li div p {
+    padding: 3px;
+    width: 100%;
+}
+
+li ul li div p a {
+    display: block;
+    width: 200px;
+
 }
 
 /* -------------------------------------------------------------------------- */
@@ -587,7 +625,7 @@ main a:focus {
 .Farm__page-1-title {
     font-size: 40px;
     color: rgba(40, 16, 15, 1);
-    margin: 0; 
+    margin: 0;
 }
 
 .dcsn {
