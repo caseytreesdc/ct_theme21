@@ -27,7 +27,7 @@
       <p class="About__page-1-link-module-p">
         Restoring, Enhancing, and Protecting trees over the years.
       </p>
-      <a class="About__page-1-link-module-a" href="/about-us/"
+      <a class="About__page-1-link-module-a" href="/about-us/our-story/"
         ><p class="About__page-1-link-module-a-p">READ OUR STORY</p></a
       >
     </div>

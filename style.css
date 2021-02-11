@@ -40,17 +40,29 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
 :root {
     /* colors */
     --black: #000000;
+    /* rgba(0, 0, 0, 1); */
     --coffee: #2c1010;
+    /* rgba(44, 16, 16, 1); */
     --grey: #373737;
+    /* rgba(55, 55, 55, 1); */
     --silver: #e5e6e5;
+    /* rgba(229, 230, 229, 1); */
     --paper: #ffffff;
+    /* rgba(255, 255, 255, 1); */
     --cobalt: #3768b2;
+    /* rgba(55, 104, 178, 1); */
     --forest: #395940;
+    /* rgba(57, 89, 64, 1); */
     --moss: #7b9e81;
+    /* rgba(123, 158, 129, 1); */
     --khaki: #f2e397;
+    /* rgba(242, 227, 151, 1); */
     --yellow: #f0d13f;
+    /* rgba(240, 209, 63, 1); */
     --orange: #e18323;
+    /* rgba(225, 131, 35, 1); */
     --paarl: #a4532e;
+    /* rgba(164, 83, 46, 1); */
 
     /* fonts */
     --cronos: cronos-pro, lato, zeitung-mono, sans-serif;
@@ -63,15 +75,35 @@ body {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--cronos);
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
 p,
 li {
     font-family: var(--lato);
 }
 
-h1,
-h2,
-h3 {
-    font-family: var(--cronos);
+a {
+    color: var(--cobalt);
+}
+
+a:hover,
+a:focus {
+    color: var(--forest);
+    text-decoration-color: var(--paarl);
+    text-decoration-style: double;
 }
 
 .hidden {
@@ -163,6 +195,7 @@ header li p {
 ul li:hover>ul {
     display: block;
 }
+
 /*
 What's up with this?! we need accessibililty 
 ul li:focus-within>ul {
@@ -184,9 +217,32 @@ li ul li div p a {
 /*	3.  Generic Page
 /* -------------------------------------------------------------------------- */
 
+.attachment-full {
+    width: 100%;
+    height: auto;
+}
+
 .Page {
     width: 800px;
     margin: 30px auto;
+}
+
+.Page img {
+    width: 100%;
+    height: auto;
+}
+
+.Page__masthead {
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.Page__h1 {
+    width: 800px;
+    font-size: 56px;
+    color: var(--silver);
 }
 
 /* -------------------------------------------------------------------------- */
