@@ -139,11 +139,6 @@ header li a:focus {
     color: var(--paper);
 }
 
-/* .top-level-link:hover {
-    background: var(--cobalt);
-    color: var(--paper);
-} */
-
 header li p {
     font-size: 18px;
     margin: 3px 0;
@@ -161,19 +156,17 @@ header li p {
     padding: 0;
     width: max-content;
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(229, 230, 229, 1));
-    /* border-top: solid 2px var(--coffee); */
-    /* border-bottom: solid 10px var(--coffee); */
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-ul li:hover>ul,
-ul li:focus>ul {
+ul li:hover>ul {
     display: block;
 }
-
-li ul li {
-    /* border-bottom: solid var(--coffee) 1px; */
-}
+/*
+What's up with this?! we need accessibililty 
+ul li:focus-within>ul {
+    display: block
+} */
 
 li ul li div p {
     padding: 3px;
@@ -181,9 +174,9 @@ li ul li div p {
 }
 
 li ul li div p a {
+    /* targets the anchor so we can control the width of the background highlight*/
     display: block;
     width: 200px;
-
 }
 
 /* -------------------------------------------------------------------------- */
@@ -490,7 +483,7 @@ main a:focus {
 }
 
 .Plant__page-2-links {
-    padding: 50px;
+    padding: 30px;
     font-family: var(--zeitung);
     letter-spacing: 3px;
     display: flex;
@@ -500,6 +493,7 @@ main a:focus {
 
 .Plant__page-2-links-a {
     color: var(--coffee);
+    padding: 20px;
 }
 
 .Plant__page-2-links-a:hover {
@@ -525,6 +519,7 @@ main a:focus {
 }
 
 .Plant__page-3-text-p-a {
+    padding: 20px;
     font-size: 16px;
     font-family: var(--zeitung);
     color: var(--coffee);
@@ -591,6 +586,7 @@ main a:focus {
 }
 
 .Plant__page-5-text-p-a {
+    padding: 20px;
     font-size: 16px;
     font-family: var(--zeitung);
     color: var(--coffee);
