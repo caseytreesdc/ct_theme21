@@ -77,6 +77,17 @@ h3 {
     display: none
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.cobalt-text {
+    color: var(--cobalt)
+}
 
 /* -------------------------------------------------------------------------- */
 /*	2. Header - see also functions.php:151 - Class Manipulation Filters
@@ -135,18 +146,6 @@ header li a:focus {
 header li p {
     margin: 3px 0;
     font-family: var(--zeitung);
-}
-
-.bold-text {
-    font-weight: bold;
-}
-
-.italic-text {
-    font-style: italic;
-}
-
-.cobalt-text {
-    color: var(--cobalt)
 }
 
 /* -------------------------------------------------------------------------- */
@@ -588,20 +587,19 @@ main a:focus {
 .Farm__page-1-title {
     font-size: 40px;
     color: rgba(40, 16, 15, 1);
-    margin: 0;
+    margin: 0; 
 }
 
 .dcsn {
-    padding-top: 40px;
-    padding-right: 40px;
     font-size: 40px;
     font-weight: 400;
+    padding: 60px 200px 0 0;
 }
 
 .ctFarm {
-    padding-right: 40px;
     font-size: 50px;
     font-weight: 900;
+    padding: 0px 200px 0 0;
 }
 
 .Farm__page-1-Video-box {
@@ -615,7 +613,7 @@ main a:focus {
 }
 
 .Farm__page-2 {
-    margin: 40px;
+    margin: 0 300px;
 }
 
 .Farm__page-2-p {
@@ -623,6 +621,7 @@ main a:focus {
 }
 
 .Farm__page-3 {
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -632,15 +631,14 @@ main a:focus {
 .Farm__page-3-h3 {
     font-family: var(--zeitung);
     font-weight: normal;
-    margin: 0;
 }
 
 .Farm__page-4-icon-w-text {
-    max-width: 23vw;
+    max-width: 12vw;
 }
 
 .Farm__page-4-icons {
-    margin: 5vh auto;
+    margin: 5vh 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -649,7 +647,7 @@ main a:focus {
 
 .Farm__page-4-icons svg {
     fill: var(--coffee);
-    width: 15vw;
+    width: 10vw;
 }
 
 .Farm__page-4-p {
@@ -659,7 +657,7 @@ main a:focus {
 
 .Farm__page-5,
 .Farm__page-6 {
-    margin: 40px 30px;
+    margin: 40px 100px;
 }
 
 .Farm__page-5-text-and-image,
@@ -677,12 +675,14 @@ main a:focus {
 }
 
 .Farm__page-5-text-h2 {
+    margin: 0;
     font-size: 56px;
     font-family: var(--cronos);
     color: var(--forest);
 }
 
 .Farm__page-6-text-h2 {
+    margin: 0;
     text-align: right;
     font-size: 56px;
     font-family: var(--cronos);
@@ -1020,7 +1020,8 @@ img.alignright {
 }
 
 p.wp-caption-text {
-    color: red;
+    color: var(--coffee);
+    font-size: 14px;
 }
 
 /* -------------------------------------------------------------------------- */

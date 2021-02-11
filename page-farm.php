@@ -12,6 +12,7 @@
         <source
           src="https://caseytreesdc.github.io/ct-farm/static/media/FarmHeroClip_v3.3986d54d.mp4"
           type="video/mp4"
+          poster="https://caseytrees.org/wp-content/uploads/2018/07/DSC02080.jpg"
         />
       </video>
     </div>

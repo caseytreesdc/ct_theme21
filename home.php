@@ -2,10 +2,8 @@
 <div class="Archive__home">
     <div class="Archive__posts-list">
         <?php 
-            $postCount = 0;
             if( have_posts() ) {
                 while( have_posts() ) {
-                    $postCount++;
                     the_post();?>
                     <div class="Archive__post">
                         <h3>
@@ -24,7 +22,6 @@
                             src="<?php echo $imageSrc ?>"
                             alt=""
                         />
-                        <p><?php echo $postCount; ?></p>
                         <hr>
                     </div>
                 <?php
