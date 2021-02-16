@@ -22,14 +22,14 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
 
     1. 	Document Setup
 	2. 	Site Header
-    3.  Generic Page
-    4. 	Home Page
-    5.  Plant Page
-    6.  Farm Page
-    7.  About Us Page
-    8.  Get Involved Page
-    9.  Archive Page - lists Leaflet posts
-    10. Leaflet - single Leaflet post
+    3.  Generic Page        .Page__
+    4. 	Home                .main__
+    5.  Plant               .Plant__
+    6.  Farm                .Farm__
+    7.  About Us            .About__
+    8.  Get Involved        .Get__
+    9.  Blog Posts          .Blog__     (the leaflet posts - home.php)
+    10. Leaflet             .Leaflet__  (single leaflet post - single.php)
 
 ----------------------------------------------------------------------------- */
 
@@ -975,121 +975,59 @@ main a:focus {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	9.  Leaflet Page
+/*	9.  Blog Posts (Leaflet) Page
 /* -------------------------------------------------------------------------- */
 
-.Leaflet__home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Blog {
+    background: var(--yellow);
+    box-shadow: inset 0 7px 9px -7px var(--grey);
 }
 
-.Leaflet__posts-list {
+.Blog__home {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.Blog__title {
+    font-family: var(--zeitung);
+    color: var(--coffee);
+    font-weight: normal;
+    text-align: left;
+}
+
+.Blog__posts-list {
     display: flex;
     flex-direction: column;
     max-width: 600px;
 }
 
-.Leaflet__post-title {
+.Blog__post-title {
     color: var(--cobalt);
     font-size: 26px;
     font-family: var(--lato);
 }
 
-.Leaflet__post-title:hover,
-.Leaflet__post-title:focus {
+.Blog__post-title:hover,
+.Blog__post-title:focus {
     color: var(--paarl);
     text-decoration-style: double;
     text-decoration-color: var(--forest);
 }
 
-.Leaflet__author-date {
+.Blog__author-date {
     font-family: var(--zeitung);
 }
 
-.Leaflet__img {
+.Blog__img {
     width: 600px;
     height: auto;
     clip-path: inset(0px 150px);
 }
 
-.Leaflet__meta {
+.Blog__meta {
     font-family: var(--lato);
-}
-
-/* -------------------------------------------------------------------------- */
-/*	9.  Archive Page
-/* -------------------------------------------------------------------------- */
-.screen-reader-text {
-    /* pagination heading from function */
-    display: none;
-}
-
-.Archive__home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Archive__posts-list {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-}
-
-.Archive__post-title {
-    color: var(--cobalt);
-    font-size: 26px;
-    font-family: var(--lato);
-}
-
-.Archive__post-title:hover,
-.Archive__post-title:focus {
-    color: var(--paarl);
-    text-decoration-style: double;
-    text-decoration-color: var(--forest);
-}
-
-.Archive__author-date {
-    font-family: var(--zeitung);
-}
-
-.Archive__img {
-    width: 600px;
-    height: auto;
-    clip-path: inset(0px 150px);
-}
-
-.Archive__meta {
-    font-family: var(--lato);
-}
-
-.pagination {
-    max-width: 600px;
-    font-family: var(--zeitung);
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5px auto;
-}
-
-.page-numbers {
-    color: var(--cobalt);
-    text-decoration: none;
-}
-
-.page-numbers:hover,
-.page-numbers:focus {
-    color: var(--paarl);
-    text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--forest);
-}
-
-.Archive__post {
-    max-width: 600px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1167,6 +1105,81 @@ img.alignright {
 p.wp-caption-text {
     color: var(--coffee);
     font-size: 14px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*
+/* -------------------------------------------------------------------------- */
+.screen-reader-text {
+    /* pagination heading from function */
+    display: none;
+}
+
+.Archive__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Archive__posts-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.Archive__post-title {
+    color: var(--cobalt);
+    font-size: 26px;
+    font-family: var(--lato);
+}
+
+.Archive__post-title:hover,
+.Archive__post-title:focus {
+    color: var(--paarl);
+    text-decoration-style: double;
+    text-decoration-color: var(--forest);
+}
+
+.Archive__author-date {
+    font-family: var(--zeitung);
+}
+
+.Archive__img {
+    width: 600px;
+    height: auto;
+    clip-path: inset(0px 150px);
+}
+
+.Archive__meta {
+    font-family: var(--lato);
+}
+
+.pagination {
+    max-width: 600px;
+    font-family: var(--zeitung);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px auto;
+}
+
+.page-numbers {
+    color: var(--cobalt);
+    text-decoration: none;
+}
+
+.page-numbers:hover,
+.page-numbers:focus {
+    color: var(--paarl);
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: var(--forest);
+}
+
+.Archive__post {
+    max-width: 600px;
 }
 
 /* -------------------------------------------------------------------------- */
