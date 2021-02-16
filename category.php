@@ -1,15 +1,15 @@
 <?php get_header(); ?>
-<div class="Leaflet__home">
-    <div class="Leaflet__posts-list">
+<div class="Archive__home">
+    <div class="Archive__posts-list">
         <?php 
             if( have_posts() ) {
                 while( have_posts() ) {
                     the_post();?>
-                    <div class="Leaflet__post">
+                    <div class="Archive__post">
                         <h3>
-                            <a class="Leaflet__post-title" href="<?php the_permalink();?>"><?php the_title();?></a>
+                            <a class="Archive__post-title" href="<?php the_permalink();?>"><?php the_title();?></a>
                         </h3>
-                        <p class="Leaflet__author-date"><?php echo get_the_date(); ?> by <?php echo get_field('author');?></p>
+                        <p class="Archive__author-date"><?php echo get_the_date(); ?> by <?php echo get_field('author');?></p>
                         <?php 
                             $image = get_field('image');
                             $size = 'large'; // (thumbnail, medium, large, full or custom size)
@@ -18,7 +18,7 @@
                             }
                         ?>
                         <img
-                            class="Leaflet__img"
+                            class="Archive__img"
                             src="<?php echo $imageSrc ?>"
                             alt=""
                         />
