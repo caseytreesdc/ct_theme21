@@ -187,7 +187,48 @@ function ct2021_replace_header_menu_div_wrapper_class( $html ) {
 // */
 
 function ct2021_acf_add_local_field_groups() {
-
+	acf_add_local_field_group(array(
+		'key' => 'group_602c07d7d9499',
+		'title' => 'Featured Post',
+		'fields' => array(
+			array(
+				'key' => 'field_602c0925b0bea',
+				'label' => 'Feature this Post',
+				'name' => 'feature_this_post',
+				'type' => 'true_false',
+				'instructions' => 'Select whether this is the featured post. Otherwise the newest will be featured. If more than one is selected, the newer one will be featured.',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'message' => '',
+				'default_value' => 0,
+				'ui' => 1,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+	));
 	acf_add_local_field_group(array(
 		'key' => 'group_5ff605b755888',
 		'title' => 'Home Page Pics',
