@@ -5,6 +5,10 @@
   <div class="main__page-1" id='testing'>
     <!-- begin main masthead section MODULE-->
     <section
+    <?php
+    $masthead = get_field('masthead', get_the_ID())[0]['image'];
+    $mastheadSRC = wp_get_attachment_image_src( $masthead, 'full')[0];
+  ?>
       style="
         background: linear-gradient(
             rgba(255, 255, 255, 0.3),
@@ -13,7 +17,7 @@
             rgba(255, 255, 255, 0.3),
             rgba(255, 255, 255, 1)
           ),
-          url(<?echo get_field('home_page_main_photo');?>);
+          url(<?php echo $mastheadSRC ?>);
       "
       class="main__page-1-section-1"
     >

@@ -122,6 +122,7 @@ function ct2021_register_scripts() {
 	wp_enqueue_script('scrollTrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js', array(), '3.6.0');
 	wp_enqueue_script('hide-empty-p-tags', get_template_directory_uri(). '/scripts/hideEmptyPTags.js');
 	wp_enqueue_script('home-page-fades', get_template_directory_uri(). '/scripts/homePageFades.js');
+	wp_enqueue_script('target-last-sub-menu', get_template_directory_uri(). '/scripts/targetLastSubMenu.js');
 }
 
 add_action('wp_enqueue_scripts', 'ct2021_register_scripts');
@@ -233,30 +234,6 @@ function ct2021_acf_add_local_field_groups() {
 		'key' => 'group_5ff605b755888',
 		'title' => 'Home Page Pics',
 		'fields' => array(
-			array(
-				'key' => 'field_5ff605f4b61ca',
-				'label' => 'Home Page MAIN Photo',
-				'name' => 'home_page_main_photo',
-				'type' => 'image',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'return_format' => 'url',
-				'preview_size' => 'medium',
-				'library' => 'all',
-				'min_width' => '',
-				'min_height' => '',
-				'min_size' => '',
-				'max_width' => '',
-				'max_height' => '',
-				'max_size' => '',
-				'mime_types' => 'png, jpg, gif',
-			),
 			array(
 				'key' => 'field_5ff60652b61cb',
 				'label' => 'Home Page RESTORE Photo',

@@ -193,6 +193,10 @@ header li p {
     z-index: 4;
 }
 
+#menu-item-18039 .sub-menu {
+    right: 0px;
+}
+
 ul li:hover>ul {
     display: block;
 }
