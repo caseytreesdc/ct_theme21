@@ -101,8 +101,7 @@ a {
 
 a:hover,
 a:focus {
-    color: var(--forest);
-    text-decoration-color: var(--paarl);
+    color: var(--cobalt);
     text-decoration-style: double;
 }
 
@@ -1030,7 +1029,6 @@ main a:focus {
 
 .Blog__Feature-text-title-a {
     color: var(--coffee);
-    text-decoration: none;
 }
 
 .Blog__Feature-excerpt {
@@ -1041,10 +1039,17 @@ main a:focus {
 .Blog__Feature-more {
     background: var(--coffee);
     width: max-content;
-    padding: 16px 30px;
+    padding: 14px 60px;
     font-family: var(--zeitung);
     color: var(--paper);
     text-decoration: none;
+}
+
+.Blog__Feature-more:hover,
+.Blog__Feature-more:focus {
+    color: var(--paper);
+    text-decoration: none;
+    background: rgba(44, 16, 16, .7)
 }
 
 .Blog__Feature-image-img {
@@ -1077,15 +1082,54 @@ main a:focus {
     font-family: var(--zeitung);
 }
 
-.Blog__Recents-text-title {
+.Blog__Recents-text-title-a {
     margin: 0;
     font-size: 30px;
     font-family: var(--cronos);
+    color: var(--coffee);
+    text-decoration: underline;
 }
 
-.Blog__Recents-text-title-a {
+.Blog__Stories {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.Blog__Stories-module {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.Blog__Stories-text {
+    width: 75%;
+}
+
+.Blog__Stories-image-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.Blog__Stories-date {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: var(--zeitung);
+}
+
+.Blog__Stories-text-title {
+    margin: 0;
+    font-size: 22px;
+    font-family: var(--cronos);
+}
+
+.Blog__Stories-text-title-a {
     color: var(--coffee);
-    text-decoration: none;
+}
+
+.Blog__Stories-excerpt {
+    font-size: 16px;
 }
 
 
@@ -1167,8 +1211,21 @@ p.wp-caption-text {
 }
 
 /* -------------------------------------------------------------------------- */
-/*
+/* General Archive - Category/Taxonomy/Resources(for now)
 /* -------------------------------------------------------------------------- */
+
+.Archive__section-title {
+    padding: 30px 12vw;
+    box-shadow: inset 0 7px 9px -7px var(--grey);
+}
+
+.Archive__title-padded {
+    font-family: var(--zeitung);
+    color: var(--coffee);
+    font-weight: normal;
+    margin: 0;
+}
+
 .screen-reader-text {
     /* pagination heading from function */
     display: none;
@@ -1183,62 +1240,118 @@ p.wp-caption-text {
 .Archive__posts-list {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    width: 75%;
+}
+
+.Archive__post {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 0;
+}
+
+.Archive__post-text {
+    width: 75%
 }
 
 .Archive__post-title {
-    color: var(--cobalt);
+    margin-top: 0;
+}
+
+.Archive__post-title-a {
+    color: var(--coffee);
     font-size: 26px;
     font-family: var(--lato);
 }
 
-.Archive__post-title:hover,
-.Archive__post-title:focus {
-    color: var(--paarl);
-    text-decoration-style: double;
-    text-decoration-color: var(--forest);
-}
-
 .Archive__author-date {
     font-family: var(--zeitung);
+    text-transform: uppercase;
+    background: linear-gradient(to top, rgb(240, 209, 63) 50%, transparent 50%);
+    width: max-content;
 }
 
 .Archive__img {
-    width: 600px;
-    height: auto;
-    clip-path: inset(0px 150px);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /* clip-path: inset(0px 150px); */
 }
 
-.Archive__meta {
+/* .Archive__meta {
     font-family: var(--lato);
-}
+} */
 
 .pagination {
-    max-width: 600px;
+    
+    padding-bottom: 20px;
+    /* background: var(--yellow); */
     font-family: var(--zeitung);
+    font-weight: bold;
+}
+
+body nav:last-of-type {
+    padding-top: 20px;
+    background: var(--silver);
 }
 
 .nav-links {
+    max-width: 75%;
     display: flex;
     justify-content: space-evenly;
-    margin: 5px auto;
+    margin: 0 auto;
 }
 
 .page-numbers {
-    color: var(--cobalt);
+    color: var(--coffee);
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*	
+/* -------------------------------------------------------------------------- */
+
+.footer__container {
+    background: var(--silver);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__logo {
+    height: 130px;
+    opacity: 1;
+}
+
+.footer__logo:hover {
+    opacity: 0.4;
+}
+
+.footer-link {
+    color: var(--coffee);
+    font-family: var(--lato);
+    font-size: 17px;
+    margin: 3px;
+}
+
+.footer__button {
+    font-family: var(--zeitung);
     text-decoration: none;
+    color: var(--silver);
+    text-align: center;
+    padding: 20px 40px;
+    background: var(--cobalt);
 }
 
-.page-numbers:hover,
-.page-numbers:focus {
-    color: var(--paarl);
-    text-decoration: underline;
-    text-decoration-style: double;
-    text-decoration-color: var(--forest);
-}
-
-.Archive__post {
-    max-width: 600px;
+.footer__button:hover {
+    background: rgba(65, 104, 172, 0.6);
 }
 
 /* -------------------------------------------------------------------------- */

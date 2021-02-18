@@ -36,7 +36,7 @@ if (have_posts())
                             <h3 class="Archive__post-title">
                                 <a class="Archive__post-title-a" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </h3>
-                            <p class="Archive__author-date"><?php echo get_the_date('M\. j Y'); ?>  <?php echo get_field('author'); ?></p>
+                            <p class="Archive__author-date"><?php echo get_the_date('M\. j Y'); ?> / <?php echo get_field('author'); ?></p>
                             <p class="Archives__excerpt"><?php echo get_the_excerpt(); ?></p>
                             <p class="Archive__meta">Categories: <?php  echo get_the_term_list($resource_id, 'resources-categories');?></p>
                             <p class="Archive__meta">Tags: <?php echo get_the_term_list($resource_id, 'resources-tags', '', ' ');?>

@@ -53,7 +53,7 @@
     <div class="Farm__page-5-text-and-image">
       <div class="Farm__page-5-text">
         <h2 class="Farm__page-5-text-h2">Sustainability</h2>
-        <p class="Plant__page-2-text-p">
+        <p class="Farm__page-5-text-p">
           Our vision is the production of sustainably grown, high quality trees
           to help communities meet their tree canopy goals. Along with
           meticulous care we provide to our soils by feeding the microflora
@@ -95,7 +95,7 @@
         <?php get_template_part('svgs/inline', 'wBlackLogo') ?>
         <?php get_template_part('svgs/inline', 'ddot') ?>
         </div>
-        <p class="Plant__page-3-text-p">
+        <p class="Farm__page-6-text-p">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
           volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
