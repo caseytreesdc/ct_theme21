@@ -22,18 +22,16 @@ if ($recentsQuery->have_posts())
             $recentsImageSrc = wp_get_attachment_image_src($recentsImage, $recentsSize) [0];
         }
 ?>
-<div class="Blog__Recents-image">
-        <img class="Blog__Recents-image-img" src="<?php echo $recentsImageSrc ?>" alt="" /></div>
-        <p class="Blog__Recents-date"><?php echo get_the_date('M\. j Y'); ?></p>
-        
-                  <a class="Blog__Recents-text-title-a" href="<?php the_permalink(); ?>"
-                    ><?php the_title(); ?></a
-                  >
-                
-                <p class="Blog__Recents-excerpt">
-                  <?php echo get_the_excerpt(); ?>
-                </p>
-          </div>
+    <div class="Blog__Recents-image">
+      <img class="Blog__Recents-image-img" src="<?php echo $recentsImageSrc ?>" alt="" /></div>
+      <p class="Blog__Recents-date"><?php echo get_the_date('M\. j Y'); ?></p>
+      <a class="Blog__Recents-text-title-a" href="<?php the_permalink(); ?>"
+        ><?php the_title(); ?></a
+      >            
+      <p class="Blog__Recents-excerpt">
+        <?php echo get_the_excerpt(); ?>
+      </p>
+    </div>
     <?php
     endwhile; ?>
 
