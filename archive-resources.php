@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="Archive__section-title">
-  <h1 class="Archive__title-padded">HOW DID WE GET HERE?</h1>
+  <h1 class="Archive__title-padded">ALL RESOURCES</h1>
 </section>
 
     <?php the_posts_pagination(array(
