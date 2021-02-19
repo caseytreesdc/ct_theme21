@@ -163,7 +163,7 @@ function ct2021_get_breadcrumbs() {
 
 // /*
 //     ===================================
-//     Class Manipulation Filters
+//     Filters
 //     ===================================
 // */
 add_filter('get_custom_logo', 'ct2021_replace_logo_classes');
@@ -181,7 +181,13 @@ function ct2021_replace_header_menu_div_wrapper_class( $html ) {
 	return $html;
 }
 
-// /*
+function ct2021_ellipsis_in_excerpt() {
+	return ' &hellip;';
+}
+
+add_filter('excerpt_more', 'ct2021_ellipsis_in_excerpt');
+
+// /* 
 //     ===================================
 //     Register Fields
 //     ===================================

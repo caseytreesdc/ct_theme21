@@ -2,7 +2,7 @@
 <!-- begin main MODULE -->
 <main>
   <!-- being main page-1 MODULE -->
-  <div class="main__page-1" id='testing'>
+  <div class="main__page-1">
     <!-- begin main masthead section MODULE-->
     <section
     <?php

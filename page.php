@@ -13,9 +13,10 @@
   class="Page__masthead"
   style="
     background: linear-gradient(
-      rgba(55, 55, 55, .5),
-      rgba(55, 55, 55, .5),
-      rgba(55, 55, 55, 1)
+      rgba(55,55,55, 0),
+      rgba(55,55,55, 0),
+      rgba(55,55,55, .4),
+      rgba(55,55,55, .8)
       ),
       url(<?php echo $mastheadSRC ?>);
     background-position: bottom;
