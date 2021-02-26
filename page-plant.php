@@ -3,9 +3,7 @@
 <div class="Plant">
     <div class="Plant__page-1">
         <section class=Plant__page-1-section-1>
-            <h1 class="Plant__page-1-section-1-h1">
-                There are so many ways to plant with us. Where do you want to see more trees?
-            </h1>
+            <?php the_content() ?>
         </section>
         <section class="Plant__page-1-section-2-icons">
             <div class="Plant__page-1-section-2-icon-w-text">

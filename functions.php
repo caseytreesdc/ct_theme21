@@ -629,25 +629,6 @@ function ct2021_acf_add_local_field_groups()
         'title' => 'Farm Copy and Images',
         'fields' => array(
             array(
-                'key' => 'field_603925b1e3eb6',
-                'label' => 'Farm Intro Text',
-                'name' => 'farm_intro_text',
-                'type' => 'wysiwyg',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'tabs' => 'all',
-                'toolbar' => 'full',
-                'media_upload' => 0,
-                'delay' => 0,
-            ),
-            array(
                 'key' => 'field_603924f8e3eb2',
                 'label' => 'Sustainability Text',
                 'name' => 'sustainability_text',
@@ -739,7 +720,7 @@ function ct2021_acf_add_local_field_groups()
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => '20789',
+                    'value' => '20789', '20806' // ctdevLocal, casetdev.wpengine
                 ),
             ),
         ),
@@ -935,7 +916,7 @@ function ct2021_acf_add_local_field_groups()
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => '20801',
+                    'value' => '20801', '20823' // ctdevLocal, casetdev.wpengine
                 ),
             ),
         ),

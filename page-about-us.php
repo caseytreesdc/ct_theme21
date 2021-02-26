@@ -16,7 +16,7 @@
     <div class="About__page-1-link-module">
       <h2 class="About__page-1-link-module-h2">Our People</h2>
       <p class="About__page-1-link-module-p">
-        Meet the spirit behind out success.
+        Meet the spirit behind our success.
       </p>
       <a class="About__page-1-link-module-a" href="/about-us/our-people/"
         ><p class="About__page-1-link-module-a-p">MEET OUR STAFF</p></a

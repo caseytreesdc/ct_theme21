@@ -19,7 +19,7 @@
     </div>
   </div>
   <div class="Farm__page-2">
-    <?php echo get_fields()['farm_intro_text']?>
+    <?php the_content() ?>
   </div>
   <div class="Farm__page-3">
     <h3 class="Farm__page-3-h3">WHAT WE OFFER</h3>

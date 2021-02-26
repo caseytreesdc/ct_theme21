@@ -477,7 +477,7 @@ main a:focus {
     margin: 0 auto;
 }
 
-.Plant__page-1-section-1-h1 {
+.Plant__page-1-section-1 h1 {
     color: var(--coffee);
     font-size: 56px;
     max-width: 700px;
