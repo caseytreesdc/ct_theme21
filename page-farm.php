@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="Farm">
   <div class="Farm__page-1">
     <div class="Farm__page-1-overlay">
@@ -18,14 +19,7 @@
     </div>
   </div>
   <div class="Farm__page-2">
-    <p class="Farm__page-2-p">
-      <b>Casey Tree Farm</b>, originally surveyed by our first president and
-      avid horticulturalist George Washington, occupies 730 acres of land along
-      the Shenandoah River in Berryville, VA. We have dedicated 100 acres of
-      that land to sustainable tree production using techniques that prioritize
-      long term soil health and productivity, while safeguarding the overall
-      environment.
-    </p>
+    <?php echo get_fields()['farm_intro_text']?>
   </div>
   <div class="Farm__page-3">
     <h3 class="Farm__page-3-h3">WHAT WE OFFER</h3>
@@ -53,23 +47,12 @@
     <div class="Farm__page-5-text-and-image">
       <div class="Farm__page-5-text">
         <h2 class="Farm__page-5-text-h2">Sustainability</h2>
-        <p class="Farm__page-5-text-p">
-          Our vision is the production of sustainably grown, high quality trees
-          to help communities meet their tree canopy goals. Along with
-          meticulous care we provide to our soils by feeding the microflora
-          using organic-based inputs, all our trees are grown in-ground using
-          rootbags, which encourages greater fine root production than
-          traditional balled and burlapped trees. More fine roots mean better
-          water and nutrient exchange and better chances of survival
-          post-planting. Rootbag-grown trees also use less soil than their
-          balled and burlapped counterparts, reducing environmental impacts and
-          transportation costs, and simplifying planting.
-        </p>
+        <?php echo get_fields()['sustainability_text']?>
       </div>
       <div
         class="Farm__page-5-image"
         style="
-          background: url(https://caseytrees.org/wp-content/uploads/2020/11/farm2020-email.png);
+          background: url(<?php echo get_fields()['sustainability_image']['url']; ?>);
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -83,7 +66,7 @@
         class="Farm__page-6-image"
         style="
           background:
-            url(https://caseytrees.org/wp-content/uploads/2020/12/match-email.png);
+            url(<?php echo get_fields()['partnership_image']['url']; ?>);
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -95,14 +78,7 @@
         <?php get_template_part('svgs/inline', 'wBlackLogo') ?>
         <?php get_template_part('svgs/inline', 'ddot') ?>
         </div>
-        <p class="Farm__page-6-text-p">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem ssim qui blandit praesent luptatum zzril delenit augue duis
-          dolore te feugait nulla facilisi.Lorem ipsum dolor sit amet.
-        </p>
+        <?php echo get_fields()['partnership_text']?>
       </div>
     </div>
   </div>

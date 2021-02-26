@@ -551,7 +551,7 @@ main a:focus {
     color: var(--cobalt);
 }
 
-.Plant__page-2-text-p {
+.Plant__page-2-text p {
     font-size: 20px;
     color: var(--coffee);
 }
@@ -593,7 +593,7 @@ main a:focus {
     text-align: right;
 }
 
-.Plant__page-3-text-p {
+.Plant__page-3-text p {
     font-size: 20px;
     color: var(--coffee);
     text-align: right;
@@ -617,7 +617,7 @@ main a:focus {
     color: var(--orange);
 }
 
-.Plant__page-4-text-p {
+.Plant__page-4-text p {
     font-size: 20px;
     color: var(--coffee);
 }
@@ -660,7 +660,7 @@ main a:focus {
     text-align: right;
 }
 
-.Plant__page-5-text-p {
+.Plant__page-5-text p {
     font-size: 20px;
     color: var(--coffee);
     text-align: right;
@@ -732,7 +732,7 @@ main a:focus {
     margin: 0 300px;
 }
 
-.Farm__page-2-p {
+.Farm__page-2 p {
     font-size: 20px;
 }
 

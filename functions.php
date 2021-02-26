@@ -107,6 +107,59 @@ register_taxonomy('resources-tags', array(
 
 // /*
 //     ===================================
+//     Register Resources Custom Post Type
+//     ===================================
+// */
+
+// /*
+//     ===================================
+//     Register Trees Custom Post Type NMC Code 
+//     ===================================
+// */
+
+add_action( 'init', 'trees_init' ); //how come this isn't after declaring the function? 
+function trees_init() { 
+	$labels = array(
+		'name'               => _x( 'Trees', 'post type general name', 'your-plugin-textdomain' ),
+		'singular_name'      => _x( 'Tree', 'post type singular name', 'your-plugin-textdomain' ),
+		'menu_name'          => _x( 'Trees', 'admin menu', 'your-plugin-textdomain' ),
+		'name_admin_bar'     => _x( 'Tree', 'add new on admin bar', 'your-plugin-textdomain' ),
+		'add_new'            => _x( 'Add New', 'tree', 'your-plugin-textdomain' ),
+		'add_new_item'       => __( 'Add New Tree', 'your-plugin-textdomain' ),
+		'new_item'           => __( 'New Tree', 'your-plugin-textdomain' ),
+		'edit_item'          => __( 'Edit Tree', 'your-plugin-textdomain' ),
+		'view_item'          => __( 'View Tree', 'your-plugin-textdomain' ),
+		'all_items'          => __( 'All Trees', 'your-plugin-textdomain' ),
+		'search_items'       => __( 'Search Trees', 'your-plugin-textdomain' ),
+		'parent_item_colon'  => __( 'Parent Trees:', 'your-plugin-textdomain' ),
+		'not_found'          => __( 'No trees found.', 'your-plugin-textdomain' ),
+		'not_found_in_trash' => __( 'No trees found in Trash.', 'your-plugin-textdomain' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'show_in_nav_menus'  => true,
+		'query_var'          => true,
+		'rewrite'            => array('slug' => 'trees-list', 'with_front' => true),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'menu_icon'          => 'dashicons-palmtree',
+		'supports'           => array('title', 'editor')
+	);
+
+	/******** Icon reference for $args['menu_position'] --> https://developer.wordpress.org/resource/dashicons/ *********/
+
+	register_post_type( 'trees', $args );
+}
+
+// /*
+//     ===================================
 //     Register Styles
 //     ===================================
 // */
@@ -213,7 +266,7 @@ add_filter('excerpt_more', 'ct2021_ellipsis_in_excerpt');
 // */
 function ct2021_acf_add_local_field_groups()
 {
-    acf_add_local_field_group(array( // Featured Post
+    acf_add_local_field_group(array(                // Featured Post
         'key' => 'group_602c07d7d9499',
         'title' => 'Featured Post',
         'fields' => array(
@@ -255,7 +308,8 @@ function ct2021_acf_add_local_field_groups()
         'active' => true,
         'description' => '',
     ));
-    acf_add_local_field_group(array( // Home Page Pics
+
+    acf_add_local_field_group(array(                // Home Page Pics
         'key' => 'group_5ff605b755888',
         'title' => 'Home Page Pics',
         'fields' => array(
@@ -350,9 +404,8 @@ function ct2021_acf_add_local_field_groups()
         'active' => true,
         'description' => '',
     ));
-}
 
-    acf_add_local_field_group(array(
+    acf_add_local_field_group(array(            // Top Resources
         'key' => 'group_6030020898e84',
         'title' => 'Top Resources',
         'fields' => array(
@@ -571,5 +624,330 @@ function ct2021_acf_add_local_field_groups()
         'description' => '',
     ));
 
+    acf_add_local_field_group(array(            // Farm Copy and Images
+        'key' => 'group_603924e4cdb29',
+        'title' => 'Farm Copy and Images',
+        'fields' => array(
+            array(
+                'key' => 'field_603925b1e3eb6',
+                'label' => 'Farm Intro Text',
+                'name' => 'farm_intro_text',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_603924f8e3eb2',
+                'label' => 'Sustainability Text',
+                'name' => 'sustainability_text',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_6039255de3eb3',
+                'label' => 'Sustainability Image',
+                'name' => 'sustainability_image',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+            array(
+                'key' => 'field_6039256be3eb4',
+                'label' => 'Partnership Text',
+                'name' => 'partnership_text',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_6039259ce3eb5',
+                'label' => 'Partnership Image',
+                'name' => 'partnership_image',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '20789',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+
+    acf_add_local_field_group(array(            //Plant Copy and Images
+        'key' => 'group_60392c6131f8a',
+        'title' => 'Plant Copy and Images',
+        'fields' => array(
+            array(
+                'key' => 'field_60392c6139fa7',
+                'label' => 'Home Text',
+                'name' => 'home_text',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_60392c6139fad',
+                'label' => 'Home Image',
+                'name' => 'home_image',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+            array(
+                'key' => 'field_60392c6139fb3',
+                'label' => 'School Text',
+                'name' => 'school_text',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_60392c6139fb9',
+                'label' => 'School Image',
+                'name' => 'school_image',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+            array(
+                'key' => 'field_60392deb5896a',
+                'label' => 'Community Text',
+                'name' => 'community_text',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_60392e2c5896c',
+                'label' => 'Community Image',
+                'name' => 'community_image',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+            array(
+                'key' => 'field_60392e1a5896b',
+                'label' => 'Dedication Text',
+                'name' => 'dedication_text',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+                'delay' => 0,
+            ),
+            array(
+                'key' => 'field_60392e3a5896d',
+                'label' => 'Dedication Image',
+                'name' => 'dedication_image',
+                'type' => 'image',
+                'instructions' => '',
+                'required' => 1,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'min_width' => '',
+                'min_height' => '',
+                'min_size' => '',
+                'max_width' => '',
+                'max_height' => '',
+                'max_size' => '',
+                'mime_types' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '20801',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+}
 add_action('acf/init', 'ct2021_acf_add_local_field_groups');
 
