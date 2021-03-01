@@ -720,8 +720,13 @@ function ct2021_acf_add_local_field_groups()
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => array('20789', '20806') // ctdevLocal, casetdev.wpengine
+                    'value' => '20789',  // ctdevLocal
                 ),
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '20806',  // casetdev.wpengine
+                )
             ),
         ),
         'menu_order' => 0,
