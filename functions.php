@@ -266,49 +266,6 @@ add_filter('excerpt_more', 'ct2021_ellipsis_in_excerpt');
 // */
 function ct2021_acf_add_local_field_groups()
 {
-    acf_add_local_field_group(array(                // Featured Post
-        'key' => 'group_602c07d7d9499',
-        'title' => 'Featured Post',
-        'fields' => array(
-            array(
-                'key' => 'field_602c0925b0bea',
-                'label' => 'Feature this Post',
-                'name' => 'feature_this_post',
-                'type' => 'true_false',
-                'instructions' => 'Select whether this is the featured post. Otherwise the newest will be featured. If more than one is selected, the newer one will be featured.',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ) ,
-                'message' => '',
-                'default_value' => 0,
-                'ui' => 1,
-                'ui_on_text' => '',
-                'ui_off_text' => '',
-            ) ,
-        ) ,
-        'location' => array(
-            array(
-                array(
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'post',
-                ) ,
-            ) ,
-        ) ,
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-    ));
-
     acf_add_local_field_group(array(                // Home Page Pics
         'key' => 'group_5ff605b755888',
         'title' => 'Home Page Pics',
@@ -931,6 +888,86 @@ function ct2021_acf_add_local_field_groups()
                     'param' => 'page',
                     'operator' => '==',
                     'value' => '20823', // Caseytdev
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
+
+    acf_add_local_field_group(array( // Feature an article
+        'key' => 'group_603cf91c13caa',
+        'title' => 'Feature an Article',
+        'fields' => array(
+            array(
+                'key' => 'field_603cfd09ee6c8',
+                'label' => 'Feature an Article',
+                'name' => 'feature_an_article',
+                'type' => 'true_false',
+                'instructions' => 'Select Yes to feature an article other than the latest one.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
+                'ui' => 1,
+                'ui_on_text' => '',
+                'ui_off_text' => '',
+            ),
+            array(
+                'key' => 'field_603cf9602bdec',
+                'label' => 'Featured Post',
+                'name' => 'featured_post',
+                'type' => 'post_object',
+                'instructions' => 'Select an article to feature.',
+                'required' => 1,
+                'conditional_logic' => array(
+                    array(
+                        array(
+                            'field' => 'field_603cfd09ee6c8',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array(
+                    0 => 'post',
+                ),
+                'taxonomy' => '',
+                'allow_null' => 0,
+                'multiple' => 0,
+                'return_format' => 'object',
+                'ui' => 1,
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '20788',
+                ),
+            ),
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '20805', // Local
                 ),
             ),
         ),
