@@ -960,14 +960,14 @@ function ct2021_acf_add_local_field_groups()
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => '20788',
+                    'value' => '20788', // Local
                 ),
             ),
             array(
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => '20805', // Local
+                    'value' => '20805', // CaseytDev
                 ),
             ),
         ),
