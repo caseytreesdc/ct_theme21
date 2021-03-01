@@ -720,14 +720,16 @@ function ct2021_acf_add_local_field_groups()
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => '20789',  // ctdevLocal
+                    'value' => '20789',  // Local
                 ),
+            ),
+            array(
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => '20806',  // casetdev.wpengine
+                    'value' => '20806',  // Caseytdev
                 )
-            ),
+            )
         ),
         'menu_order' => 0,
         'position' => 'normal',
@@ -921,7 +923,14 @@ function ct2021_acf_add_local_field_groups()
                 array(
                     'param' => 'page',
                     'operator' => '==',
-                    'value' => '20801', '20823' // ctdevLocal, casetdev.wpengine
+                    'value' => '20801', // Local
+                ),
+            ),
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '20823', // Caseytdev
                 ),
             ),
         ),
