@@ -1,14 +1,17 @@
 <?php get_header(); ?>
 
 <section class="Archive__section-title">
-  <h1 class="Archive__title-padded">TAXONOMY</h1>
+<?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?> 
+  <h1 class="Archive__title-padded"><?php echo $term->name ?></h1>
 </section>
 
-    <?php the_posts_pagination(array(
+<?php the_posts_pagination(array(
     'mid_size' => 2,
     'prev_text' => __('NEWER POSTS', 'textdomain') ,
     'next_text' => __('OLDER POSTS', 'textdomain') ,
-)); ?>
+    )); 
+?>
+
 <div class="Archive__home">
     <div class="Archive__posts-list">
         <?php
