@@ -136,7 +136,7 @@ a:focus {
 
 .header__container {
     /* the 1% margin prevents the  header nav skew from exceeding the window width */
-    padding: 1% 1%;
+    padding: 2% 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,7 +150,7 @@ a:focus {
 }
 
 .header__logo {
-    width: 250px;
+    width: 180px;
     height: auto;
 }
 
@@ -181,7 +181,7 @@ header li a:focus {
 }
 
 header li p {
-    font-size: 18px;
+    font-size: 14px;
     margin: 3px 0;
     font-family: var(--zeitung);
 }
@@ -287,11 +287,40 @@ main a:focus {
 }
 
 .main__page-1-section-1-h2 {
-    margin: 0;
-    font-family: var(--cronos);
-    padding: 40px 150px 0 0;
-    font-size: 56px;
     color: var(--coffee);
+    font-family: var(--cronos);
+    font-size: 56px;
+    font-weight: 600;
+    margin: 0;
+    padding: 40px 150px 0 0;
+}
+
+.typeform-share {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(55, 104, 178, .8);
+    color: var(--paper);
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    margin: 40px 150px;
+    height: 50px;
+    padding: 0px 33px;
+    border-radius: 5px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.typeform-share:hover {
+    background-color: rgba(55, 104, 178, 1);
+    color: var(--paper);
 }
 
 .main__page-1-section-2 {
@@ -308,10 +337,12 @@ main a:focus {
 
 .motto {
     padding: 100px 0 0 150px;
-    font-family: var(--zeitung);
-    font-size: 18px;
+}
+
+.motto p {
+    font-family: var(--cronos);
+    font-size: 22px;
     color: var(--coffee);
-    letter-spacing: 3px;
 }
 
 .main__page-1-section-3 {
@@ -326,7 +357,7 @@ main a:focus {
 .main__page-1-section-3-p {
     font-family: var(--zeitung);
     color: var(--coffee);
-    letter-spacing: 3px;
+    letter-spacing: 0px;
 }
 
 .down-arrow {
@@ -371,7 +402,13 @@ main a:focus {
 .main__page-4-section-1-h2,
 .main__page-5-section-1-h2 {
     font-size: 80px;
+    font-weight: 600;
     margin: 0 0 40px 0;
+}
+
+.main__page-5-section-1-h2 {
+    font-size: 60px;
+    width: 80%;
 }
 
 .main__page-2-section-1-h2 {
@@ -404,11 +441,21 @@ main a:focus {
 .main__page-2-section-2,
 .main__page-3-section-2,
 .main__page-4-section-2 {
+    width: 70vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main__page-2-section-2 p,
+.main__page-3-section-2 p,
+.main__page-4-section-2 p {
     text-align: right;
     font-family: var(--zeitung);
     color: var(--coffee);
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     line-height: 2em;
+    width: 80%;
+    text-transform: uppercase;
 }
 
 .main__page-2-section-icons,
@@ -422,9 +469,9 @@ main a:focus {
 .main__page-3-section-icons svg,
 .main__page-4-section-icons svg,
 .main__page-5-section-icons svg {
-    width: 100px;
+    width: 60px;
     height: auto;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 .main__page-2-section-icons svg {

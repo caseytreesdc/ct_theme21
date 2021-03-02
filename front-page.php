@@ -25,16 +25,19 @@
         Empowering communities <br />
         in DC <i>through trees</i>
       </h2>
+      <!-- Begin Module Typeform Button  -->
+    <a class="typeform-share button" href="https://form.typeform.com/to/mnnpM5l1?typeform-medium=embed-snippet" data-mode="popup" style="" data-size="100" target="_blank">FFS Typeform</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+      <!-- End Module Typeform Button  -->
     </section>
     <!-- end main masthead section MODULE-->
     <!-- begin main motto section MODULE-->
     <section class="main__page-1-section-2">
       <div class="motto">
         <p>Our mission is to</p>
-        <p class="bold-text">RESTORE ENHANCE + PROTECT</p>
+        <p class="bold-text"><a href="#restore">RESTORE</a> <a href="#enhance">ENHANCE</a> + <a href="#protect">PROTECT</a></p>
         <p>the tree canopy of Washington, DC.</p>
       </div>
-      <!-- begin get udpdates iframe MODULE CURRENTLY HIDDEN IN STYLESHEET FOR TYPEFORM-->
+      <!-- begin get udpdates iframe MODULE CURRENTLY HIDDEN IN STYLESHEET-->
       <iframe
         class="get-updates__iframe"
         src="https://tfaforms.com/4865291"
@@ -56,23 +59,16 @@
   </div>
   <!-- end main page-1 MODULE-->
   <!-- begin main page-2 MODULE-->
-  <div class="main__page-2">
+  <div id="restore" class="main__page-2">
     <section class="main__page-2-section-1">
-      <h2 class="main__page-2-section-1-h2">RESTORE</h2>
+      <h2 class="main__page-2-section-1-h2">Restore</h2>
     </section>
     <section class="main__page-2-section-2">
       <p class="main__page-2-section-2-p">
-        WITH OUR DISTRICT PARTNERS AND THOUSANDS OF LOCAL VOLUNTEERS,
-      </p>
-      <p class="main__page-2-section-2-p">
-        WE
+        WITH OUR DISTRICT PARTNERS AND THOUSANDS OF LOCAL VOLUNTEERS, WE
         <a class="grey-highlight main__page-2-section-2-a" href="/plant/"
           >PLANT 3,000+ TREES</a
-        >
-        EVERY YEAR TO REACH OUR
-      </p>
-      <p class="main__page-2-section-2-p">
-        COLLECTIVE GOAL OF 40% TREE CANOPY BY 2032.
+        > EVERY YEAR TO REACH OUR COLLECTIVE GOAL OF 40% TREE CANOPY BY 2032.
       </p>
     </section>
     <section class="main__page-2-section-icons">
@@ -89,25 +85,18 @@
   </div>
   <!-- end main page-2 MODULE-->
   <!-- begin main page-3 MODULE-->
-  <div class="main__page-3">
+  <div id="enhance" class="main__page-3">
     <section class="main__page-3-section-1">
-      <h2 class="main__page-3-section-1-h2">ENHANCE</h2>
+      <h2 class="main__page-3-section-1-h2">Enhance</h2>
     </section>
     <section class="main__page-3-section-2">
       <p class="main__page-3-section-2-p">
-        OUR PROGRAMS + CLASSES EQUIP DC RESIDENTS WITH
-      </p>
-      <p class="main__page-3-section-2-p">
-        THE
+        OUR PROGRAMS + CLASSES EQUIP DC RESIDENTS WITH THE
         <a
           href="/resources-list/"
           class="main__page-3-section-2-a grey-highlight"
           >TECHNICAL SKILLS + KNOWLEDGE</a
-        >
-        TO FOSTER
-      </p>
-      <p class="main__page-3-section-2-p">
-        A HEALTHY, MATURE TREE CANOPY IN DC.
+        > TO FOSTER A HEALTHY, MATURE TREE CANOPY IN DC.
       </p>
     </section>
     <section class="main__page-3-section-icons">
@@ -126,9 +115,9 @@
   </div>
   <!-- end main page-3 MODULE-->
   <!-- begin main page-4 MODULE-->
-  <div class="main__page-4">
+  <div id="protect" class="main__page-4">
     <section class="main__page-4-section-1">
-      <h2 class="main__page-4-section-1-h2">PROTECT</h2>
+      <h2 class="main__page-4-section-1-h2">Protect</h2>
     </section>
     <section class="main__page-4-section-2">
       <p class="main__page-4-section-2-p">
@@ -139,16 +128,13 @@
           >ADVOCACY ACTIONS</a
         >
         AND
-      </p>
-      <p class="main__page-4-section-2-p">
         <a
           href="/resources-list/"
           class="main__page-4-section-2-a grey-highlight"
           >CONSERVATION INITIATIVES</a
         >
-        THAT HELP US
+        THAT HELP US PROTECT US.
       </p>
-      <p class="main__page-4-section-2-p">PROTECT US.</p>
     </section>
     <section class="main__page-4-section-icons">
       <?php get_template_part('svgs/inline', 'grid') ?>
