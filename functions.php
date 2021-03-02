@@ -34,6 +34,7 @@ add_action('init', 'ct2021_menus');
 //     Register Resources Custom Post Type
 //     ===================================
 // */
+
 function ct2021_resources_init()
 {
     $labels = array(
@@ -104,12 +105,6 @@ register_taxonomy('resources-tags', array(
     'hierarchical' => true,
     'show_in_nav_menus' => false,
 ));
-
-// /*
-//     ===================================
-//     Register Resources Custom Post Type
-//     ===================================
-// */
 
 // /*
 //     ===================================
@@ -983,3 +978,20 @@ function ct2021_acf_add_local_field_groups()
 }
 add_action('acf/init', 'ct2021_acf_add_local_field_groups');
 
+// /*
+//     ===================================
+//     Custom CMS Login Logo
+//     ===================================
+// */
+
+function ct2021_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url('https://caseytrees.org/wp-content/uploads/2020/08/Cobalt_Horizontal-logo.png');
+            background-size: contain;
+            width: 250px;
+            margin: 0 auto;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'ct2021_login_logo' );

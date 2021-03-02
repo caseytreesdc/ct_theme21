@@ -378,6 +378,7 @@ main a:focus {
 .main__page-4,
 .main__page-5 {
     background: var(--paper);
+    height: 100vh;
 }
 
 .main__page-2-section-1,
@@ -504,7 +505,7 @@ main a:focus {
 }
 
 .main__page-5 {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
 }
