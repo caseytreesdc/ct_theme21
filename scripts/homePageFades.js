@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-function init() {
+function scrollFade() {
   gsap.to(".main__page-1", {
     opacity: 0,
     scrollTrigger: {
@@ -76,5 +76,5 @@ function init() {
 }
 
 window.addEventListener("load", function () {
-  init();
+  scrollFade();
 });

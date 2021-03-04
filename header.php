@@ -22,5 +22,18 @@
         )
     ) 
     ?>
+    <a class="Hamburger">&#9776</a>
     </header>
+    <?php 
+      wp_nav_menu(
+        array(
+            'theme_location' => 'Main Navigation 2021',
+            'items_wrap' => '<ul class="Mobile-Nav__ul">%3$s</ul>', //what is %3$s
+            'before' => '<div class="Mobile-Nav__anchor-p-container"><p>',
+            'after' => '</p></div>',
+        )
+    ) 
+    ?>
     <!-- end header MODULE -->
+    <!-- Begin main content MODULE -->
+    <div class="Main-Content">

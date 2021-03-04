@@ -138,7 +138,7 @@ a:focus {
     /* the 1% margin prevents the  header nav skew from exceeding the window width */
     padding: 2% 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     -webkit-box-shadow: 0 8px 6px -6px var(--grey);
     -moz-box-shadow: 0 8px 6px -6px var(--grey);
@@ -205,7 +205,7 @@ header li p {
     right: 0px;
 }
 
-ul li:hover>ul {
+.Nav__ul li:hover>ul {
     display: block;
 }
 
@@ -215,15 +215,37 @@ ul li:focus-within>ul {
     display: block
 } */
 
-li ul li div p {
+/* li ul li div p {
     padding: 3px;
     width: 100%;
-}
+} */
 
-li ul li div p a {
+.Nav__ul li ul li div p a {
     /* targets the anchor so we can control the width of the background highlight*/
     display: block;
     width: 200px;
+}
+
+.Hamburger {
+    display: none;
+}
+
+.Mobile-Nav__ul {
+    display: none;
+    position: absolute;
+    z-index: 4;
+    list-style: none;
+}
+
+.Mobile-Nav__ul ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: max-content;
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(229, 230, 229, 1));
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
+    z-index: 4;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1011,7 +1033,7 @@ main a:focus {
     text-align: center;
 }
 
-.Get__page-1-icons svg {}
+/* .Get__page-1-icons svg {} */
 
 .cobalt-svg svg {
     fill: var(--cobalt);
@@ -1577,7 +1599,30 @@ body nav:last-of-type {
 /* -------------------------------------------------------------------------- */
 /*	
 /* -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+    .Nav__ul {
+        display: none;
+    }
 
+    /* .Mobile-Nav__ul {
+        display: inline;
+    } */
+    .Hamburger {
+        display: inline;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+
+/* 
 @media (max-width: 576px) {
     .header__container {
         display: flex;
@@ -1615,11 +1660,4 @@ body nav:last-of-type {
     .Archive__img {
         max-width: 99vw;
     }
-}
-
-/* //  landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    .Nav__slash {
-        display: none;
-    }
-}
+} */

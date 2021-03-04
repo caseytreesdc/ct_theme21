@@ -1,3 +1,5 @@
+</div>
+<!-- End main content module -->
 </body>
     <!-- Begin Modules Footer -->
     <footer class="footer__container">
