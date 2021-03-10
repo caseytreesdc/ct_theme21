@@ -33,12 +33,12 @@
     <!-- begin main motto section MODULE-->
     <section class="main__page-1-section-2">
       <div class="motto">
-        <p>Our mission is to</p>
-        <p class="bold-text"><a href="#restore">RESTORE</a> <a href="#enhance">ENHANCE</a> + <a href="#protect">PROTECT</a></p>
-        <p>the tree canopy of Washington, DC.</p>
+        <p>Our mission is to
+        <span class="bold-text"><a href="#restore">RESTORE</a> <a href="#enhance">ENHANCE</a> + <a href="#protect">PROTECT</a></span>
+        the tree canopy of Washington, DC.</p>
       </div>
       <!-- begin get udpdates iframe MODULE CURRENTLY HIDDEN IN STYLESHEET-->
-      <iframe
+      <!-- <iframe
         class="get-updates__iframe"
         src="https://tfaforms.com/4865291"
         height="350"
@@ -46,7 +46,7 @@
         frameborder="0"
         scrolling="no"
       ></iframe>
-      <script src="//tfaforms.com/js/iframe_resize_helper.js"></script>
+      <script src="//tfaforms.com/js/iframe_resize_helper.js"></script> -->
       <!-- end get udpdates iframe MODULE -->
     </section>
     <!-- end motto section MODULE -->

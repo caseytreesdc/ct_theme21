@@ -4,17 +4,19 @@ function handleHamburger() {
   mainContent = document.getElementsByClassName("Main-Content")[0];
   siteFooter = document.getElementsByClassName("footer__container")[0];
 
-  hamburger.addEventListener("click", () => {     
-      if (mobileNav.style.display === "block") {
-        mobileNav.style.display = "none";
-        mainContent.style.display = "block";
-        siteFooter.style.display = "block";
-      } else {
-        mobileNav.style.display = "block";
-        mainContent.style.display = "none";
-        siteFooter.style.display = "none";
-      }
-  });
+  function displaySetting() {
+    if (mobileNav.style.display === "block") {
+      mobileNav.style.display = "none";
+      mainContent.style.display = "block";
+      siteFooter.style.display = "block";
+    } else {
+      mobileNav.style.display = "block";
+      mainContent.style.display = "none";
+      siteFooter.style.display = "none";
+    }
+  }
+
+  hamburger.addEventListener("click", displaySetting);
 }
 
 window.addEventListener("load", function () {
