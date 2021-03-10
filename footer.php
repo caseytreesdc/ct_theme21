@@ -1,10 +1,12 @@
 </div>
-<!-- End main content module -->
+<!-- End main content module - opens at header.php -->
+
 </body>
     <!-- Begin Modules Footer -->
     <footer class="footer__container">
         <div class="footer__column">
-            <?php echo get_custom_logo(); ?>
+            <!-- // echo get_custom_logo() - not using because svg is clearer ... can custom cms logo support svg? // -->
+            <a class="footer__logo-anchor" href="/"><?php get_template_part('svgs/inline', 'logo')?></a>
         </div>
         <div class="footer__column">
             <a class="footer-link" href="https://caseytreesdc.github.io/ct-videos/ycyt"

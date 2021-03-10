@@ -37,17 +37,6 @@
         <span class="bold-text"><a href="#restore">RESTORE</a> <a href="#enhance">ENHANCE</a> + <a href="#protect">PROTECT</a></span>
         the tree canopy of Washington, DC.</p>
       </div>
-      <!-- begin get udpdates iframe MODULE CURRENTLY HIDDEN IN STYLESHEET-->
-      <!-- <iframe
-        class="get-updates__iframe"
-        src="https://tfaforms.com/4865291"
-        height="350"
-        width="600"
-        frameborder="0"
-        scrolling="no"
-      ></iframe>
-      <script src="//tfaforms.com/js/iframe_resize_helper.js"></script> -->
-      <!-- end get udpdates iframe MODULE -->
     </section>
     <!-- end motto section MODULE -->
     <!-- begin how do we do it section MODULE-->

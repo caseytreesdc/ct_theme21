@@ -29,8 +29,8 @@
     </div>
     <!-- begin header MODULE -->
     <header class="header__container">
-    <!-- // echo get_custom_logo() - not using because svg is clearer ... // -->
-      <a class="header__logo-anchor" href="/"><?php get_template_part('svgs/inline', 'headerLogo')?></a>
+    <!-- // echo get_custom_logo() - not using because svg is clearer ... can custom cms logo support svg? // -->
+      <a class="header__logo-anchor" href="/"><?php get_template_part('svgs/inline', 'logo')?></a>
       <?php 
       wp_nav_menu(
           array(
@@ -41,18 +41,22 @@
           )
       ) 
       ?>
-      <a aria-label="Open the menu" tabindex="0" class="Hamburger">&#9776</a>
+      <div class="treemonisha">
+        <a class="Donate-a"href="https://connect.clickandpledge.com/w/Form/212c9142-dfbb-4801-8e11-d0f1b5810fc0?_ga=2.230975706.412929304.1615239806-434706414.1607542758">DONATE</a>
+        <a class="Hamburger"aria-label="Open the menu" tabindex="0" class="Hamburger">&#9776</a>
+      </div>
     </header>
     <?php 
       wp_nav_menu(
         array(
             'theme_location' => 'Main Navigation 2021',
-            'items_wrap' => '<a href="https://connect.clickandpledge.com/w/Form/212c9142-dfbb-4801-8e11-d0f1b5810fc0?_ga=2.230975706.412929304.1615239806-434706414.1607542758"></a><ul class="Mobile-Nav__ul">%3$s</ul>', //what is %3$s and also is this why nmc theme link is hard to find? 
+            'items_wrap' => '<ul class="Mobile-Nav__ul">%3$s</ul>', //what is %3$s and also is this why nmc theme link is hard to find? 
             'before' => '<div class="Mobile-Nav__anchor-p-container"><p>',
             'after' => '</p></div>',
         )
-    ) 
+    )
     ?>
     <!-- end header MODULE -->
-    <!-- Begin main content MODULE -->
+    
+    <!-- Begin main content MODULE - closes at footer.php -->
     <div class="Main-Content">
