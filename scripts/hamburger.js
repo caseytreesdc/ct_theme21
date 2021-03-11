@@ -1,8 +1,8 @@
 function handleHamburger() {
-  hamburger = document.getElementsByClassName("Hamburger")[0];
-  mobileNav = document.getElementsByClassName("Mobile-Nav__ul")[0];
-  mainContent = document.getElementsByClassName("Main-Content")[0];
-  siteFooter = document.getElementsByClassName("footer__container")[0];
+  let hamburger = document.getElementsByClassName("Hamburger")[0];
+  let mobileNav = document.getElementsByClassName("Mobile-Nav__ul")[0];
+  let mainContent = document.getElementsByClassName("Main-Content")[0];
+  let siteFooter = document.getElementsByClassName("footer__container")[0];
 
   function displaySetting() {
     if (mobileNav.style.display === "block") {

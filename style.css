@@ -85,7 +85,7 @@ h4 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 h4 {
@@ -291,6 +291,7 @@ ul li:focus-within>ul {
     color: var(--paper);
 }
 
+
 /* -------------------------------------------------------------------------- */
 /*	2. Utility Navigation
 /* -------------------------------------------------------------------------- */
@@ -387,10 +388,6 @@ ul li:focus-within>ul {
 /*	4.  Home Page
 /* -------------------------------------------------------------------------- */
 
-main section p {
-    margin: 0;
-}
-
 main a {
     text-decoration: none;
     color: var(--coffee);
@@ -414,10 +411,9 @@ main a:focus {
 .main__page-1-section-1-h2 {
     color: var(--coffee);
     font-family: var(--cronos);
-    font-size: 5vh;
     font-weight: 600;
     margin: 0;
-    /* padding: 40px 150px 0 0; */
+    padding: 2vh 2vw;
 }
 
 .typeform-share {
@@ -430,7 +426,7 @@ main a:focus {
     font-size: 20px;
     line-height: 50px;
     text-align: center;
-    /* margin: 40px 150px; */
+    margin: 2vh 2vw;
     height: 50px;
     padding: 0px 33px;
     border-radius: 5px;
@@ -449,7 +445,6 @@ main a:focus {
 }
 
 .main__page-1-section-2 {
-    /* border: 2px solid darkcyan; */
     height: 15vh;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .9), rgba(255, 255, 255, 1));
     display: flex;
@@ -458,13 +453,13 @@ main a:focus {
 }
 
 .motto {
-    border: 2px solid green;
+    padding: 0 5vw;
     display: flex;
 }
 
 .motto p {
     font-family: var(--cronos);
-    font-size: 22px;
+    font-size: 26px;
     color: var(--coffee);
 }
 
@@ -472,6 +467,11 @@ main a:focus {
     text-decoration: none;
 }
 
+@media only screen and (min-width: 1280px) {
+    .motto {
+        width: 30%;
+    }
+}
 .main__page-1-section-3 {
     /* border: 2px solid chartreuse; */
     height: 15vh;
@@ -1705,7 +1705,7 @@ body nav:last-of-type {
 /* -------------------------------------------------------------------------- */
 
 /* Smaller than 1280, like a resized window on a laptop */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1279px) {
     
     .header__container svg {
         width: 20vw;
