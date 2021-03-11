@@ -84,6 +84,10 @@ h4 {
     font-family: var(--cronos);
 }
 
+h1 {
+    font-size: 2em;
+}
+
 h2 {
     font-size: 2em;
 }
@@ -654,7 +658,6 @@ main a:focus {
 
 .Plant__page-1-section-1 h1 {
     color: var(--coffee);
-    font-size: 56px;
     max-width: 700px;
 }
 
@@ -663,11 +666,13 @@ main a:focus {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .Plant__page-1-section-2-icons svg {
     fill: var(--coffee);
     width: 15vw;
+    min-width: 140px;
 }
 
 .Plant__page-1-section-2-p {
@@ -709,16 +714,10 @@ main a:focus {
 .Plant__page-4-image,
 .Plant__page-5-text,
 .Plant__page-5-image {
-    width: 45%;
+    margin: 0 20px;
+    width: 420px;
+    object-fit: scale-down;
 }
-
-/* 
-.Plant__page-2-image,
-.Plant__page-3-image,
-.Plant__page-4-image,
-.Plant__page-5-image {
-    background-size: contain;
-} */
 
 .Plant__page-2-text-h2 {
     font-size: 56px;
@@ -738,18 +737,22 @@ main a:focus {
     font-weight: bold;
 }
 
-.Plant__page-2-links {
+.Plant__page-2-links,
+.Plant__page-4-links {
     padding: 30px;
     font-family: var(--zeitung);
     letter-spacing: 3px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.Plant__page-2-links-a {
+.Plant__page-2-links-a,
+.Plant__page-4-links-a {
     color: var(--coffee);
     padding: 20px;
+    text-align: center;
 }
 
 .Plant__page-2-links-a:hover {
@@ -804,20 +807,6 @@ main a:focus {
     font-weight: bold;
 }
 
-.Plant__page-4-links {
-    padding: 20px;
-    font-family: var(--zeitung);
-    letter-spacing: 3px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.Plant__page-4-links-a {
-    padding: 30px;
-    color: var(--coffee);
-
-}
 
 .Plant__page-4-links-a:hover {
     color: var(--orange);
@@ -1772,6 +1761,7 @@ body nav:last-of-type {
 
     .footer__container {
         flex-direction: column;
+        justify-content: space-around;
         height: 100vh;
     }
 
@@ -1780,36 +1770,88 @@ body nav:last-of-type {
         height: auto;
     }
 
-    /* iPhone 12 Pro Max or Smaller */
-    @media only screen and (max-width: 428px) {
-        .header__container svg {
-            width: 40vw;
-            height: auto;
-        }
-
-        .treemonisha {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 40vw;
-        }
+    .Plant {
+        max-width: 700px;
+        margin: 0 auto;
     }
 
-    /* iPhone SE, 5, 5c, 5s or Smaller */
-    @media only screen and (max-width: 320px) {
-        .main__page-5 {
-            display: none;
-        }
 
-        .header__container svg {
-            width: 50vw;
-            height: auto;
-        }
-
-        .treemonisha {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 40vw;
-        }
+    .Plant__page-2-text-and-image,
+    .Plant__page-3-text-and-image,
+    .Plant__page-4-text-and-image,
+    .Plant__page-5-text-and-image {
+        flex-direction: column;
+        align-items: center;
     }
+
+    .Plant__page-2-text,
+    .Plant__page-2-image,
+    .Plant__page-3-text,
+    .Plant__page-3-image,
+    .Plant__page-4-text,
+    .Plant__page-4-image,
+    .Plant__page-5-text,
+    .Plant__page-5-image {
+        margin: 20px 0;
+        width: 700px;
+    }
+}
+
+/* Small tablets and then iPhones (414) and Pixels (412)  */
+@media only screen and (max-width: 540px) {
+    .header__container svg {
+        width: 40vw;
+        height: auto;
+    }
+
+    .treemonisha {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 40vw;
+    }
+
+    .Plant {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .Plant__page-2-text,
+    .Plant__page-2-image,
+    .Plant__page-3-text,
+    .Plant__page-3-image,
+    .Plant__page-4-text,
+    .Plant__page-4-image,
+    .Plant__page-5-text,
+    .Plant__page-5-image {
+        width: 340px;
+    }
+}
+
+
+/* iPhone 6, 6s, 7, 8, SE(2020), X, 11 pro */
+@media only screen and (max-width: 375px) {
+    .Plant {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .Plant__page-2-text,
+    .Plant__page-2-image,
+    .Plant__page-3-text,
+    .Plant__page-3-image,
+    .Plant__page-4-text,
+    .Plant__page-4-image,
+    .Plant__page-5-text,
+    .Plant__page-5-image {
+        width: 300px;
+    }
+}
+
+/* iPhone SE, 5, 5c, 5s or Smaller */
+@media only screen and (max-width: 320px) {
+    .header__container svg {
+        width: 50vw;
+        height: auto;
+    }
+}

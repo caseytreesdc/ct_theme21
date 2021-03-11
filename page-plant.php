@@ -43,18 +43,10 @@
                     Not sure which program is best for you? Take this quiz!
                 </a>
             </div>
-            <div 
+            <img 
                 class="Plant__page-2-image"
-                style="
-                    background: linear-gradient(
-                        rgba(55, 104, 178, 0.5),
-                        rgba(55, 104, 178, 0.5)
-                    ),
-                    url(<?php echo get_fields()['home_image']['url']; ?>);
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;">
-            </div>
+                src="<?php echo get_fields()['home_image']['url']; ?>"
+            >
         </div>
         <div class="Plant__page-2-links">
             <a class="Plant__page-2-links-a" href="">FFS</a>
@@ -65,18 +57,10 @@
     </div>
     <div class="Plant__page-3">
         <div class="Plant__page-3-text-and-image">
-            <div 
-                class="Plant__page-3-image"
-                style="
-                    background: linear-gradient(
-                        rgba(123, 158, 129, 0.5),
-                        rgba(123, 158, 129, 0.5)
-                    ),
-                    url(<?php echo get_fields()['school_image']['url']; ?>);
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;">
-            </div>
+            <img 
+                class="Plant__page-3-image" 
+                src="<?php echo get_fields()['school_image']['url']; ?>"
+            >
             <div class="Plant__page-3-text">
                 <h2 class="Plant__page-3-text-h2">School</h2>
                 <?php echo get_fields()['school_text']?>
@@ -97,18 +81,10 @@
                     Calendar of Upcoming Events
                 </a>
             </div>
-            <div 
-                class="Plant__page-2-image"
-                style="
-                    background: linear-gradient(
-                        rgba(225, 131, 35, 0.5),
-                        rgba(225, 131, 35, 0.5)
-                    ),
-                    url(<?php echo get_fields()['community_image']['url']; ?>);
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;">
-            </div>
+            <img 
+                class="Plant__page-4-image" 
+                src="<?php echo get_fields()['community_image']['url']; ?>"
+            >
         </div>
         <div class="Plant__page-4-links">
             <a class="Plant__page-4-links-a" href="">APPLY NOW</a>
@@ -118,18 +94,10 @@
     </div>
     <div class="Plant__page-5">
         <div class="Plant__page-5-text-and-image">
-            <div 
-                class="Plant__page-5-image"
-                style="
-                    background: linear-gradient(
-                        rgba(164, 83, 46, 0.5),
-                        rgba(164, 83, 46, 0.5)
-                    ),
-                    url(<?php echo get_fields()['dedication_image']['url']; ?>);
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;"">
-            </div>
+            <img 
+                class="Plant__page-5-image" 
+                src="<?php echo get_fields()['dedication_image']['url']; ?>"
+            >
             <div class="Plant__page-5-text">
                 <h2 class="Plant__page-5-text-h2">Dedication</h2>
                 <?php echo get_fields()['dedication_text']?>
