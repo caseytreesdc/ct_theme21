@@ -2,21 +2,17 @@
 
 <div class="Farm">
   <div class="Farm__page-1">
-    <div class="Farm__page-1-overlay">
       <div class="Farm__page-1-title-box">
         <p class="Farm__page-1-title dcsn">DC STATE NURSERY <i>at</i></p>
         <p class="Farm__page-1-title ctFarm">CASEY TREE FARM</p>
       </div>
-    </div>
-    <div class="Farm__page-1-Video-box">
       <video loop autoplay muted class="Farm__page-1-Video">
         <source
-          src="https://caseytreesdc.github.io/ct-farm/static/media/FarmHeroClip_v3.3986d54d.mp4"
+          src="https://caseytrees.org/wp-content/uploads/2020/08/FarmHeroClip_v3.mp4"
           type="video/mp4"
           poster="https://caseytrees.org/wp-content/uploads/2018/07/DSC02080.jpg"
         />
       </video>
-    </div>
   </div>
   <div class="Farm__page-2">
     <?php the_content() ?>
@@ -44,43 +40,34 @@
     </div>
   </div>
   <div class="Farm__page-5">
-    <div class="Farm__page-5-text-and-image">
+    <!-- <div class="Farm__page-5-text-and-image"> -->
       <div class="Farm__page-5-text">
         <h2 class="Farm__page-5-text-h2">Sustainability</h2>
         <?php echo get_fields()['sustainability_text']?>
       </div>
-      <div
+      <img
         class="Farm__page-5-image"
-        style="
-          background: url(<?php echo get_fields()['sustainability_image']['url']; ?>);
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-        "
-      ></div>
-    </div>
+        src="<?php echo get_fields()['sustainability_image']['url']; ?>"
+      >
+    <!-- </div> -->
   </div>
   <div class="Farm__page-6">
-    <div class="Farm__page-6-text-and-image">
-      <div
+    <!-- <div class="Farm__page-6-text-and-image"> -->
+      <img
         class="Farm__page-6-image"
-        style="
-          background:
-            url(<?php echo get_fields()['partnership_image']['url']; ?>);
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
+        src="
+          <?php echo get_fields()['partnership_image']['url']; ?>
         "
-      ></div>
+      >
       <div class="Farm__page-6-text">
         <h2 class="Farm__page-6-text-h2">Partnership with DC</h2>
         <div class="Farm__page-6-text-logos">
-        <?php get_template_part('svgs/inline', 'wBlackLogo') ?>
+        <?php get_template_part('svgs/inline', 'logo') ?>
         <?php get_template_part('svgs/inline', 'ddot') ?>
         </div>
         <?php echo get_fields()['partnership_text']?>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </div>
 <?php get_footer(); ?>

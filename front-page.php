@@ -18,6 +18,7 @@
             rgba(255, 255, 255, 1)
           ),
           url(<?php echo $mastheadSRC ?>);
+          background-size: cover;
       "
       class="main__page-1-section-1"
     >

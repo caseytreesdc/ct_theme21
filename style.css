@@ -331,7 +331,6 @@ ul li:focus-within>ul {
 
 .Utility svg:hover,
 .Utility svg:focus {
-    height: 20px;
     width: auto;
     fill: rgba(255, 255, 255, .6);
 }
@@ -404,11 +403,9 @@ main a:focus {
 }
 
 .main__page-1-section-1 {
-    /* border: 2px solid rosybrown; */
     height: 50vh;
     background-repeat: no-repeat;
     box-shadow: inset 0 7px 9px -7px var(--grey);
-    /* we may not need this when we put the form in */
     text-align: right;
 }
 
@@ -595,15 +592,16 @@ main a:focus {
 .main__page-4-section-icons {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .main__page-2-section-icons svg,
 .main__page-3-section-icons svg,
 .main__page-4-section-icons svg,
 .main__page-5-section-icons svg {
-    width: 60px;
+    width: 6vw;
     height: auto;
-    padding: 0 10px;
+    padding: 1vw 2vw;
 }
 
 .main__page-2-section-icons svg {
@@ -847,61 +845,51 @@ main a:focus {
 /*	6.  Farm Page
 /* -------------------------------------------------------------------------- */
 
-.Farm__page-1-overlay {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: absolute;
+.Farm__page-1 {
+    max-height: 70vh;
 }
 
 .Farm__page-1-title-box {
-    box-shadow: inset 0 7px 9px -7px var(--grey);
-    min-height: 67vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1));
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    margin-top: 6vh;
 }
 
 .Farm__page-1-title {
-    font-size: 40px;
+    margin: 0 auto;
+    font-size: 3vw;
+    width: 70%;
     color: rgba(40, 16, 15, 1);
-    margin: 0;
+    text-align: right;
 }
 
 .dcsn {
-    font-size: 40px;
     font-weight: 400;
-    padding: 60px 200px 0 0;
 }
 
 .ctFarm {
-    font-size: 50px;
     font-weight: 900;
-    padding: 0px 200px 0 0;
-}
-
-.Farm__page-1-Video-box {
-    max-height: 67vh;
-    overflow: hidden;
 }
 
 .Farm__page-1-Video {
+    max-height: 70vh;
     width: 100%;
-    object-fit: none;
+    object-fit: cover;
+    opacity: .7;
 }
 
 .Farm__page-2 {
-    margin: 0 300px;
+    margin: 3vh auto;
+    max-width: 70vw;
 }
 
 .Farm__page-2 p {
     font-size: 20px;
+    margin: 0;
 }
 
 .Farm__page-3 {
-    margin: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -913,35 +901,37 @@ main a:focus {
     font-weight: normal;
 }
 
-.Farm__page-4-icon-w-text {
-    max-width: 12vw;
-}
-
 .Farm__page-4-icons {
-    margin: 5vh 200px;
+    margin: 7vh auto;
+    max-width: 70vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
+}
+
+.Farm__page-4-icon-w-text {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Farm__page-4-icons svg {
     fill: var(--coffee);
-    width: 10vw;
 }
 
 .Farm__page-4-p {
     font-family: var(--zeitung);
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .Farm__page-5,
 .Farm__page-6 {
-    margin: 40px 100px;
-}
-
-.Farm__page-5-text-and-image,
-.Farm__page-6-text-and-image {
+    max-width: 76vw;
+    margin: 5vh auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -951,20 +941,13 @@ main a:focus {
 .Farm__page-5-image,
 .Farm__page-6-text,
 .Farm__page-6-image {
-    width: 40%
+    width: 45%;
 }
 
-.Farm__page-5-text-h2 {
-    margin: 0;
-    font-size: 56px;
-    font-family: var(--cronos);
-    color: var(--forest);
-}
-
+.Farm__page-5-text-h2,
 .Farm__page-6-text-h2 {
-    margin: 0;
-    text-align: right;
-    font-size: 56px;
+    margin-top: 0;
+    font-size: 4vw;
     font-family: var(--cronos);
     color: var(--forest);
 }
@@ -1731,6 +1714,48 @@ body nav:last-of-type {
         display: inline;
         color: var(--coffee);
     }
+
+    .Farm__page-1-title {
+        font-size: 6vw;
+    }
+
+    .Farm__page-1-Video {
+        opacity: .5;
+    }
+
+    .Farm__page-4-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Farm__page-4-icon-w-text {
+        width: 50%;
+    }
+
+    .Farm__page-5,
+    .Farm__page-6 {
+        max-width: 80vw;
+        margin: 5vh auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Farm__page-5-text,
+    .Farm__page-5-image,
+    .Farm__page-6-text,
+    .Farm__page-6-image {
+        width: 80vw;
+    }
+
+
+    .Farm__page-5-text-h2,
+    .Farm__page-6-text-h2 {
+        font-size: 6vw;
+        margin: 3vh 0;
+        font-family: var(--cronos);
+        color: var(--forest);
+    }
 }
 
 /* Tablet or smaller */
@@ -1756,7 +1781,16 @@ body nav:last-of-type {
     .main__page-3-section-2 p,
     .main__page-4-section-2 p {
         text-align: left;
-        width: 80%;
+        width: 100%;
+    }
+
+    .main__page-2-section-icons svg,
+    .main__page-3-section-icons svg,
+    .main__page-4-section-icons svg,
+    .main__page-5-section-icons svg {
+        width: 15vw;
+        height: auto;
+        padding: 1vw 2vw;
     }
 
     .footer__container {
@@ -1826,6 +1860,7 @@ body nav:last-of-type {
     .Plant__page-5-image {
         width: 340px;
     }
+
 }
 
 
