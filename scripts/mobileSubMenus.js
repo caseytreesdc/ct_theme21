@@ -1,6 +1,6 @@
 function handleMobileSubMenus() {
   let spanNode = document.createElement("span");
-  spanNode.classList.add("THISISWHATWERELOOKINGFOR");
+  spanNode.classList.add("toggle-mobile-subnav");
   let textNode = document.createTextNode("+");
   spanNode.appendChild(textNode);
 

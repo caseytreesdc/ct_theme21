@@ -295,6 +295,13 @@ ul li:focus-within>ul {
     color: var(--paper);
 }
 
+.subnav-toggle {
+    display: none;
+}
+
+.menu-item-has-children>.Mobile-Nav__anchor-p-container .subnav-toggle {
+    display: inline-block;
+}
 
 /* -------------------------------------------------------------------------- */
 /*	2. Utility Navigation

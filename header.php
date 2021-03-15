@@ -52,7 +52,7 @@
             'theme_location' => 'Main Navigation 2021',
             'items_wrap' => '<ul class="Mobile-Nav__ul">%3$s</ul>', //what is %3$s and also is this why nmc theme link is hard to find? 
             'before' => '<div class="Mobile-Nav__anchor-p-container"><p>',
-            'after' => '</p></div>',
+            'after' => '<span class="subnav-toggle">+</span></p></div>',
         )
     )
     ?>
