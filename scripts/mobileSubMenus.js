@@ -1,17 +1,29 @@
 function handleMobileSubMenus() {
-  let spanNode = document.createElement("span");
-  spanNode.classList.add("toggle-mobile-subnav");
-  let textNode = document.createTextNode("+");
-  spanNode.appendChild(textNode);
+  let mobileNav = document.querySelector(".Mobile-Nav__ul");
+  let menuItems = mobileNav.querySelectorAll(".menu-item");
 
-  let topLevelElements = document.getElementsByClassName("Mobile-Nav__ul")[0];
+  function toggleSubNav() {
+    console.log(this);
+    if (this.classList.contains("sub-menu__active")) {
+      this.classList.remove("sub-menu__active");
+    } else if (mobileNav.querySelector(".sub-menu__active")) {
+      mobileNav
+        .querySelector(".sub-menu__active")
+        .classList.remove("sub-menu__active");
+      this.classList.add("sub-menu_active");
+    } else {
+      this.classList.add("sub-menu__active");
+    }
+  }
 
-  let listItems = topLevelElements.children 
-  listItems.forEach(item => {
-      console.log(item)
-  })
+  for (let menuItem of menuItems) {
+    console.log(menuItem);
+    if (menuItem.querySelector(".sub-menu")) {
+      menuItem.addEventListener("click", toggleSubNav);
+    }
+  }
 }
 
-// window.addEventListener("load", function () {
-//   handleMobileSubMenus();
-// });
+window.addEventListener("load", function () {
+  handleMobileSubMenus();
+});
