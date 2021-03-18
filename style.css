@@ -261,46 +261,57 @@ ul li:focus-within>ul {
 
 .Mobile-Nav__ul {
     display: none;
-    position: absolute;
-    z-index: 4;
     list-style: none;
-    font-family: var(--zeitung);
-    width: 100vw;
+    width: 90vw;
+    background: var(--paper);
+    margin: 3vh auto;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-.Mobile-Nav__ul ul {
-    list-style: none;
-    padding: 0;
-    width: max-content;
-    overflow: hidden;
-    background: var(--silver);
-    /* box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6); */
-}
-
-.Mobile-Nav__ul li p {
-    font-family: var(--zeitung);
-    text-transform: uppercase;
+.Mobile-Nav__ul li div {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
 }
 
 .Mobile-Nav__ul li a {
     color: var(--coffee);
-    padding: 3px 2vw;
+    font-family: var(--zeitung);
+    font-size: 3.5vh;
     text-transform: uppercase;
     text-decoration: none;
+    padding-left: 3vw;
+    width: 100%;
 }
 
-.Mobile-Nav__ul li a:hover,
-.Mobile-Nav__ul li a:focus {
+.Mobile-Nav__ul li div:hover,
+.Mobile-Nav__ul li div:focus,
+.Mobile-Nav__ul li div:hover a {
     background: var(--cobalt);
+    color: var(--paper);
+    cursor: pointer;
+}
+
+
+.Mobile-Nav__ul .highlight {
+    background: var(--paarl);
+    color: var(--paper);
+}
+
+.Mobile-Nav__ul .highlight>div>a {
     color: var(--paper);
 }
 
 .subnav-toggle {
+    width: 15%;
+    text-align: center;
     display: none;
+    font-family: var(--zeitung);
+    font-size: 4vh;
 }
 
-.menu-item-has-children>.Mobile-Nav__anchor-p-container .subnav-toggle {
-    display: inline-block;
+.menu-item-has-children>div .subnav-toggle {
+    display: block;
 }
 
 .Mobile-Nav__ul .sub-menu {
@@ -309,6 +320,18 @@ ul li:focus-within>ul {
 
 .sub-menu__active .sub-menu {
     display: block;
+}
+
+.Mobile-Nav__ul ul {
+    list-style: none;
+    background: var(--silver);
+    border-bottom: solid 1vh var(--forest);
+    border-top: solid .5vh var(--grey);
+}
+
+.Mobile-Nav__ul ul li a {
+    font-size: 3vh;
+    text-transform: none;
 }
 
 /* -------------------------------------------------------------------------- */

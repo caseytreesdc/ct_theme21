@@ -6,12 +6,8 @@ function handleMobileSubMenus() {
     console.log(this);
     if (this.classList.contains("sub-menu__active")) {
       this.classList.remove("sub-menu__active");
-    } else if (mobileNav.querySelector(".sub-menu__active")) {
-      mobileNav
-        .querySelector(".sub-menu__active")
-        .classList.remove("sub-menu__active");
-      this.classList.add("sub-menu_active");
-    } else {
+    }
+    else {
       this.classList.add("sub-menu__active");
     }
   }
