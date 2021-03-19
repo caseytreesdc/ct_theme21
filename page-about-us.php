@@ -41,28 +41,15 @@
       >
     </div>
   </div>
-  <div
-    class="About__page-2"
-    style="
-      background: linear-gradient(
-          rgba(55, 104, 178, 1),
-          rgba(55, 104, 178, 1),
-          rgba(55, 104, 178, 0.3),
-          rgba(55, 104, 178, 0.3)
-        ),
-        url(https://caseytrees.org/wp-content/uploads/2018/07/DSC01877-Edit-e1531498455366-1920x627-c-default.jpg);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: contain;
-    "
-  >
+  <div class="About__page-2"> 
+    <!-- background is set in CSS for now  -->
     <div class="About__page-2-link-module">
       <h2 class="About__page-2-link-module-h2">Join our team</h2>
       <a
         class="About__page-2-link-module-a"
         href="https://www2.appone.com/Search/Search.aspx?ServerVar=caseytrees.appone.com"
         target="_blank"
-        ><p class="About__page-2-link-module-a-p">SEE OPENINGS</p></a
+        >SEE OPENINGS</a
       >
     </div>
   </div>

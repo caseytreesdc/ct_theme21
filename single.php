@@ -16,7 +16,7 @@
                     ?>
     <p class="Leaflet__loop-meta">
       <?php echo get_the_date(); ?>
-      /
+      / <br class="Leaflet__loop-meta-br">
       <?php echo get_field('author');?>
     </p>
     <h2 class="Leaflet__loop-title"><?php the_title();?></h2>

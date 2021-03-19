@@ -133,6 +133,10 @@ a:focus {
     color: var(--cobalt)
 }
 
+.post-categories {
+    list-style: none;
+}
+
 /* -------------------------------------------------------------------------- */
 /*	1. Accessibility
 /* -------------------------------------------------------------------------- */
@@ -258,6 +262,8 @@ ul li:focus-within>ul {
     text-decoration: none;
     font: var(--zeitung);
 }
+
+
 
 .Mobile-Nav__ul {
     display: none;
@@ -1003,12 +1009,12 @@ main a:focus {
 /*	7. About Us
 /* -------------------------------------------------------------------------- */
 .About__page-1 {
-    margin: 40px;
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .About__page-1-h1 {
     color: var(--coffee);
-    font-size: 56px;
 }
 
 .About__page-1-p {
@@ -1023,14 +1029,14 @@ main a:focus {
 }
 
 .About__page-1-rings svg {
-    width: 600px;
+    width: 60vw;
 }
 
 .About__page-1-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin: 40px 0;
+    justify-content: space-around;
 }
 
 .About__page-1-link-module {
@@ -1073,14 +1079,25 @@ main a:focus {
 
 .About__page-2 {
     height: 500px;
+    background: linear-gradient(rgba(55, 104, 178, 1),
+            rgba(55, 104, 178, 1),
+            rgba(55, 104, 178, 0.3),
+            rgba(55, 104, 178, 0.3)),
+        url(https://caseytrees.org/wp-content/uploads/2018/07/DSC01877-Edit-e1531498455366-1920x627-c-default.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .About__page-2-link-module {
-    padding: 60px;
+    width: 25%;
+    padding: 2vh 4vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .About__page-2-link-module-h2 {
-    margin: 0;
+    /* margin: 0; */
     font-family: var(--cronos);
     font-size: 36px;
     color: var(--paper);
@@ -1089,20 +1106,16 @@ main a:focus {
 
 
 .About__page-2-link-module-a {
-    text-decoration: none;
-}
-
-.About__page-2-link-module-a-p {
-    width: 200px;
-    padding: 14px;
     font-family: var(--zeitung);
     background: var(--coffee);
     color: var(--paper);
+    text-decoration: none;
+    padding: 14px;
     text-align: center;
     letter-spacing: 2px;
 }
 
-.About__page-2-link-module-a-p:hover {
+.About__page-2-link-module-a:hover {
     background: rgba(44, 16, 16, .7);
 }
 
@@ -1112,23 +1125,27 @@ main a:focus {
 
 
 .Get__page-1 {
-    margin: 40px 150px;
+    width: 80vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .Get__page-1-h1 {
-    font-size: 56px;
     color: var(--coffee);
 }
 
 .Get__page-1-p {
     font-size: 20px;
     color: var(--coffee);
-    width: 70vw;
 }
 
 .Get__page-1-icons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -1137,8 +1154,8 @@ main a:focus {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 10vw;
-    margin: 30px 0;
+    width: 125px;
+    /* margin: 30px 10px; */
 }
 
 .Get__page-1-icon-p {
@@ -1147,8 +1164,6 @@ main a:focus {
     color: #2c1010;
     text-align: center;
 }
-
-/* .Get__page-1-icons svg {} */
 
 .cobalt-svg svg {
     fill: var(--cobalt);
@@ -1181,11 +1196,15 @@ main a:focus {
 
 .Blog__section-title {
     background: var(--yellow);
-    padding: 30px 12vw;
     box-shadow: inset 0 7px 9px -7px var(--grey);
+    display: flex;
+    justify-content: center;
 }
 
 .Blog__title-padded {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 30px 0;
     font-family: var(--zeitung);
     color: var(--coffee);
     font-weight: normal;
@@ -1194,11 +1213,11 @@ main a:focus {
 
 .Blog__section-Feature {
     background: var(--yellow);
-    /* height: 50vh; */
 }
 
 .Blog__Feature-padded {
-    padding: 0 12vw;
+    width: 80vw;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -1336,7 +1355,8 @@ main a:focus {
 .Leaflet__loop {
     display: flex;
     flex-direction: column;
-    width: 800px;
+    max-width: 800px;
+    width: 90vw;
     margin: 0 auto;
 }
 
@@ -1359,11 +1379,15 @@ main a:focus {
     text-transform: uppercase;
     padding: 12px 30px;
     margin: 0;
-    width: max-content
+    width: max-content;
+}
+
+.Leaflet__loop-meta-br {
+    display: none;
 }
 
 .Leaflet__loop-title {
-    font-size: 50px;
+    /* font-size: 50px; */
     color: var(--coffee);
     font-weight: normal;
     margin: 16px 0 0 0;
@@ -1751,6 +1775,7 @@ body nav:last-of-type {
     .Hamburger {
         display: inline;
         color: var(--coffee);
+        padding: 5vw 0;
     }
 
     .Farm__page-1-title {
@@ -1806,6 +1831,7 @@ body nav:last-of-type {
     .header__container svg {
         width: 33vw;
         height: auto;
+        padding: 0 3vw;
     }
 
     .main__page-2-section-2,
@@ -1867,6 +1893,111 @@ body nav:last-of-type {
         margin: 20px 0;
         width: 700px;
     }
+
+    .About__page-1-rings svg {
+        width: 60vw;
+    }
+
+    .About__page-1-links {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .About__page-1-link-module {
+        margin: 3vh auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .About__page-2 {
+        background-position: 75% 0%;
+    }
+
+    .About__page-2-link-module {
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .Blog__Feature-padded {
+        width: 80vw;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+    }
+
+    .Blog__Feature-text {
+        width: 100%;
+    }
+
+    .Blog__Feature-image {
+        width: 100%;
+    }
+
+    .Blog__Feature-text-title {
+        margin-top: 4vh;
+        font-size: 30px;
+        font-family: var(--cronos);
+        font-weight: bold;
+    }
+
+    .Blog__Feature-more {
+        background: var(--coffee);
+        width: 80vw;
+        padding: 14px 0;
+        text-align: center;
+        margin: 4vh auto;
+        font-family: var(--zeitung);
+        color: var(--paper);
+        text-decoration: none;
+    }
+
+    .Blog__Feature-image-img {
+        width: 100%;
+        height: auto;
+        object-fit: scale-down;
+    }
+
+    .Blog__Recents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--yellow);
+    }
+
+    .Blog__Recents-module {
+        width: 80vw;
+        margin: 5vh auto;
+        padding: 0;
+    }
+
+    .Blog__Recents-image-img {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .Blog__Stories-module {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
+
+    .Blog__Stories-image-img {
+        height: 33vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .Blog__Stories-text {
+        width: 100%;
+    }
+
+    .Leaflet__loop-meta-br {
+        display: inline-block;
+    }
 }
 
 /* Small tablets and then iPhones (414) and Pixels (412)  */
@@ -1880,7 +2011,7 @@ body nav:last-of-type {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 40vw;
+        width: 50vw;
     }
 
     .Plant {
@@ -1922,9 +2053,4 @@ body nav:last-of-type {
 }
 
 /* iPhone SE, 5, 5c, 5s or Smaller */
-@media only screen and (max-width: 320px) {
-    .header__container svg {
-        width: 50vw;
-        height: auto;
-    }
-}
+@media only screen and (max-width: 320px) {}

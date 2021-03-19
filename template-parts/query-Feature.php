@@ -43,7 +43,7 @@
   <div id="post-<?php echo $postData['ID'] ?>" class="Blog__Feature-padded">
     <div class="Blog__Feature-text">
       <p class="Blog__Feature-text-title">
-        <a class="Blog__Feature-text-title-a" href="<?php $postData['permalink']; ?>"
+        <a class="Blog__Feature-text-title-a" href="<?php echo $postData['permalink']; ?>"
           ><?php echo $postData['title']; ?></a
         >
       </p>
