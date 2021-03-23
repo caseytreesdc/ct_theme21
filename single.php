@@ -23,7 +23,6 @@
     <div class="Leaflet__loop-content">
       <?php the_content();?>
     </div>
-    <?php echo get_the_category_list(); ?>
     <?php
             }
         }

@@ -41,8 +41,18 @@ if (have_posts())
                             </h3>
                             <p class="Archive__author-date"><?php echo get_the_date('M\. j Y'); ?></p>
                             <p class="Archives__excerpt"><?php echo get_the_excerpt(); ?></p>
-                            <p class="Archive__meta">Categories: <?php  echo get_the_term_list($resource_id, 'resources-categories');?></p>
-                            <p class="Archive__meta">Tags: <?php echo get_the_term_list($resource_id, 'resources-tags', '', ' ');?>
+                            <?php 
+                                $categories = get_the_term_list($resource_id, 'resources-categories');
+                                if($categories) {
+                                    ?><p class="Archive__meta">Categories: <?php echo $categories;?></p><?php
+                                }
+                            ?>
+                            <?php 
+                                $tags = get_the_term_list($resource_id, 'resources-tags', '', ' ');
+                                if($tags) {
+                                    ?><p class="Archive__meta">Tags: <?php echo $tags;?></p><?php
+                                }
+                            ?>
                         </div>
                     </div>
                 <?php

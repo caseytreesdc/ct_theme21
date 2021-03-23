@@ -1,14 +1,18 @@
 <?php get_header(); ?>
 
 <section class="Archive__section-title">
-  <h1 class="Archive__title-padded">SERCH RESULTS</h1>
+<?php $term = get_search_query(); ?> 
+  <h1 class="Archive__title-padded">
+      <?php echo $wp_query->found_posts.' results for "'.$term.'"'?>
+    </h1>
 </section>
-
-    <?php the_posts_pagination(array(
-    'mid_size' => 2,
-    'prev_text' => __('NEWER POSTS', 'textdomain') ,
-    'next_text' => __('OLDER POSTS', 'textdomain') ,
-)); ?>
+<?php 
+    the_posts_pagination(array(
+        'mid_size' => 2,
+        'prev_text' => __('NEWER POSTS', 'textdomain') ,
+        'next_text' => __('OLDER POSTS', 'textdomain') ,
+    )); 
+?>
 <div class="Archive__home">
     <div class="Archive__posts-list">
         <?php
@@ -38,8 +42,18 @@ if (have_posts())
                             </h3>
                             <p class="Archive__author-date"><?php echo get_the_date('M\. j Y'); ?></p>
                             <p class="Archives__excerpt"><?php echo get_the_excerpt(); ?></p>
-                            <p class="Archive__meta">Categories: <?php  echo get_the_term_list($resource_id, 'resources-categories');?></p>
-                            <p class="Archive__meta">Tags: <?php echo get_the_term_list($resource_id, 'resources-tags', '', ' ');?>
+                            <?php 
+                                $categories = get_the_term_list($resource_id, 'resources-categories');
+                                if($categories) {
+                                    ?><p class="Archive__meta">Categories: <?php echo $categories;?></p><?php
+                                }
+                            ?>
+                            <?php 
+                                $tags = get_the_term_list($resource_id, 'resources-tags', '', ' ');
+                                if($tags) {
+                                    ?><p class="Archive__meta">Tags: <?php echo $tags;?></p><?php
+                                }
+                            ?>
                         </div>
                     </div>
                 <?php
