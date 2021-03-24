@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="Leaflet">
-    <p></p>
+    
   <div class="Leaflet__loop">
     <?php 
         if( have_posts() ) {
@@ -14,9 +14,7 @@
                         echo wp_get_attachment_image( $image, $size );
                     }
                     ?>
-    <p class="Leaflet__loop-meta">
-      <?php echo get_the_date(); ?>
-    </p>
+
     <h2 class="Leaflet__loop-title"><?php the_title();?></h2>
     <div class="Leaflet__loop-content">
       <?php the_content();?>

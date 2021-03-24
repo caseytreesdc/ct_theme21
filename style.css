@@ -16,22 +16,28 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
 */
 
 
-/*--------------------------------------------------------------
+/*
+--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 
-    1. 	Document Setup
-	2. 	Site Header         .Nav__ul
-	2. 	Mobile Navigatoin   .Mobile-Nav
-	2. 	Utility Navigatoin  .Utility
-    3.  Generic Page        .Page__
-    4. 	Home                .main__
-    5.  Plant               .Plant__
-    6.  Farm                .Farm__
-    7.  About Us            .About__
-    8.  Get Involved        .Get__
-    9.  Blog Posts          .Blog__     (the leaflet posts - home.php)
-    10. Leaflet             .Leaflet__  (single leaflet post - single.php)
+ 0.     Document Setup
+ 1.     Accessibility
+ 2.     Site Header         .Nav__ul
+ 3.     Mobile Navigation   .Mobile-Nav
+ 4.     Utility Navigatoin  .Utility
+ 5.     Generic Page        .Page__
+ 6.     Home                .main__
+ 7.     Plant               .Plant__
+ 8.     Farm                .Farm__
+10.     Get Involved        .Get__
+11.     Blog Posts          .Blog__
+12.     Leaflet             .Leaflet__
+13.     General Archive     .Archive__
+14.     Resources           .Resources__
+15.     Site Footer         .footer__
+16.     Breadcrumbs         .Breadcrumbs__
+17.     Media Queries       @media
 
 ----------------------------------------------------------------------------- */
 
@@ -137,6 +143,13 @@ a:focus {
     list-style: none;
 }
 
+/* prevents iOS from styling these elements  */
+input[type=text],
+input[type=button] {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
 /* -------------------------------------------------------------------------- */
 /*	1. Accessibility
 /* -------------------------------------------------------------------------- */
@@ -167,14 +180,6 @@ a:focus {
     height: auto;
     fill: var(--coffee);
 }
-
-/* .Nav__container {
-    transform: skew(-20deg);
-} */
-/* 
-.menu-primary-nav-container {
-    
-} */
 
 .Nav__ul {
     list-style-type: none;
@@ -251,7 +256,7 @@ ul li:focus-within>ul {
 
 
 /* -------------------------------------------------------------------------- */
-/*	2. Mobile Navigation
+/*	3. Mobile Navigation
 /* -------------------------------------------------------------------------- */
 
 .treemonisha {
@@ -341,7 +346,7 @@ ul li:focus-within>ul {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	2. Utility Navigation
+/*	4. Utility Navigation
 /* -------------------------------------------------------------------------- */
 
 .Utility {
@@ -399,7 +404,7 @@ ul li:focus-within>ul {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	3.  Generic Page
+/*	5.  Generic Page - page.php
 /* -------------------------------------------------------------------------- */
 
 .attachment-full {
@@ -433,7 +438,7 @@ ul li:focus-within>ul {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	4.  Home Page
+/*	6.  Home Page - front-page.php
 /* -------------------------------------------------------------------------- */
 
 main a {
@@ -692,7 +697,7 @@ main a:focus {
 
 
 /* -------------------------------------------------------------------------- */
-/*	5. Plant Page
+/*	7. Plant Page - page-plant.php
 /* -------------------------------------------------------------------------- */
 .Plant {
     max-width: 1000px;
@@ -712,10 +717,71 @@ main a:focus {
     flex-wrap: wrap;
 }
 
+.Plant__page-1-section-2-icons a {
+    text-decoration: none;
+    padding: 1vh 1vw;
+}
+
 .Plant__page-1-section-2-icons svg {
     fill: var(--coffee);
-    width: 15vw;
+    width: 13vw;
     min-width: 140px;
+}
+
+.Plant__page-1-section-2-icons a:nth-child(1) {
+    color: var(--cobalt);
+}
+
+.Plant__page-1-section-2-icons a:nth-child(2) {
+    color: var(--moss);
+}
+
+.Plant__page-1-section-2-icons a:nth-child(3) {
+    color: var(--orange);
+}
+
+.Plant__page-1-section-2-icons a:nth-child(4) {
+    color: var(--paarl);
+}
+
+.Plant__page-1-section-2-icons a:hover,
+.Plant__page-1-section-2-icons a:focus {
+    background: rgba(229, 230, 229, .6)
+}
+
+.Plant__page-1-section-2-icons a:hover,
+.Plant__page-1-section-2-icons a:focus {
+    background: rgba(229, 230, 229, .6)
+}
+
+.Plant__page-1-section-2-icons a:hover,
+.Plant__page-1-section-2-icons a:focus {
+    background: rgba(229, 230, 229, .6)
+}
+
+.Plant__page-1-section-2-icons a:hover,
+.Plant__page-1-section-2-icons a:focus {
+    background: rgba(229, 230, 229, .6)
+}
+
+.Plant__page-1-section-2-icons a:nth-child(1):hover svg,
+.Plant__page-1-section-2-icons a:nth-child(1):focus svg {
+    fill: var(--cobalt);
+}
+
+.Plant__page-1-section-2-icons a:nth-child(2):hover svg,
+.Plant__page-1-section-2-icons a:nth-child(2):focus svg {
+    fill: var(--moss);
+}
+
+.Plant__page-1-section-2-icons a:nth-child(3):hover svg,
+.Plant__page-1-section-2-icons a:nth-child(3):focus svg {
+    fill: var(--orange);
+}
+
+.Plant__page-1-section-2-icons a:nth-child(4):hover svg,
+.Plant__page-1-section-2-icons a:nth-child(4):focus svg {
+    fill: var(--paarl);
 }
 
 .Plant__page-1-section-2-p {
@@ -887,7 +953,7 @@ main a:focus {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	6.  Farm Page
+/*	8.  Farm Page - page-farm.php
 /* -------------------------------------------------------------------------- */
 
 .Farm__page-1 {
@@ -1007,7 +1073,7 @@ main a:focus {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	7. About Us
+/*	9. About Us - page-about-us.php
 /* -------------------------------------------------------------------------- */
 .About__page-1 {
     width: 80vw;
@@ -1121,7 +1187,7 @@ main a:focus {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	8.  Get Involved Page
+/*	10.  Get Involved Page - page-get-involved.php
 /* -------------------------------------------------------------------------- */
 
 
@@ -1191,7 +1257,8 @@ main a:focus {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	9.  Blog Posts (Leaflet) Page
+/*	11.  Blog Posts (Leaflet) Page                                             */
+/*  home.php, template-parts/query- Feature.php, Recents.php, Stories.php     */
 /* -------------------------------------------------------------------------- */
 
 
@@ -1351,7 +1418,7 @@ main a:focus {
 
 
 /* -------------------------------------------------------------------------- */
-/*	10.  Leaflet - single post
+/*	12.  Leaflet - single.php, single-resources.php
 /* -------------------------------------------------------------------------- */
 .Leaflet__loop {
     display: flex;
@@ -1462,7 +1529,9 @@ p.wp-caption-text {
 
 
 /* -------------------------------------------------------------------------- */
-/* General Archive - Category/Taxonomy/Resources(for now)
+/* 13. General Archive - Category/Taxonomy/Resources(for now)                 */
+/* category.php, taxonomy.php, search.php,                                    */
+/* archive-resources.php, category-blog.php                                   */
 /* -------------------------------------------------------------------------- */
 
 .Archive__section-title {
@@ -1541,7 +1610,7 @@ body nav:last-of-type {
 }
 
 .nav-links {
-    max-width: 75%;
+    max-width: 50%;
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
@@ -1554,7 +1623,7 @@ body nav:last-of-type {
 
 
 /* -------------------------------------------------------------------------- */
-/*	Resources Page
+/*	14. Resources Page - page-resources.php
 /* -------------------------------------------------------------------------- */
 
 .Resources__section-title {
@@ -1709,7 +1778,7 @@ body nav:last-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	
+/*	15. Site Footer - footer.php
 /* -------------------------------------------------------------------------- */
 
 .footer__container {
@@ -1756,7 +1825,7 @@ body nav:last-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	
+/*	16. Breadcrumbs (not in use)
 /* -------------------------------------------------------------------------- */
 
 .Breadcrumbs {
@@ -1775,7 +1844,7 @@ body nav:last-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	
+/*	17. Media Queries
 /* -------------------------------------------------------------------------- */
 
 /* Smaller than 1280, like a resized window on a laptop */

@@ -32,12 +32,12 @@
       >
     </div>
     <div class="About__page-1-link-module">
-      <h2 class="About__page-1-link-module-h2">Our Impact</h2>
+      <h2 class="About__page-1-link-module-h2">Get in Touch</h2>
       <p class="About__page-1-link-module-p">
-        How Casey Trees and our partners work re-treeing the DMV.
+        Reach out regarding tree planting, membership, donation, volunteering and more. 
       </p>
-      <a class="About__page-1-link-module-a" href="/about-us/"
-        ><p class="About__page-1-link-module-a-p">LEARN OUR MISSION</p></a
+      <a class="About__page-1-link-module-a" href="/about-us/contact-us/"
+        ><p class="About__page-1-link-module-a-p">CONTACT US</p></a
       >
     </div>
   </div>

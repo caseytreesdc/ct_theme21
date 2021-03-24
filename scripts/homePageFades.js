@@ -75,6 +75,6 @@ function scrollFade() {
   // });
 }
 
-window.addEventListener("load", function () {
-  scrollFade();
-});
+// window.addEventListener("load", function () {
+//   scrollFade();
+// });
