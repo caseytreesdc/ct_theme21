@@ -997,3 +997,15 @@ function ct2021_login_logo() { ?>
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'ct2021_login_logo' );
+
+// /*
+//     ===================================
+//     Tribe Events on the Get Involved Page
+//     ===================================
+// */
+
+function enqueue_month_view_scripts() {
+    Tribe_Template_Factory::asset_package('ajax-calendar');
+    Tribe_Template_Factory::asset_package('events-css');    
+}
+add_action('wp_enqueue_scripts', 'enqueue_month_view_scripts');

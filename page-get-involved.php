@@ -31,9 +31,25 @@
       <?php get_template_part('svgs/inline', 'document') ?>
       <p class="Get__page-1-icon-p">YOUTH</p>
     </div>
-    <div class="Get__page-1-icon-w-text coffee-svg">
+    <a href="/events/month/" class="Get__page-1-icon-w-text coffee-svg">
       <?php get_template_part('svgs/inline', 'plus') ?>
-    </div>
+      <p class="Get__page-1-icon-p">ALL EVENTS</p>
+    </a>
   </div>
 </div>
+<div class="Get__page-2">
+  <div class="Get__event"></div>
+  <div class="Get__event"></div>
+  <div class="Get__event"></div>
+  <div class="Get__event"></div>
+  <div class="Get__event"></div>
+  <div class="Get__event"></div>
+  <div class="Get__event"></div>
+  <div class="Get__event"></div>
+  <div class="Get__event"></div>
+</div>
+<div class="Get__page-3">
+  <?php tribe_show_month(); ?>
+</div>
 <?php get_footer(); ?>
+<?php var_dump(tribe_get_events()); ?>

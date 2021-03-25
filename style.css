@@ -1193,11 +1193,9 @@ main a:focus {
 
 .Get__page-1 {
     width: 80vw;
-    min-height: 80vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .Get__page-1-h1 {
@@ -1222,7 +1220,13 @@ main a:focus {
     align-items: center;
     justify-content: flex-start;
     width: 125px;
-    /* margin: 30px 10px; */
+    text-decoration: none;
+    padding: 2%;
+}
+
+.Get__page-1-icon-w-text:focus,
+.Get__page-1-icon-w-text:hover {
+    background: var(--silver);
 }
 
 .Get__page-1-icon-p {
@@ -1255,6 +1259,77 @@ main a:focus {
 .coffee-svg svg {
     fill: var(--coffee);
 }
+
+.Get__page-2 {
+    width: 80vw;
+    min-height: 50vh;
+    margin: 5vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Get__event {
+    min-height: 100px;
+    width: 30%;
+    background: var(--silver);
+}
+
+.Get__event:focus,
+.Get__event:hover {
+    opacity: .5;
+}
+
+.Get__event:nth-child(1) {
+    border: solid 3px var(--paarl)
+}
+
+.Get__event:nth-child(2) {
+    border: solid 3px var(--orange)
+}
+
+.Get__event:nth-child(3) {
+    border: solid 3px var(--moss)
+}
+
+.Get__event:nth-child(4) {
+    border: solid 3px var(--forest)
+}
+
+.Get__event:nth-child(5) {
+    border: solid 3px var(--cobalt)
+}
+
+.Get__event:nth-child(6) {
+    border: solid 3px var(--cobalt)
+}
+
+.Get__event:nth-child(7) {
+    border: solid 3px var(--moss)
+}
+
+.Get__event:nth-child(8) {
+    border: solid 3px var(--forest)
+}
+
+.Get__event:nth-child(9) {
+    border: solid 3px var(--cobalt)
+}
+
+
+.Get__page-3 {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.Get__page-3 #tribe-events-header,
+.Get__page-3 #tribe-events-footer,
+.Get__page-3 .tribe-events-button {
+    display: none;
+}
+
+
 
 /* -------------------------------------------------------------------------- */
 /*	11.  Blog Posts (Leaflet) Page                                             */
