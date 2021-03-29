@@ -21,8 +21,8 @@ if (have_posts())
     while (have_posts())
     {
         the_post(); ?>
-                    <div class="Archive__post">
-                        <?php
+        <div class="Archive__post">
+        <?php
         $image = get_field('image');
         $size = 'large'; // (thumbnail, medium, large, full or custom size)
         if ($image)

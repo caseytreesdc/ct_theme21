@@ -8,18 +8,23 @@
 <?php
     $masthead = get_field('masthead', get_the_ID())[0]['image'];
     $mastheadSRC = wp_get_attachment_image_src( $masthead, 'full')[0];
+    $mastheadClassList = "Page__masthead";
+    if ( get_field('masthead')[0]['tall']) {
+      $mastheadClassList .= " tall-masthead";
+    }
   ?>
 <div
-  class="Page__masthead"
+  class="<?php echo $mastheadClassList ?>"
   style="
     background: linear-gradient(
-      rgba(55,55,55, 0),
-      rgba(55,55,55, 0),
-      rgba(55,55,55, .4),
-      rgba(55,55,55, .8)
+      rgba(44, 16, 16, 0),
+      rgba(44, 16, 16, 0),
+      rgba(44, 16, 16, 0),
+      rgba(44, 16, 16, .4),
+      rgba(44, 16, 16, 1)
       ),
       url(<?php echo $mastheadSRC ?>);
-    background-position: bottom;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
   "

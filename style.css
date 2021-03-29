@@ -51,6 +51,8 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
     /* rgba(0, 0, 0, 1); */
     --coffee: #2c1010;
     /* rgba(44, 16, 16, 1); */
+    --americano: #4b3331;
+    /* rgba(75, 51, 49, 1); */
     --grey: #373737;
     /* rgba(55, 55, 55, 1); */
     --silver: #e5e6e5;
@@ -75,7 +77,8 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
     /* fonts */
     --cronos: cronos-pro, lato, zeitung-mono, sans-serif;
     --lato: lato, cronos-pro, zeitung-mono, sans-serif;
-    --zeitung: zeitung-mono, cronos-pro, lato, sans-serif;
+    /* --zeitung: zeitung-mono, cronos-pro, lato, sans-serif; */
+    --zeitung: lato, cronos-pro, zeitung-mono, sans-serif;
 }
 
 html,
@@ -88,6 +91,7 @@ h2,
 h3,
 h4 {
     font-family: var(--cronos);
+    color: var(--coffee);
 }
 
 h1 {
@@ -105,6 +109,7 @@ h4 {
 p,
 li {
     font-family: var(--lato);
+    color: var(--americano);
 }
 
 
@@ -186,7 +191,6 @@ input[type=button] {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 66vw;
 }
 
@@ -199,14 +203,14 @@ input[type=button] {
 
 .Nav__ul li a:hover,
 .Nav__ul li a:focus {
-    background: var(--cobalt);
+    background: var(--forest);
     color: var(--paper);
 }
 
 .Nav__ul li p {
     font-size: 14px;
     margin: 3px 0;
-    font-family: var(--zeitung);
+    font-family: var(--lato);
 }
 
 .Nav__ul li {
@@ -224,9 +228,13 @@ input[type=button] {
     z-index: 4;
 }
 
+.Nav__ul ul li a {
+    text-transform: capitalize;
+}
+
 #menu-item-18039 {
-    outline: 2px solid var(--cobalt);
-    outline-offset: -2px;
+    border-radius: 3px;
+    background: var(--yellow);
 }
 
 #menu-item-18039 .sub-menu {
@@ -425,9 +433,13 @@ ul li:focus-within>ul {
 
 .Page__masthead {
     box-shadow: inset 0 7px 9px -7px var(--grey);
-    height: 50vh;
+    height: 470px;
     display: flex;
     align-items: flex-end;
+}
+
+.tall-masthead {
+    height: 70vh;
 }
 
 .Page__h1 {
@@ -791,12 +803,12 @@ main a:focus {
 
 .Plant__page-1-section-3-p {
     font-size: 20px;
-    color: var(--coffee);
+    color: var(--americano);
     font-weight: bold;
 }
 
 .Plant__page-1-section-3-a {
-    color: var(--cobalt)
+    color: var(--cobalt);
 }
 
 .Plant__page-2,
@@ -836,7 +848,7 @@ main a:focus {
 
 .Plant__page-2-text p {
     font-size: 20px;
-    color: var(--coffee);
+    color: var(--americano);
 }
 
 .Plant__page-2-text-a {
@@ -882,7 +894,7 @@ main a:focus {
 
 .Plant__page-3-text p {
     font-size: 20px;
-    color: var(--coffee);
+    color: var(--americano);
     text-align: right;
 }
 
