@@ -18,7 +18,7 @@
 if (have_posts())
 {
     while (have_posts())
-    {   var_dump(get_fields()); 
+    {   
         the_post(); ?>
                     <div class="Archive__post">
                         <?php

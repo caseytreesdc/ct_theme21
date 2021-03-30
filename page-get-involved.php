@@ -52,4 +52,3 @@
   <?php tribe_show_month(); ?>
 </div>
 <?php get_footer(); ?>
-<?php var_dump(tribe_get_events()); ?>

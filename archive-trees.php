@@ -18,7 +18,8 @@
             $fields = get_fields();
             
             if( $fields ): 
-                var_dump($fields)
+                // var_dump($fields)
+                // get_attachment_image($fields['related_image'])
                 ?>
             <?php endif; ?>
             <?php
