@@ -81,6 +81,10 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
     --zeitung: lato, cronos-pro, zeitung-mono, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     margin: 0;
@@ -201,8 +205,24 @@ input[type=button] {
     text-decoration: none;
 }
 
-.Nav__ul li a:hover,
-.Nav__ul li a:focus {
+.Nav__ul li:hover>ul {
+    display: block;
+}
+
+.Nav__ul>li>div>p>a:hover,
+.Nav__ul>li>div>p>a:focus {
+    background: var(--forest);
+    border-radius: 3px;
+    color: var(--paper);
+}
+
+#menu-item-18039>div>p>a {
+    background: var(--yellow);
+    border-radius: 3px;
+}
+
+#menu-item-18039>div>p>a:hover,
+#menu-item-18039>div>p>a:focus {
     background: var(--forest);
     color: var(--paper);
 }
@@ -228,22 +248,20 @@ input[type=button] {
     z-index: 4;
 }
 
-.Nav__ul ul li a {
-    text-transform: capitalize;
+.sub-menu>li>div>p>a:hover,
+.sub-menu>li>div>p>a:focus {
+    background: var(--forest);
+    color: var(--paper);
 }
 
-#menu-item-18039 {
-    border-radius: 3px;
-    background: var(--yellow);
+.Nav__ul ul li a {
+    text-transform: capitalize;
 }
 
 #menu-item-18039 .sub-menu {
     right: 0px;
 }
 
-.Nav__ul li:hover>ul {
-    display: block;
-}
 
 /*
 What's up with this?! we need accessibililty 
@@ -310,7 +328,6 @@ ul li:focus-within>ul {
     color: var(--paper);
     cursor: pointer;
 }
-
 
 .Mobile-Nav__ul .highlight {
     background: var(--paarl);
@@ -530,6 +547,7 @@ main a:focus {
     text-decoration: none;
 }
 
+/* why is this here?  */
 @media only screen and (min-width: 1280px) {
     .motto {
         width: 30%;
@@ -684,7 +702,7 @@ main a:focus {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    /* height: 50vh; */
+    height: 50vh;
 }
 
 .main__page-2-section-3-img,
@@ -1039,6 +1057,7 @@ main a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 }
 
 .Farm__page-4-icons svg {
@@ -1955,7 +1974,8 @@ body nav:last-of-type {
 
     .Donate-a {
         text-decoration: none;
-        border: 2px solid var(--cobalt);
+        /* border: 2px solid var(--cobalt); */
+        background: var(--yellow);
         font-family: var(--zeitung);
         color: var(--coffee);
         padding: .3vh 5vw;
@@ -1963,7 +1983,7 @@ body nav:last-of-type {
 
     .Donate-a:hover,
     .Donate-a:focus {
-        background: var(--cobalt);
+        background: var(--forest);
         color: var(--paper);
     }
 

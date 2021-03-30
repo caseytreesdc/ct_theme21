@@ -22,24 +22,28 @@
     <div class="down-arrow"></div>
   </div>
   <div class="Farm__page-4-icons">
-    <div class="Farm__page-4-icon-w-text">
+    <a href="#sustainability" class="Farm__page-4-icon-w-text">
       <?php get_template_part('svgs/inline', 'house') ?>
       <p class="Farm__page-4-p">SUSTAINABILITY</p>
-    </div>
-    <div class="Farm__page-4-icon-w-text">
+    </a>
+    <a href="#partnership" class="Farm__page-4-icon-w-text">
       <?php get_template_part('svgs/inline', 'grid') ?>
       <p class="Farm__page-4-p">PARTNERSHIP WITH DC</p>
-    </div>
-    <div class="Farm__page-4-icon-w-text">
+    </a>
+    <a  href="https://caseytreesdc.github.io/ct-farm/Trees#FarmTrees"
+        target="_blank"
+        class="Farm__page-4-icon-w-text">
       <?php get_template_part('svgs/inline', 'document') ?>
       <p class="Farm__page-4-p">TREES WE GROW</p>
-    </div>
-    <div class="Farm__page-4-icon-w-text">
+    </a>
+    <a  href="https://caseytreesdc.github.io/ct-farm/Request#RequestForm"
+        target="_blank"
+        class="Farm__page-4-icon-w-text">
       <?php get_template_part('svgs/inline', 'tape') ?>
       <p class="Farm__page-4-p">AVAILABILITY & REQUESTS</p>
-    </div>
+    </a>
   </div>
-  <div class="Farm__page-5">
+  <div id="sustainability" class="Farm__page-5">
     <!-- <div class="Farm__page-5-text-and-image"> -->
       <div class="Farm__page-5-text">
         <h2 class="Farm__page-5-text-h2">Sustainability</h2>
@@ -51,7 +55,7 @@
       >
     <!-- </div> -->
   </div>
-  <div class="Farm__page-6">
+  <div id="partnership" class="Farm__page-6">
     <!-- <div class="Farm__page-6-text-and-image"> -->
       <img
         class="Farm__page-6-image"
