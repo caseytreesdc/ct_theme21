@@ -3,7 +3,7 @@ function handleMobileSubMenus() {
   let menuItems = mobileNav.querySelectorAll(".menu-item");
 
   function toggleSubNav() {
-    console.log(this);
+    // console.log(this);
     if (this.classList.contains("sub-menu__active")) {
       this.classList.remove("sub-menu__active");
     }
@@ -13,7 +13,7 @@ function handleMobileSubMenus() {
   }
 
   for (let menuItem of menuItems) {
-    console.log(menuItem);
+    // console.log(menuItem);
     if (menuItem.querySelector(".sub-menu")) {
       menuItem.addEventListener("click", toggleSubNav);
     }

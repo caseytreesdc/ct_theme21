@@ -35,9 +35,10 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
 12.     Leaflet             .Leaflet__
 13.     General Archive     .Archive__
 14.     Resources           .Resources__
-15.     Site Footer         .footer__
-16.     Breadcrumbs         .Breadcrumbs__
-17.     Media Queries       @media
+15.     Trees               .trees-
+16.     Site Footer         .footer__
+17.     Breadcrumbs         .Breadcrumbs__
+19.     Media Queries       @media
 
 ----------------------------------------------------------------------------- */
 
@@ -133,7 +134,7 @@ a:focus {
 }
 
 .hidden {
-    display: none
+    display: none;
 }
 
 .bold-text {
@@ -1884,7 +1885,41 @@ body nav:last-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	15. Site Footer - footer.php
+/*	15. Trees - archive-trees.php
+/* -------------------------------------------------------------------------- */
+
+.trees-wrap {
+    background: var(--silver);
+}
+
+.trees-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tree-thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    background: var(--paper);
+    margin: 1%;
+    border-radius: 5px;
+    opacity: .8;
+}
+
+.tree-thumbnail:hover,
+.tree-thumbnail:focus {
+    opacity: 1;
+}
+
+.tree-thumbnail h2 {
+    font-size: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	16. Site Footer - footer.php
 /* -------------------------------------------------------------------------- */
 
 .footer__container {
@@ -1931,7 +1966,7 @@ body nav:last-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	16. Breadcrumbs (not in use)
+/*	17. Breadcrumbs (not in use)
 /* -------------------------------------------------------------------------- */
 
 .Breadcrumbs {
@@ -1950,7 +1985,7 @@ body nav:last-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	17. Media Queries
+/*	18. Media Queries
 /* -------------------------------------------------------------------------- */
 
 /* Smaller than 1280, like a resized window on a laptop */
