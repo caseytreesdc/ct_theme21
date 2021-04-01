@@ -2,8 +2,8 @@
 
 <?php 
 
-//make true to display tree properties
-$debugTreeFilters = false;
+// uncomment next line and make true to display tree properties
+// $debugTreeFilters = false;
 
 $sizes = get_field_object('field_585adaf7b2ac9');
 $lightConditions = get_field_object('field_585adabdb2ac4');
@@ -15,47 +15,82 @@ $otherOptions = array(
     );
 ?>
 
-<div class=trees-wrap>
+<div class="trees-wrap">
 
     <div class="tree-filter">
-        <?php 
-            foreach($sizes['choices'] as $key => $value) { ?>
-                <div class="tree-filter__group">
-                    <input 
-                        type="checkbox"
-                        class="tree-checkbox" 
-                        name="<?php echo $key ?>"
-                        id="<?php echo $key ?>"
-                    >
-                    <label for="<?php echo $key ?>"><?php echo $value ?></label>
-                </div>
-        <?php   }
-            foreach($lightConditions['choices'] as $key => $value) { ?>
-                <div class="tree-filter__group">
-                    <input 
-                        type="checkbox"
-                        class="tree-checkbox" 
-                        name="<?php echo $key ?>"
-                        id="<?php echo $key ?>"
-                    >
-                    <label for="<?php echo $key ?>"><?php echo $value ?></label>
-                </div>
-        <?php   }
-            foreach($otherOptions as $key => $value) { ?>
-                <div class="tree-filter__group">
-                    <input 
-                        type="checkbox"
-                        class="tree-checkbox" 
-                        name="<?php echo $key ?>"
-                        id="<?php echo $key ?>"
-                    >
-                    <label for="<?php echo $key ?>"><?php echo $key ?></label>
-                </div>
+        <h2>Filter Trees</h2>
+        <div class="tree-filter__group">
+            <h3>Sizes</h3>
+        <?php foreach($sizes['choices'] as $key => $value) { ?>
+            <div>
+                <input
+                    type="checkbox"
+                    class="tree-checkbox"
+                    name="<?php echo $key ?>"
+                    id="<?php echo $key ?>"
+                >
+                <label for="<?php echo $key ?>"><?php echo $value ?></label>
+            </div>
+        <?php  } ?>
+        </div>
+        <div class="tree-filter__group">
+            <h3>Light Conditions</h3>
+        <?php foreach($lightConditions['choices'] as $key => $value) { ?>
+            <div>
+                <input
+                    type="checkbox"
+                    class="tree-checkbox"
+                    name="<?php echo $key ?>"
+                    id="<?php echo $key ?>"
+                >
+                <label for="<?php echo $key ?>"><?php echo $value ?></label>
+            </div>
+        <?php  } ?>
+        </div>
+        <div class="tree-filter__group">
+            <h3>Other Options</h3>
+        <?php foreach($otherOptions as $key => $value) { ?>
+            <div>
+                <input
+                    type="checkbox"
+                    class="tree-checkbox"
+                    name="<?php echo $key ?>"
+                    id="<?php echo $key ?>"
+                >
+                <label for="<?php echo $key ?>"><?php echo $key ?></label>
+            </div>
         <?php } ?>
+        </div>
+        <!-- Trees selection from dropdown -->
+        <form>
+            <label>View a specific tree</label>
+            <select class="tree-dropdown">
+                <option value="/trees-list/">Select a Tree</option>
+                <?php
+                    if ( have_posts() ) {
+                        while (have_posts() ) {
+                            the_post(); ?>
+                            <option
+                                class="tree-select"
+                                value="<?php the_permalink();?>"
+                            >
+                                <?php the_title()?>
+                            </option>
+                    <?php };
+                }
+                ?>
+            </select>
+        </form>
+
+        <!-- Reset button  -->
+        <div class="tree-filter__reset"><p>RESET FORM</p></div>
     </div>
 
     <div class="trees-list">
-    <?php 
+        <p class="trees-list-p">
+            The trees in this guide are well adapted to the soil and conditions present in Washington, D.C. We encourage you to plant medium and larger-sized trees, as they provide greater benefits to the city than smaller trees. Young trees require 1.5 inches of rain or 25 gallons of water per week for the first three years to establish their roots.
+        </p>
+    <?php
         if( have_posts() ) {
             while( have_posts() ) {
                 the_post();
@@ -120,8 +155,7 @@ $otherOptions = array(
                             ?>
                         </div>
                     </div>
-                    
-                    
+
                     <!-- use to display more tree options when developing change the variable on line 6 to true -->
                     <?php if($debugTreeFilters) { ?>
                         <p><?php echo get_fields()['light_conditions'] ?></p>
@@ -146,7 +180,10 @@ $otherOptions = array(
                             }
                         ?></p>
                     <?php } ?>
+                    <!-- end debug options module  -->
+
                 </a>
+                <!-- end individual tree markup  -->
                 <?php
             } //endwhile
         } //endif

@@ -1,12 +1,12 @@
 function loopOverTrees() {
-  let list = document.getElementsByClassName("tree-thumbnail");
   let checkbox = document.getElementsByClassName("tree-checkbox");
+  let list = document.getElementsByClassName("tree-thumbnail");
 
   for (i = 0; i < list.length; i++) {
     let tree = list[i];
     let specs = tree.dataset.fields;
 
-    console.log(specs);
+    // console.log(specs);
 
     let sizeTF =
       (checkbox[0].checked && specs.includes("small")) ||
@@ -21,15 +21,6 @@ function loopOverTrees() {
       !(checkbox[3].checked || checkbox[4].checked || checkbox[5].checked);
 
     let otherTF =
-      // if I do it the right way
-      //   (checkbox[6] &&
-      //   checkbox[7] &&
-      //   checkbox[8]) &&
-      //   (specs.includes("prominent_flower") &&
-      //   specs.includes("showy_seasonal_color") &&
-      //   specs.includes("fruitnut_producing"));
-
-      // but If I treat these like the rest:
       (checkbox[6].checked && specs.includes("prominent_flower")) ||
       (checkbox[7].checked && specs.includes("showy_seasonal_color")) ||
       (checkbox[8].checked && specs.includes("fruitnut_producing")) ||
@@ -46,6 +37,14 @@ function loopOverTrees() {
     if (sizeTF && lightTF && otherTF) {
       tree.style.display = "flex";
     }
+
+    let resetButton = document.getElementsByClassName("tree-filter__reset")[0];
+    resetButton.addEventListener("click", () => {
+      for (j = 0; j < checkbox.length; j++) {
+        checkbox[j].checked = false;
+        tree.style.display = "flex";
+      }
+    });
   }
 }
 
@@ -57,6 +56,14 @@ function handleTrees() {
   });
 }
 
+function handleTreeSelection() {
+  dropdown = document.getElementsByClassName("tree-dropdown")[0];
+  dropdown.addEventListener("change", () => {
+    location.assign(dropdown[dropdown.selectedIndex].value);
+  });
+}
+
 window.addEventListener("load", function () {
   handleTrees();
+  handleTreeSelection();
 });
