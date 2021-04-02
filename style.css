@@ -82,6 +82,10 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
     --zeitung: lato, cronos-pro, zeitung-mono, sans-serif;
 }
 
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -2038,48 +2042,208 @@ body nav:last-of-type {
 /*	16. Site Footer - footer.php
 /* -------------------------------------------------------------------------- */
 
-.footer__container {
-    background: var(--silver);
+.footer__section-1 {
+    padding-top: 6vh;
+    background: var(--americano);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 25px;
+}
+
+.footer__section-2 {
+    background: var(--americano);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .footer__column {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.footer__section-1 .footer__column:nth-child(1) {
+    width: 20vw;
     justify-content: center;
 }
 
 .footer__logo-anchor {
-    fill: var(--cobalt);
+    fill: var(--paper);
     width: 16vw;
 }
 
 .footer__logo-anchor:hover {
-    fill: var(--coffee);
-}
-
-.footer-link {
-    color: var(--coffee);
-    font-family: var(--lato);
-    font-size: 17px;
-    margin: 3px;
+    fill: var(--silver);
 }
 
 .footer__button {
     font-family: var(--zeitung);
     text-decoration: none;
-    color: var(--silver);
+    color: var(--coffee);
     text-align: center;
-    padding: 20px 40px;
-    background: var(--cobalt);
+    width: 100%;
+    height: 50px;
+    background: var(--yellow);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__button:hover {
-    background: rgba(65, 104, 172, 0.6);
+    background: var(--forest);
+    color: var(--paper)
 }
+
+.footer__section-1 .footer__column:nth-child(2) {
+    width: 50vw;
+    justify-content: center;
+}
+
+.footer__section-1 .footer__column:nth-child(2) h2 {
+    color: var(--paper);
+    font-family: var(--lato);
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.footer__section-1 .footer__column:nth-child(3) {
+    justify-content: center;
+    width: 20vw;
+}
+
+.footer__section-2 .footer__column:nth-child(1) {
+    width: 20vw;
+    margin: 3vh 0;
+}
+
+.footer__section-2 .footer__column:nth-child(2) {
+    width: 50vw;
+}
+
+.footer__nav>.menu-primary-nav-container {
+    min-width: 100%;
+}
+
+.footer__nav>.menu-primary-nav-container>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3vh 0;
+}
+
+.footer__nav>.menu-primary-nav-container>ul>li {
+    width: 33%;
+    /* min-height: 20vh; */
+    margin: 0 0 3vh 0;
+}
+
+.footer__nav>.menu-primary-nav-container>ul>li a {
+    text-decoration: none;
+    color: var(--paper);
+    font-size: 14px;
+}
+
+.footer__nav>.menu-primary-nav-container>ul>li>a {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer__nav>.menu-primary-nav-container>ul>li {
+    padding: 1vh 0;
+}
+
+.footer__nav>.menu-primary-nav-container>ul>li a:hover,
+.footer__nav>.menu-primary-nav-container>ul>li a:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--coffee);
+    text-decoration-style: double;
+}
+
+.footer__section-2 .footer__column:nth-child(3) {
+    width: 20vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 3vh 0;
+}
+
+.footer__social {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__social a {
+    text-decoration: none;
+}
+
+.footer__social svg {
+    height: 30px;
+    width: auto;
+    padding-left: 1vw;
+    fill: var(--silver);
+}
+
+.footer__social svg:hover,
+.footer__social svg:focus {
+    width: auto;
+    fill: rgba(255, 255, 255, .6);
+}
+
+.footer__contact {
+    font-size: 14px;
+    width: 100%;
+    text-align: right;
+}
+
+.footer__contact p {
+    color: var(--paper);
+}
+
+.footer__contact a {
+    text-decoration: none;
+}
+
+.footer__contact a:hover,
+.footer__contact a:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--coffee);
+    text-decoration-style: double;
+}
+
+.footer__section-3 {
+    background: var(--coffee);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 24vh
+}
+
+.footer__section-3 ul {
+    list-style: none;
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    margin: 0 0 2vh 0;
+}
+
+.footer__section-3 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--silver);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footnote {
+    font-size: 14px;
+    margin: 0;
+    color: var(--silver);
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*	17. Breadcrumbs (not in use)

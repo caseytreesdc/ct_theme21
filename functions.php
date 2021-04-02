@@ -23,6 +23,7 @@ function ct2021_menus()
     $locations = array(
         'Main Navigation 2021' => __('Main Navigation 2021', 'text_domain') ,
         'Utility Navigation 2021' => __('Utility Navigation 2021', 'text_domain') ,
+        'Footnote Navigation 2021' => __('Footnote Navigation 2021', 'text_domain') ,
     );
 
     register_nav_menus($locations);
