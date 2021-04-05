@@ -2042,6 +2042,10 @@ body nav:last-of-type {
 /*	16. Site Footer - footer.php
 /* -------------------------------------------------------------------------- */
 
+footer {
+    max-width: 100vw;
+}
+
 .footer__section-1 {
     padding-top: 6vh;
     background: var(--americano);
@@ -2131,11 +2135,15 @@ body nav:last-of-type {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 3vh 0;
+    list-style: none;
+}
+
+.footer__nav>.menu-primary-nav-container>ul .sub-menu {
+    list-style: none;
 }
 
 .footer__nav>.menu-primary-nav-container>ul>li {
     width: 33%;
-    /* min-height: 20vh; */
     margin: 0 0 3vh 0;
 }
 
@@ -2239,6 +2247,7 @@ body nav:last-of-type {
 }
 
 .footnote {
+    text-align: center;
     font-size: 14px;
     margin: 0;
     color: var(--silver);
@@ -2437,15 +2446,68 @@ body nav:last-of-type {
         padding: 1vw 2vw;
     }
 
-    .footer__container {
+    .footer__section-1 {
         flex-direction: column;
-        justify-content: space-around;
-        height: 100vh;
+        align-items: center;
     }
 
-    .footer__container svg {
+    .footer__column {
+        width: 80vw;
+    }
+
+    .footer__logo-anchor {
         width: 50vw;
-        height: auto;
+    }
+
+    .footer__section-1 .footer__column:nth-child(2) h2 {
+        width: 80vw;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .footer__section-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__button {
+        width: 75vw;
+    }
+
+    .footer__section-2 .footer__column:nth-child(2) {
+        width: 80%;
+    }
+
+    .footer__nav>.menu-primary-nav-container>ul>li {
+        width: 50%;
+        margin: 0 0 3vh 0;
+    }
+
+    .footer__section-2 .footer__column:nth-child(3) {
+        width: 80%;
+    }
+
+    .footer__social {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__contact {
+        font-size: 14px;
+        width: 100%;
+        text-align: right;
+        text-align: center;
+    }
+
+    .footer__section-3 {
+        height: fit-content;
+        padding: 5vh 0;
+    }
+    
+    .footer__section-3 ul{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
 
     .Plant {
