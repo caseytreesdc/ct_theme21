@@ -7,19 +7,27 @@
         </section>
         <section class="Plant__page-1-section-2-icons">
             <a href="#home"><div class="Plant__page-1-section-2-icon-w-text">
-                <?php get_template_part('svgs/inline', 'home') ?>
+                <img
+                    src="<?php echo get_fields()['home_image']['url']; ?>"
+                >
                 <p class="Plant__page-1-section-2-p">HOME</p>
             </div></a>
             <a href="#school"><div class="Plant__page-1-section-2-icon-w-text">
-                <?php get_template_part('svgs/inline', 'school') ?>
+                <img
+                    src="<?php echo get_fields()['school_image']['url']; ?>"
+                >
                 <p class="Plant__page-1-section-2-p">SCHOOL</p>
             </div></a>
             <a href="#community"><div class="Plant__page-1-section-2-icon-w-text">
-                <?php get_template_part('svgs/inline', 'community') ?>
+                <img
+                    src="<?php echo get_fields()['community_image']['url']; ?>"
+                >
                 <p class="Plant__page-1-section-2-p">COMMUNITY</p>
             </div></a>
             <a href="#dedication"><div class="Plant__page-1-section-2-icon-w-text">
-            <?php get_template_part('svgs/inline', 'dedication') ?>
+                <img
+                    src="<?php echo get_fields()['dedication_image']['url']; ?>"
+                >
                 <p class="Plant__page-1-section-2-p">DEDICATION</p>
             </div></a>
         </section>
@@ -53,6 +61,16 @@
             <a class="Plant__page-2-links-a" href="/plant/residential-planting/">RSH</a>
             <a class="Plant__page-2-links-a" href="/resources/tree-rebate/">REBATE</a>
             <a class="Plant__page-2-links-a" href="/plant/residential-planting/pepco-tree-application-form/">PEPCO</a>
+        </div>
+        <div class="Plant__page-2-form-excerpt">
+            <p><?php echo get_the_excerpt(2215) ?></p>
+            <p><?php echo get_the_excerpt(53) ?></p>
+            <p><?php echo get_the_excerpt(55) ?></p>
+            <p><?php echo get_the_excerpt(14356) ?></p>
+            <p>
+                Hover over the above options, or follow the link to learn more about Fee-For Service,
+                Riversmart Homes, Tree Rebate, and Pepco tree planting opportunities.
+            </p>
         </div>
     </div>
     <div id="school" class="Plant__page-3">

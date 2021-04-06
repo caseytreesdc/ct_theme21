@@ -1,5 +1,5 @@
-button = document.getElementsByClassName("tree-filter__display")[0];
-filter = document.getElementsByClassName("tree-filter")[0];
+let button = document.getElementsByClassName("tree-filter__display")[0];
+let filter = document.getElementsByClassName("tree-filter")[0];
 
 function showHideTreeFilter() {
   if (filter.style.display === "block") {

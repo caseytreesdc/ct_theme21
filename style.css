@@ -503,7 +503,7 @@ ul li:focus-within>ul {
 }
 
 .Page {
-    width: 780px;
+    max-width: 780px;
     margin: 30px auto;
     margin-bottom: 20vh;
 }
@@ -804,6 +804,10 @@ main a:focus {
     max-width: 700px;
 }
 
+.Plant h2 {
+    margin-top: 0;
+}
+
 .Plant__page-1-section-2-icons {
     display: flex;
     flex-direction: row;
@@ -817,25 +821,31 @@ main a:focus {
     padding: 1vh 1vw;
 }
 
-.Plant__page-1-section-2-icons svg {
-    fill: var(--coffee);
+.Plant__page-1-section-2-icons img {
+    border-radius: 50%;
+    border: 2px solid var(--coffee);
+    padding: 4px;
     width: 13vw;
     min-width: 140px;
 }
 
-.Plant__page-1-section-2-icons a:nth-child(1) {
+.Plant__page-1-section-2-icons a:nth-child(1):hover p,
+.Plant__page-1-section-2-icons a:nth-child(1):focus p {
     color: var(--cobalt);
 }
 
-.Plant__page-1-section-2-icons a:nth-child(2) {
+.Plant__page-1-section-2-icons a:nth-child(2):hover p,
+.Plant__page-1-section-2-icons a:nth-child(2):focus p {
     color: var(--moss);
 }
 
-.Plant__page-1-section-2-icons a:nth-child(3) {
+.Plant__page-1-section-2-icons a:nth-child(3):hover p,
+.Plant__page-1-section-2-icons a:nth-child(3):focus p {
     color: var(--orange);
 }
 
-.Plant__page-1-section-2-icons a:nth-child(4) {
+.Plant__page-1-section-2-icons a:nth-child(4):hover p,
+.Plant__page-1-section-2-icons a:nth-child(4):focus p {
     color: var(--paarl);
 }
 
@@ -859,24 +869,24 @@ main a:focus {
     background: rgba(229, 230, 229, .6)
 }
 
-.Plant__page-1-section-2-icons a:nth-child(1):hover svg,
-.Plant__page-1-section-2-icons a:nth-child(1):focus svg {
-    fill: var(--cobalt);
+.Plant__page-1-section-2-icons a:nth-child(1):hover img,
+.Plant__page-1-section-2-icons a:nth-child(1):focus img {
+    border-color: var(--cobalt);
 }
 
-.Plant__page-1-section-2-icons a:nth-child(2):hover svg,
-.Plant__page-1-section-2-icons a:nth-child(2):focus svg {
-    fill: var(--moss);
+.Plant__page-1-section-2-icons a:nth-child(2):hover img,
+.Plant__page-1-section-2-icons a:nth-child(2):focus img {
+    border-color: var(--moss);
 }
 
-.Plant__page-1-section-2-icons a:nth-child(3):hover svg,
-.Plant__page-1-section-2-icons a:nth-child(3):focus svg {
-    fill: var(--orange);
+.Plant__page-1-section-2-icons a:nth-child(3):hover img,
+.Plant__page-1-section-2-icons a:nth-child(3):focus img {
+    border-color: var(--orange);
 }
 
-.Plant__page-1-section-2-icons a:nth-child(4):hover svg,
-.Plant__page-1-section-2-icons a:nth-child(4):focus svg {
-    fill: var(--paarl);
+.Plant__page-1-section-2-icons a:nth-child(4):hover img,
+.Plant__page-1-section-2-icons a:nth-child(4):focus img {
+    border-color: var(--paarl);
 }
 
 .Plant__page-1-section-2-p {
@@ -962,6 +972,25 @@ main a:focus {
 .Plant__page-2-links-a:hover {
     color: var(--cobalt);
     background: var(--silver);
+}
+
+.Plant__page-2-form-excerpt {
+    display: flex;
+    min-height: 10vh;
+    background: var(--cobalt);
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Plant__page-2-form-excerpt p {
+    color: var(--paper);
+    margin: 0;
+    display: none;
+    padding: 2%;
+}
+
+.Plant__page-2-form-excerpt p:last-of-type {
+    display: block;
 }
 
 .Plant-page-3-text {

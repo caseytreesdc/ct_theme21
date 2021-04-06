@@ -186,6 +186,7 @@ function ct2021_register_scripts()
     wp_enqueue_script('mobile-submenus', get_template_directory_uri() . '/scripts/mobileSubMenus.js');
     wp_enqueue_script('mobile-trees', get_template_directory_uri() . '/scripts/treeOptionsDisplay.js');
     wp_enqueue_script('trees', get_template_directory_uri() . '/scripts/trees.js');
+    wp_enqueue_script('plant-page-hovers', get_template_directory_uri() . '/scripts/plantPageFormDescriptions.js');
 }
 
 add_action('wp_enqueue_scripts', 'ct2021_register_scripts');
