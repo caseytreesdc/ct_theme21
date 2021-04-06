@@ -55,8 +55,25 @@
             'before' => '<div>',
             'after' => '<span class="subnav-toggle">+</span></div>',
         )
-    )
+      );
     ?>
+    <div class="Mobile-Utility">
+      <div class="Mobile-Utility__social">
+        <a target="_blank" href="https://www.facebook.com/CaseyTreesDC/"><?php get_template_part('svgs/inline', 'facebook') ?></a>
+        <a target="_blank" href="https://twitter.com/caseytrees"><?php get_template_part('svgs/inline', 'twitter') ?></a>
+        <a target="_blank" href="https://www.instagram.com/CaseyTrees/"><?php get_template_part('svgs/inline', 'instagram') ?></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCeDRVR0TjyuXoKT9dtepp5A"><?php get_template_part('svgs/inline', 'youtube') ?></a>
+      </div>
+      <hr />
+      <?php 
+        wp_nav_menu(
+          array(
+              'theme_location' => 'Utility Navigation 2021',
+              'container_class' => 'Mobile-Utility__menu'
+          )
+        )
+      ?>
+    </div>
     <!-- end mobile nav  MODULE-->
     <!-- end header MODULE -->
     

@@ -313,13 +313,14 @@ ul li:focus-within>ul {
 .Mobile-Nav__ul li div {
     display: flex;
     justify-content: space-between;
-    padding: 3%;
+    align-items: center;
+    height: 6vh;
 }
 
 .Mobile-Nav__ul li a {
     color: var(--coffee);
     font-family: var(--zeitung);
-    font-size: 3.5vh;
+    font-size: 2vh;
     text-transform: uppercase;
     text-decoration: none;
     padding-left: 3vw;
@@ -371,7 +372,7 @@ ul li:focus-within>ul {
 }
 
 .Mobile-Nav__ul ul li a {
-    font-size: 3vh;
+    font-size: 2vh;
     text-transform: none;
 }
 
@@ -431,6 +432,55 @@ ul li:focus-within>ul {
 
 .Utility p {
     margin: 0;
+}
+
+.Mobile-Utility {
+    display: none;
+    margin: 0 auto;
+    width: 90vw;
+    background: var(--coffee);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    align-items: center;
+}
+
+.Mobile-Utility__social {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.Mobile-Utility__social a {
+    text-decoration: none;
+    align-items: center;
+}
+
+.Mobile-Utility svg {
+    height: 20px;
+    width: auto;
+    fill: var(--silver);
+}
+
+.Mobile-Utility hr {
+    width: 90%;
+    margin: 0;
+}
+
+.Mobile-Utility__menu {
+    height: 60px;
+}
+
+.Mobile-Utility ul {
+    list-style: none;
+}
+
+.Mobile-Utility ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--silver);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -2298,7 +2348,7 @@ footer {
 
     .Donate-a {
         text-decoration: none;
-        /* border: 2px solid var(--cobalt); */
+        border-radius: 5px;
         background: var(--yellow);
         font-family: var(--zeitung);
         color: var(--coffee);
@@ -2503,8 +2553,8 @@ footer {
         height: fit-content;
         padding: 5vh 0;
     }
-    
-    .footer__section-3 ul{
+
+    .footer__section-3 ul {
         flex-direction: column;
         width: 100%;
         text-align: center;
