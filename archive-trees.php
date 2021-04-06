@@ -16,7 +16,9 @@ $otherOptions = array(
 ?>
 
 <div class="trees-wrap">
-
+    <div class="tree-filter__display">
+        <p>Show Filter Options</p>
+    </div>
     <div class="tree-filter">
         <h2>Filter Trees</h2>
         <div class="tree-filter__group">
