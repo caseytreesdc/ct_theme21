@@ -200,7 +200,7 @@ input[type=button] {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    width: 66vw;
+    width: 60vw;
 }
 
 .Nav__ul li a {
@@ -267,7 +267,6 @@ input[type=button] {
     right: 0px;
 }
 
-
 /*
 What's up with this?! we need accessibililty 
 ul li:focus-within>ul {
@@ -280,9 +279,20 @@ ul li:focus-within>ul {
 } */
 
 .Nav__ul li ul li div p a {
-    /* targets the anchor so we can control the width of the background highlight*/
     display: block;
     width: 200px;
+}
+
+.Nav__ul>.current-menu-item>div>p>a {
+    background: var(--forest);
+    border-radius: 3px;
+    color: var(--paper);
+}
+
+.Nav__ul .current-menu-parent>div>p>a {
+    background: var(--forest);
+    border-radius: 3px;
+    color: var(--paper);
 }
 
 
@@ -493,7 +503,7 @@ ul li:focus-within>ul {
 }
 
 .Page {
-    width: 80vw;
+    width: 780px;
     margin: 30px auto;
     margin-bottom: 20vh;
 }

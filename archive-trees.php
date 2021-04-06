@@ -12,6 +12,8 @@ $otherOptions = array(
         'Fall Colors' => get_field_object('showy_seasonal_color'),
         'Fruit/Nut Producing' => get_field_object('fruitnut_producing'),
         'Evergreen' => get_field_object('evergreen'),
+        'Tree Rebate' => get_field_object('tree_rebate'),
+        'Riversmart Homes' => get_field_object('riversmart_homes'),
     );
 ?>
 
@@ -96,7 +98,6 @@ $otherOptions = array(
         if( have_posts() ) {
             while( have_posts() ) {
                 the_post();
-
                 $checkboxFields = '';
 
                 //get the size
@@ -115,7 +116,9 @@ $otherOptions = array(
                 if (get_fields()['prominent_flower'] ||
                 get_fields()['showy_seasonal_color'] ||
                 get_fields()['fruitnut_producing'] ||
-                get_fields()['evergreen'] ) {
+                get_fields()['evergreen'] ||
+                get_fields()['tree_rebate'] ||
+                get_fields()['riversmart_homes'] ) {
                     if(get_fields()['prominent_flower']) {
                         $checkboxFields = $checkboxFields.'prominent_flower';
                         $checkboxFields = $checkboxFields.' ';
@@ -130,6 +133,14 @@ $otherOptions = array(
                     }
                     if(get_fields()['evergreen']) {
                         $checkboxFields = $checkboxFields.'evergreen';
+                        $checkboxFields = $checkboxFields.' ';
+                    }
+                    if(get_fields()['tree_rebate']) {
+                        $checkboxFields = $checkboxFields.'tree_rebate';
+                        $checkboxFields = $checkboxFields.' ';
+                    }
+                    if(get_fields()['riversmart_homes']) {
+                        $checkboxFields = $checkboxFields.'riversmart_homes';
                         $checkboxFields = $checkboxFields.' ';
                     }
                 }
@@ -158,7 +169,7 @@ $otherOptions = array(
                         </div>
                     </div>
 
-                    <!-- use to display more tree options when developing change the variable on line 6 to true -->
+                    <!-- use to display more tree options when developing - change the variable on line 6 to true -->
                     <?php if($debugTreeFilters) { ?>
                         <p><?php echo get_fields()['light_conditions'] ?></p>
                         <p><?php 

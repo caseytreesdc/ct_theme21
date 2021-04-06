@@ -25,11 +25,15 @@ function loopOverTrees() {
       (checkbox[7].checked && specs.includes("showy_seasonal_color")) ||
       (checkbox[8].checked && specs.includes("fruitnut_producing")) ||
       (checkbox[9].checked && specs.includes("evergreen")) ||
+      (checkbox[10].checked && specs.includes("tree_rebate")) ||
+      (checkbox[11].checked && specs.includes("riversmart_homes")) ||
       !(
         checkbox[6].checked ||
         checkbox[7].checked ||
         checkbox[8].checked ||
-        checkbox[9].checked
+        checkbox[9].checked ||
+        checkbox[10].checked ||
+        checkbox[11].checked
       );
 
     tree.style.display = "none";
