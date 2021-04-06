@@ -849,44 +849,29 @@ main a:focus {
     color: var(--paarl);
 }
 
-.Plant__page-1-section-2-icons a:hover,
-.Plant__page-1-section-2-icons a:focus {
-    background: rgba(229, 230, 229, .6)
-}
-
-.Plant__page-1-section-2-icons a:hover,
-.Plant__page-1-section-2-icons a:focus {
-    background: rgba(229, 230, 229, .6)
-}
-
-.Plant__page-1-section-2-icons a:hover,
-.Plant__page-1-section-2-icons a:focus {
-    background: rgba(229, 230, 229, .6)
-}
-
-.Plant__page-1-section-2-icons a:hover,
-.Plant__page-1-section-2-icons a:focus {
-    background: rgba(229, 230, 229, .6)
-}
 
 .Plant__page-1-section-2-icons a:nth-child(1):hover img,
 .Plant__page-1-section-2-icons a:nth-child(1):focus img {
     border-color: var(--cobalt);
+    background: var(--cobalt);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(2):hover img,
 .Plant__page-1-section-2-icons a:nth-child(2):focus img {
     border-color: var(--moss);
+    background: var(--moss);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(3):hover img,
 .Plant__page-1-section-2-icons a:nth-child(3):focus img {
     border-color: var(--orange);
+    background: var(--orange);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(4):hover img,
 .Plant__page-1-section-2-icons a:nth-child(4):focus img {
     border-color: var(--paarl);
+    background: var(--paarl);
 }
 
 .Plant__page-1-section-2-p {
@@ -2622,7 +2607,6 @@ footer {
         margin: 0 auto;
     }
 
-
     .Plant__page-2-text-and-image,
     .Plant__page-3-text-and-image,
     .Plant__page-4-text-and-image,
@@ -2641,6 +2625,10 @@ footer {
     .Plant__page-5-image {
         margin: 20px 0;
         width: 700px;
+    }
+
+    .Plant__page-2-form-excerpt {
+        display: none;
     }
 
     .About__page-1-rings svg {
