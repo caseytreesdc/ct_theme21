@@ -497,11 +497,6 @@ ul li:focus-within>ul {
 /*	5.  Generic Page - page.php
 /* -------------------------------------------------------------------------- */
 
-.attachment-full {
-    /* width: 100%; */
-    /* height: auto; */
-}
-
 .Page {
     max-width: 780px;
     margin: 30px auto;
@@ -753,7 +748,7 @@ main a:focus {
 .main__page-5-section-icons svg {
     width: 6vw;
     height: 6vw;
-    padding: 1vh 2vw;
+    padding: 1vh 1vh;
 }
 
 .main__page-2-section-icons svg {
@@ -1616,7 +1611,7 @@ main a:focus {
     display: flex;
     flex-direction: column;
     max-width: 800px;
-    width: 90vw;
+    overflow: hidden;
     margin: 0 auto;
 }
 
@@ -1669,38 +1664,40 @@ main a:focus {
     text-decoration-color: var(--coffee);
 }
 
+.Leaflet__loop img {
+    max-width: 100%;
+    height: auto;
+}
+
 div.alignleft,
 img.alignleft {
     float: left;
     margin: 0 1em 1em 0;
+    max-width: 50%;
 }
 
 div.alignright,
 img.alignright {
     float: right;
     margin: 0 0 1em 1em;
-}
-
-div.alignright,
-img.alignright {
-    float: right;
-    margin: 0 0 1em 1em;
+    max-width: 50%;
 }
 
 img.aligncenter {
     display: block;
-    margin-left: auto;
-    margin-right: auto
+    margin: 1vh auto;
 }
 
 a img.alignright {
     float: right;
-    margin: 0 0 1em 1em
+    margin: 0 0 1em 1em;
+    max-width: 50%;
 }
 
 a img.alignleft {
     float: left;
-    margin: 0 1em 1em 0
+    margin: 0 1em 1em 0;
+    max-width: 50%;
 }
 
 a img.aligncenter {
@@ -2142,8 +2139,10 @@ body nav:last-of-type {
 /* -------------------------------------------------------------------------- */
 
 footer {
+    display: flex;
+    flex-direction: column;
     margin: 5vh 0 0 0;
-    max-width: 100vw;
+    clear: both;
 }
 
 .footer__section-1 {
