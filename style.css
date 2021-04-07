@@ -2832,6 +2832,8 @@ footer {
     }
 
     .Searchform__submit {
+        -webkit-appearance: none;
+        background: var(--yellow);
         font-family: var(--zeitung);
         text-transform: uppercase;
         border: 0;
