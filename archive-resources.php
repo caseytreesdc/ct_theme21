@@ -12,26 +12,31 @@
 <div class="Archive__home">
     <div class="Archive__posts-list">
         <?php
-if (have_posts())
-{
-    while (have_posts())
-    {   
-        the_post(); ?>
+            if (have_posts())
+            {
+                while (have_posts())
+                {   
+                    the_post(); ?>
                     <div class="Archive__post">
                         <?php
-        $image = get_field('image');
-        $size = 'large'; // (thumbnail, medium, large, full or custom size)
-        if ($image)
-        {
-            $imageSrc = wp_get_attachment_image_src($image, $size) [0]; ?>
-            <img
-            class="Archive__img"
-            src="<?php echo $imageSrc ?>"
-            alt=""
-            />
-            <?php
-        }
-?>
+                            if (get_field('image')) {
+                                $image = get_field('image');
+                            } else if (get_field('masthead')[0]['image']) {
+                                $image = get_field('masthead')[0]['image'];
+                            } else if (get_field('related_image')) { 
+                                $image = get_field('related_image');
+                            } else {
+                                $image = 14538;
+                            }
+                            
+                            $size = 'large'; // (thumbnail, medium, large, full or custom size)                    
+                            $imageSrc = wp_get_attachment_image_src($image, $size) [0];                    
+                        ?>
+                        <img
+                            class="Archive__img"
+                            src="<?php echo $imageSrc ?>"
+                            alt=""
+                        />
                         <div class="Archive__post-text">
                             <h3 class="Archive__post-title">
                                 <a class="Archive__post-title-a" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
