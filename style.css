@@ -752,8 +752,8 @@ main a:focus {
 .main__page-4-section-icons svg,
 .main__page-5-section-icons svg {
     width: 6vw;
-    height: auto;
-    padding: 1vw 2vw;
+    height: 6vw;
+    padding: 1vh 2vw;
 }
 
 .main__page-2-section-icons svg {
@@ -2542,8 +2542,7 @@ footer {
     .main__page-4-section-icons svg,
     .main__page-5-section-icons svg {
         width: 15vw;
-        height: auto;
-        padding: 1vw 2vw;
+        height: 15vw;
     }
 
     .footer__section-1 {
