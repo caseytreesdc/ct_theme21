@@ -61,7 +61,7 @@ function handleTrees() {
 }
 
 function handleTreeSelection() {
-  dropdown = document.getElementsByClassName("tree-dropdown")[0];
+  let dropdown = document.getElementsByClassName("tree-dropdown")[0];
   dropdown.addEventListener("change", () => {
     location.assign(dropdown[dropdown.selectedIndex].value);
   });
@@ -71,3 +71,4 @@ window.addEventListener("load", function () {
   handleTrees();
   handleTreeSelection();
 });
+

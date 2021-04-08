@@ -36,8 +36,9 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
 13.     General Archive     .Archive__
 14.     Resources           .Resources__
 15.     Trees               .trees-
-16.     Site Footer         .footer__
-17.     Breadcrumbs         .Breadcrumbs__
+16.     Tree Single         .Tree__
+17.     Site Footer         .footer__
+18.     Breadcrumbs         .Breadcrumbs__
 19.     Media Queries       @media
 
 ----------------------------------------------------------------------------- */
@@ -2135,13 +2136,132 @@ body nav:last-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	16. Site Footer - footer.php
+/*	16. Single Tree - single-trees.php
+/* -------------------------------------------------------------------------- */
+
+.Tree__masthead {
+    box-shadow: inset 0 7px 9px -7px var(--grey);
+    height: 470px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.Tree__masthead h2 {
+    color: var(--silver);
+    width: 66vw;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.Tree__Obrien-and-content {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    margin: 3vh auto;
+}
+
+.Tree__Obrien img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Tree__content {
+    width: 60%;
+}
+
+.Tree__content select {
+    border: solid 2px var(--silver);
+    border-radius: 5px;
+    width: 50%;
+    height: 6vh;
+    padding: 5px 20px 5px 5px;
+    margin: 2vh 0;
+    font-family: var(--lato);
+    display: flex;
+    justify-content: center;
+}
+
+.Tree__content summary {
+    font-family: var(--lato);
+}
+
+.Tree__image {
+    max-width: 100%;
+}
+
+.Tree__image:hover,
+.Tree__image:focus {
+    opacity: .7;
+}
+
+.Tree__gallery a {
+    text-decoration: none;
+}
+
+.Tree__gallery-1-columns {
+    width: 66vw;
+    margin: 5vh auto;
+}
+
+.Tree__gallery-2-columns {
+    width: max-content;
+    margin: 5vh auto;
+    display: flex;
+}
+
+.Tree__gallery-2-columns .Tree__image {
+    height: 40vh;
+    width: auto;
+    padding: 1vw;
+}
+
+.Tree__gallery-3-columns {
+    width: max-content;
+    margin: 5vh auto;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.Tree__gallery-3-columns .Tree__image {
+    height: 35vh;
+    width: auto;
+}
+
+.Tree__gallery-4-columns {
+    width: max-content;
+    margin: 5vh auto;
+}
+
+.Tree__gallery-4-columns .Tree__image {
+    height: 30vh;
+    width: auto;
+}
+
+.Tree__gallery-4-plus-columns {
+    width: 66vw;
+    margin: 0 auto;
+    /* Prevent vertical gaps */
+
+    line-height: 3;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 1;
+    -moz-column-count: 3;
+    -moz-column-gap: 1;
+    column-count: 3;
+    column-gap: 1;
+    column-width: 33%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	17. Site Footer - footer.php
 /* -------------------------------------------------------------------------- */
 
 footer {
     display: flex;
     flex-direction: column;
-    margin: 5vh 0 0 0;
+    margin: 0;
     clear: both;
 }
 
@@ -2354,7 +2474,7 @@ footer {
 
 
 /* -------------------------------------------------------------------------- */
-/*	17. Breadcrumbs (not in use)
+/*	18. Breadcrumbs (not in use)
 /* -------------------------------------------------------------------------- */
 
 .Breadcrumbs {
@@ -2373,7 +2493,7 @@ footer {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	18. Media Queries
+/*	19. Media Queries
 /* -------------------------------------------------------------------------- */
 
 /* Smaller than 1280, like a resized window on a laptop */
@@ -2621,6 +2741,15 @@ footer {
         align-items: center;
     }
 
+    .Plant-page-3-text,
+    .Plant__page-3-text-h2,
+    .Plant__page-3-text p,
+    .Plant-page-5-text,
+    .Plant__page-5-text-h2,
+    .Plant__page-5-text p {
+        text-align: left;
+    }
+
     .Plant__page-2-text,
     .Plant__page-2-image,
     .Plant__page-3-text,
@@ -2776,6 +2905,40 @@ footer {
     .trees-list-p {
         width: 100%;
     }
+
+    .Tree__Obrien img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Tree__gallery-1-columns,
+    .Tree__gallery-2-columns,
+    .Tree__gallery-3-columns,
+    .Tree__gallery-4-columns,
+    .Tree__gallery-4-plus-columns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        line-height: 1;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 1;
+        -moz-column-count: 1;
+        -moz-column-gap: 1;
+        column-count: 1;
+        column-gap: 0;
+        column-width: 100%;
+    }
+
+    .Tree__gallery-1-columns .Tree__image,
+    .Tree__gallery-2-columns .Tree__image,
+    .Tree__gallery-3-columns .Tree__image,
+    .Tree__gallery-4-columns .Tree__image,
+    .Tree__gallery-4-plus-columns .Tree__image {
+        width: 100%;
+        padding: 0;
+        height: auto;
+    }
 }
 
 /* Small tablets and then iPhones (414) and Pixels (412)  */
@@ -2840,6 +3003,32 @@ footer {
         padding: 0;
         font-size: 18px;
         width: 100%;
+    }
+
+    .Tree__masthead {
+        height: 40vh;
+    }
+
+    .Tree__masthead h2 {
+        color: var(--silver);
+        width: 90vw;
+        font-size: 40px;
+    }
+
+    .Tree__Obrien-and-content {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .Tree__content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .Tree__Obrien img {
+        width: 200px;
+        height: 200px;
     }
 }
 
