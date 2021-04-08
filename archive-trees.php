@@ -71,9 +71,16 @@ $otherOptions = array(
             <select class="tree-dropdown">
                 <option value="/trees-list/">Select a Tree</option>
                 <?php
-                    if ( have_posts() ) {
-                        while (have_posts() ) {
-                            the_post(); ?>
+                    $treeArgs = array(  
+                        'post_type' => 'trees',
+                        'orderby' => 'title',
+                        'order' => 'ASC'
+                    );
+
+                    $treeQuery = new WP_query($treeArgs);
+                    if ( $treeQuery->have_posts() ) {
+                        while ( $treeQuery->have_posts() ) {
+                            $treeQuery->the_post(); ?>
                             <option
                                 class="tree-select"
                                 value="<?php the_permalink();?>"
@@ -95,9 +102,10 @@ $otherOptions = array(
             The trees in this guide are well adapted to the soil and conditions present in Washington, D.C. We encourage you to plant medium and larger-sized trees, as they provide greater benefits to the city than smaller trees. Young trees require 1.5 inches of rain or 25 gallons of water per week for the first three years to establish their roots.
         </p>
     <?php
-        if( have_posts() ) {
-            while( have_posts() ) {
-                the_post();
+        if( $treeQuery->have_posts() ) {
+            while( $treeQuery->have_posts() ) {
+                $treeQuery->the_post();
+                
                 $checkboxFields = '';
 
                 //get the size
