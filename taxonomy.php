@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 
 <section class="Archive__section-title">
-<?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?> 
-  <h1 class="Archive__title-padded"><?php echo $term->name ?></h1>
+    <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); ?> 
+            <h1 class="Archive__title-padded"><?php echo $term->name ?></h1>
+        <?php if($term->description) { ?>
+            <h2><?php echo $term->description ?></h2>
+        <?php } ?>
 </section>
 
 <?php the_posts_pagination(array(

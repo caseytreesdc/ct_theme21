@@ -1736,6 +1736,12 @@ p.wp-caption-text {
     margin: 0;
 }
 
+.Archive__section-title h2 {
+    font-family: var(--lato);
+    font-size: 18px;
+    font-weight: normal;
+}
+
 .Archive__home {
     display: flex;
     flex-direction: column;
