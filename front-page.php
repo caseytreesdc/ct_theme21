@@ -24,7 +24,7 @@
     >
       <h2 class="main__page-1-section-1-h2">
         Empowering communities <br />
-        in DC <i>through trees</i>
+        <i>through trees</i>
       </h2>
       <!-- Begin Module Typeform Button  -->
     <a class="typeform-share button" href="https://form.typeform.com/to/mnnpM5l1?typeform-medium=embed-snippet" data-mode="popup" style="" data-size="100" target="_blank">FFS Typeform</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
@@ -55,9 +55,9 @@
     </section>
     <section class="main__page-2-section-2">
       <p class="main__page-2-section-2-p">
-        WITH OUR DISTRICT PARTNERS AND THOUSANDS OF LOCAL VOLUNTEERS, WE
+        WITH OUR PARTNERS AND THOUSANDS OF LOCAL VOLUNTEERS, WE
         <a class="grey-highlight main__page-2-section-2-a" href="/plant/"
-          >PLANT 3,000+ TREES</a
+          >PLANT 4,000+ TREES</a
         > EVERY YEAR TO REACH OUR COLLECTIVE GOAL OF 40% TREE CANOPY BY 2032.
       </p>
     </section>
@@ -86,7 +86,7 @@
           href="/resources-list/"
           class="main__page-3-section-2-a grey-highlight"
           >TECHNICAL SKILLS + KNOWLEDGE</a
-        > TO FOSTER A HEALTHY, MATURE TREE CANOPY IN DC.
+        > TO FOSTER A HEALTHY, MATURE TREE CANOPY.
       </p>
     </section>
     <section class="main__page-3-section-icons">
