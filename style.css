@@ -1210,7 +1210,7 @@ main a:focus {
 }
 
 .About__page-1-rings svg {
-    width: 60vw;
+    width: 30vw;
 }
 
 .About__page-1-links {
@@ -2480,6 +2480,83 @@ footer {
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*	18. Modules
+/* -------------------------------------------------------------------------- */
+.Module__secondary-content {
+    margin-top: 5vh;
+}
+
+.Module__secondary-content h3 {
+    font-family: var(--lato);
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.Module__three-column-articles {
+    display: flex;
+    width: 80vw;
+    margin: 5vh auto;
+    justify-content: space-around;
+}
+
+.Module__three-column-articles img {
+    border-radius: 5px;
+    width: 22vw;
+    height: 22vh;
+    object-fit: cover;
+}
+
+.Module__three-column-articles a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: var(--lato);
+    color: var(--grey);
+}
+
+.Module__three-column-articles p {
+    color: var(--paarl);
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.Module__full-width-cta div {
+    width: 25%;
+    padding: 2vh 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.Module__full-width-cta h2 {
+    /* margin: 0; */
+    font-family: var(--cronos);
+    font-size: 36px;
+    color: var(--paper);
+    font-weight: normal;
+}
+
+.Module__full-width-cta p {
+    font-family: var(--lato);
+    color: var(--coffee);
+    font-size: 18px;
+}
+
+.Module__full-width-cta a {
+    font-family: var(--zeitung);
+    background: var(--coffee);
+    color: var(--paper);
+    text-decoration: none;
+    padding: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.Module__full-width-cta a:hover {
+    background: rgba(44, 16, 16, .7);
+}
 /* -------------------------------------------------------------------------- */
 /*	18. Breadcrumbs (not in use)
 /* -------------------------------------------------------------------------- */

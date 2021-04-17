@@ -1,3 +1,4 @@
+<?php /* Template Name: Modules Page */ ?>
 <?php get_header(); ?>
 <div class="About">
   <div class="About__page-1">
@@ -5,9 +6,9 @@
       Our mission is to restore, enhance, & protect the tree canopy of our
       nation’s capital.
     </h1>
-    <p class="About__page-1-p">
+    <!-- <p class="About__page-1-p">
       Hover over the rings to learn how Casey Trees came to be.
-    </p>
+    </p> -->
   </div>
   <div class="About__page-1-rings">
     <?php get_template_part('svgs/inline', 'rings') ?>
@@ -53,5 +54,6 @@
       >
     </div>
   </div>
+  <?php get_template_part('template-parts/acf', 'modules') ?>
 </div>
 <?php get_footer(); ?>
