@@ -502,7 +502,6 @@ ul li:focus-within>ul {
 .Page {
     max-width: 780px;
     margin: 30px auto;
-    margin-bottom: 20vh;
 }
 
 .Page img {
@@ -2484,7 +2483,8 @@ footer {
 /*	18. Modules
 /* -------------------------------------------------------------------------- */
 .Module__secondary-content {
-    margin-top: 5vh;
+    margin: 5vh auto;
+    max-width: 60vw;
 }
 
 .Module__secondary-content h3 {
@@ -2539,8 +2539,8 @@ footer {
 
 .Module__full-width-cta p {
     font-family: var(--lato);
-    color: var(--coffee);
-    font-size: 18px;
+    color: var(--silver);
+    font-size: 22px;
 }
 
 .Module__full-width-cta a {
@@ -2557,6 +2557,69 @@ footer {
 .Module__full-width-cta a:hover {
     background: rgba(44, 16, 16, .7);
 }
+
+.Module__four-column-ctas-h2 {
+    font-weight: normal;
+    font-size: 34px;
+    text-align: center;
+}
+
+.Module__four-column-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.Module__four-column-ctas-a {
+    text-align: center;
+    text-decoration: none;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    margin: 5px;
+    /* max-width: 300px; */
+}
+
+.Module__four-column-ctas-a>img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    opacity: .8;
+    border-radius: 5%;
+}
+
+.Module__four-column-ctas-a>h3 {
+    font-family: var(--lato);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.Module__four-column-ctas-a>p {
+    width: 250px;
+}
+
+.Module__four-column-ctas-a:hover>img,
+.Module__four-column-ctas-a:focus>img {
+    opacity: 1;
+}
+
+.Module__four-column-ctas-a:hover>h3,
+.Module__four-column-ctas-a:focus>h3 {
+    background: var(--forest);
+    color: var(--paper);
+}
+
+.Module__four-column-ctas-a:hover>p,
+.Module__four-column-ctas-a:focus>p {
+    opacity: 1;
+}
+
+
 /* -------------------------------------------------------------------------- */
 /*	18. Breadcrumbs (not in use)
 /* -------------------------------------------------------------------------- */
