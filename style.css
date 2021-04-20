@@ -2498,13 +2498,7 @@ footer {
     width: 80vw;
     margin: 5vh auto;
     justify-content: space-around;
-}
-
-.Module__three-column-articles img {
-    border-radius: 5px;
-    width: 22vw;
-    height: 22vh;
-    object-fit: cover;
+    flex-wrap: wrap;
 }
 
 .Module__three-column-articles a {
@@ -2513,6 +2507,14 @@ footer {
     text-decoration: none;
     font-family: var(--lato);
     color: var(--grey);
+    padding: 3vh 0;
+}
+
+.Module__three-column-articles img {
+    border-radius: 5px;
+    width: 316px;
+    height: 176px;
+    object-fit: cover;
 }
 
 .Module__three-column-articles p {
