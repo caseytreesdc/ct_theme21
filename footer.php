@@ -1,6 +1,16 @@
 </div>
 <!-- End main content module - opens at header.php -->
-
+<!-- Begin Get Updates  -->
+<?php
+    $hideGetUpdatesTab = get_fields()['hide_get_updates_tab'];
+    if (!$hideGetUpdatesTab) { ?>
+        <div class="Updates">
+            <h3>Get Updates</h3>
+            <?php get_template_part('template-parts/nmc', 'getUpdates'); ?>
+        </div>
+    <?php }
+?>
+<!-- End Get_updates -->
 </body>
     <!-- Begin Modules Footer -->
     <footer class="footer__container">

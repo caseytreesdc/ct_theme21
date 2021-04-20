@@ -30,17 +30,23 @@ Tags: featured-images accessible classic-editor advanced-custom-fields
  6.     Home                .main__
  7.     Plant               .Plant__
  8.     Farm                .Farm__
+ 9.     About Us            .About__
 10.     Get Involved        .Get__
 11.     Blog Posts          .Blog__
 12.     Leaflet             .Leaflet__
 13.     General Archive     .Archive__
 14.     Resources           .Resources__
 15.     Trees               .trees-
-16.     Tree Single         .Tree__
-18.     Tribe Events        --------
-19.     Site Footer         .footer__
+16.     Single Tree         .Tree__
+17.     Get Updates         .Updates__
+18.     Site Footer         .footer__
+19.     Modules             .Module__
 20.     Breadcrumbs         .Breadcrumbs__
-21.     Media Queries       @media
+21.     Media Queries       @media max-width
+                            1279    resized window
+                            768     tablet
+                            540     small tablets/iphones/pixels
+                            320     small phones   
 
 ----------------------------------------------------------------------------- */
 
@@ -606,13 +612,6 @@ main a:focus {
 
 .motto a {
     text-decoration: none;
-}
-
-/* why is this here?  */
-@media only screen and (min-width: 1280px) {
-    .motto {
-        width: 30%;
-    }
 }
 
 .main__page-1-section-3 {
@@ -2261,7 +2260,60 @@ body nav:last-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	17. Site Footer - footer.php
+/*	17. Get Updates - nmc-getUpdates.php
+/* -------------------------------------------------------------------------- */
+
+.Updates {
+    background: var(--silver);
+    text-align: center;
+}
+
+.Updates h3 {
+    font-family: var(--lato);
+    font-size: 30px;
+    margin: 0;
+    padding: 3vh 0 0 0;
+}
+
+.Updates .wForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Updates input[type=text] {
+    font-family: var(--lato);
+    padding: 0 15px;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 1.2;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    -webkit-box-shadow: 0 0 0 0 #fff;
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.Updates .errMsg {
+    font-family: var(--lato);
+}
+
+.Updates .g-recaptcha>div {
+    margin: 0 auto;
+}
+
+.Updates input[type=submit] {
+    font-family: var(--lato);
+    width: 200px;
+    height: 46px;
+    text-transform: uppercase;
+}
+
+.Updates .captchaHelp {
+    font-family: var(--lato);
+}
+
+/* -------------------------------------------------------------------------- */
+/*	18. Site Footer - footer.php
 /* -------------------------------------------------------------------------- */
 
 footer {
@@ -2480,7 +2532,7 @@ footer {
 
 
 /* -------------------------------------------------------------------------- */
-/*	18. Modules
+/*	19. Modules
 /* -------------------------------------------------------------------------- */
 .Module__secondary-content {
     margin: 5vh auto;
@@ -2623,7 +2675,7 @@ footer {
 
 
 /* -------------------------------------------------------------------------- */
-/*	18. Breadcrumbs (not in use)
+/*	20. Breadcrumbs (not in use)
 /* -------------------------------------------------------------------------- */
 
 .Breadcrumbs {
@@ -2642,7 +2694,7 @@ footer {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	19. Media Queries
+/*	21. Media Queries
 /* -------------------------------------------------------------------------- */
 
 /* Smaller than 1280, like a resized window on a laptop */
@@ -2683,6 +2735,10 @@ footer {
         display: inline;
         color: var(--coffee);
         padding: 5vw 0;
+    }
+
+    .motto {
+        width: 30%;
     }
 
     .Farm__page-1-title {
@@ -2978,7 +3034,6 @@ footer {
     .Blog__Feature-image-img {
         height: 50vh;
         width: 100%;
-        /* object-fit: scale-down; */
     }
 
     .Blog__Recents {
