@@ -647,7 +647,7 @@ main a:focus {
 .main__page-3,
 .main__page-4,
 .main__page-5 {
-    background: var(--paper);
+    background: var(--paper);padding
 }
 
 .main__page-2-section-1,
@@ -784,6 +784,7 @@ main a:focus {
     /* height: 70vh; */
     display: flex;
     flex-direction: column;
+    padding-bottom: 4vh;
 }
 
 .main__page-5-section-2-p {
@@ -2266,6 +2267,7 @@ body nav:last-of-type {
 .Updates {
     background: var(--silver);
     text-align: center;
+    padding: 2vh 0;
 }
 
 .Updates h3 {
@@ -2537,6 +2539,7 @@ footer {
 .Module__secondary-content {
     margin: 5vh auto;
     max-width: 60vw;
+    overflow: hidden;
 }
 
 .Module__secondary-content h3 {
@@ -2557,9 +2560,8 @@ footer {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    font-family: var(--lato);
-    color: var(--grey);
     padding: 3vh 0;
+    width: 316px;
 }
 
 .Module__three-column-articles img {
@@ -2567,6 +2569,13 @@ footer {
     width: 316px;
     height: 176px;
     object-fit: cover;
+    opacity: .8;
+}
+
+.Module__three-column-articles h3 {
+    margin: 0;
+    font-family: var(--lato);
+    color: var(--coffee);
 }
 
 .Module__three-column-articles p {
@@ -2575,26 +2584,47 @@ footer {
     font-weight: bold;
 }
 
+.Module__three-column-articles a:hover img,
+.Module__three-column-articles a:focus img {
+    opacity: 1;
+}
+
+.Module__three-column-articles a:hover h3,
+.Module__three-column-articles a:focus h3 {
+    color: var(--coffee);
+}
+
+.Module__three-column-articles a:hover p,
+.Module__three-column-articles a:focus p {
+    color: var(--forest);
+}
+
+.Module__full-width-cta {
+    height: 66vh;
+}
 
 .Module__full-width-cta div {
-    width: 25%;
-    padding: 2vh 4vw;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 66vh;
 }
 
 .Module__full-width-cta h2 {
-    /* margin: 0; */
     font-family: var(--cronos);
     font-size: 36px;
     color: var(--paper);
     font-weight: normal;
+    width: 80%;
 }
 
 .Module__full-width-cta p {
     font-family: var(--lato);
     color: var(--silver);
     font-size: 22px;
+    width: 80%;
 }
 
 .Module__full-width-cta a {
@@ -2603,9 +2633,11 @@ footer {
     color: var(--paper);
     text-decoration: none;
     padding: 14px;
+    width: 80%;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
+
 }
 
 .Module__full-width-cta a:hover {
@@ -2636,7 +2668,7 @@ footer {
     align-items: center;
     padding: 2px;
     margin: 5px;
-    /* max-width: 300px; */
+    width: 300px;
 }
 
 .Module__four-column-ctas-a>img {
@@ -2737,10 +2769,6 @@ footer {
         padding: 5vw 0;
     }
 
-    .motto {
-        width: 30%;
-    }
-
     .Farm__page-1-title {
         font-size: 6vw;
     }
@@ -2831,6 +2859,12 @@ footer {
 
     .Resources__section-tagslist>li ul {
         height: 20vw;
+    }
+
+    .Module__full-width-cta div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 

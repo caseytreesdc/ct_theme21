@@ -12,7 +12,7 @@ foreach($posts as $index => $postArray) {
                 wp_get_attachment_image_src(
                     get_fields()['related_image'], 'large')[0] ?>" 
         >
-        <?php the_title(); ?>
+        <h3><?php the_title(); ?></h3>
         <p>READ MORE</p>
     </a>
 
