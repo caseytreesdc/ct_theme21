@@ -647,7 +647,7 @@ main a:focus {
 .main__page-3,
 .main__page-4,
 .main__page-5 {
-    background: var(--paper);padding
+    background: var(--paper);
 }
 
 .main__page-2-section-1,
