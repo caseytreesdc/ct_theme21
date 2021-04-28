@@ -6,6 +6,12 @@
             <?php the_content() ?>
         </section>
         <section class="Plant__page-1-section-2-icons">
+            <a href="#consultation"><div class="Plant__page-1-section-2-icon-w-text">
+                <img
+                    src="<?php echo get_fields()['consultation_image']['url']; ?>"
+                >
+                <p class="Plant__page-1-section-2-p">CONSULTATION</p>
+            </div></a>
             <a href="#home"><div class="Plant__page-1-section-2-icon-w-text">
                 <img
                     src="<?php echo get_fields()['home_image']['url']; ?>"
@@ -41,6 +47,23 @@
                 </a>
             </p>
         </section>
+    </div>
+    <div id="consultation" class="Plant__page-15">
+        <div class="Plant__page-15-text-and-image">
+            <img 
+                class="Plant__page-15-image" 
+                src="<?php echo get_fields()['consultation_image']['url']; ?>"
+            >
+            <div class="Plant__page-15-text">
+                <h2 class="Plant__page-15-text-h2">Consultation</h2>
+                <?php echo get_fields()['consultation_text']?>
+                <p class="Plant__page-15-text-p">
+                    <a href="/plant/school-tree-planting/" class="Plant__page-15-text-p-a">
+                        INQUIRY
+                    </a>
+                </p>
+            </div>
+        </div>
     </div>
     <div id="home" class="Plant__page-2">
         <div class="Plant__page-2-text-and-image">

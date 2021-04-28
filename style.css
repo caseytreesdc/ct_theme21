@@ -271,8 +271,10 @@ input[type=button] {
     text-transform: capitalize;
 }
 
+
 #menu-item-18039 .sub-menu {
-    right: 0px;
+    /* right: 0px; */
+    /* uncomment the above line to make the sub-menu open to the left  */
 }
 
 /*
@@ -348,18 +350,17 @@ ul li:focus-within>ul {
 .Mobile-Nav__ul li div:hover,
 .Mobile-Nav__ul li div:focus,
 .Mobile-Nav__ul li div:hover a {
-    background: var(--cobalt);
+    background: var(--forest);
     color: var(--paper);
     cursor: pointer;
 }
 
 .Mobile-Nav__ul .highlight {
-    background: var(--paarl);
-    color: var(--paper);
+    background: var(--yellow);
 }
 
 .Mobile-Nav__ul .highlight>div>a {
-    color: var(--paper);
+    color: var(--coffee);
 }
 
 .subnav-toggle {
@@ -519,18 +520,28 @@ ul li:focus-within>ul {
     box-shadow: inset 0 7px 9px -7px var(--grey);
     height: 470px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .tall-masthead {
     height: 70vh;
 }
 
-.Page__h1 {
+.Page__heading-text {
     width: 80%;
-    margin: 5vh auto;
+    margin: 0 auto 5vh auto;
+}
+
+.Page__title {
+    margin: 0;
     font-size: 56px;
     color: var(--silver);
+}
+
+.Page__subtitle {
+    color: var(--silver);
+    margin: 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -828,51 +839,61 @@ main a:focus {
     border-radius: 50%;
     border: 2px solid var(--coffee);
     padding: 4px;
-    width: 13vw;
-    min-width: 140px;
+    width: 150px;
 }
 
 .Plant__page-1-section-2-icons a:nth-child(1):hover p,
 .Plant__page-1-section-2-icons a:nth-child(1):focus p {
-    color: var(--cobalt);
+    color: var(--forest);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(2):hover p,
 .Plant__page-1-section-2-icons a:nth-child(2):focus p {
-    color: var(--moss);
+    color: var(--cobalt);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(3):hover p,
 .Plant__page-1-section-2-icons a:nth-child(3):focus p {
-    color: var(--orange);
+    color: var(--moss);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(4):hover p,
 .Plant__page-1-section-2-icons a:nth-child(4):focus p {
+    color: var(--orange);
+}
+
+.Plant__page-1-section-2-icons a:nth-child(5):hover p,
+.Plant__page-1-section-2-icons a:nth-child(5):focus p {
     color: var(--paarl);
 }
 
 
 .Plant__page-1-section-2-icons a:nth-child(1):hover img,
 .Plant__page-1-section-2-icons a:nth-child(1):focus img {
-    border-color: var(--cobalt);
-    background: var(--cobalt);
+    border-color: var(--forest);
+    background: var(--forest);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(2):hover img,
 .Plant__page-1-section-2-icons a:nth-child(2):focus img {
-    border-color: var(--moss);
-    background: var(--moss);
+    border-color: var(--cobalt);
+    background: var(--cobalt);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(3):hover img,
 .Plant__page-1-section-2-icons a:nth-child(3):focus img {
-    border-color: var(--orange);
-    background: var(--orange);
+    border-color: var(--moss);
+    background: var(--moss);
 }
 
 .Plant__page-1-section-2-icons a:nth-child(4):hover img,
 .Plant__page-1-section-2-icons a:nth-child(4):focus img {
+    border-color: var(--orange);
+    background: var(--orange);
+}
+
+.Plant__page-1-section-2-icons a:nth-child(5):hover img,
+.Plant__page-1-section-2-icons a:nth-child(5):focus img {
     border-color: var(--paarl);
     background: var(--paarl);
 }
@@ -892,6 +913,7 @@ main a:focus {
     color: var(--cobalt);
 }
 
+.Plant__page-15,
 .Plant__page-2,
 .Plant__page-3,
 .Plant__page-4,
@@ -899,6 +921,7 @@ main a:focus {
     margin: 30px 0;
 }
 
+.Plant__page-15-text-and-image,
 .Plant__page-2-text-and-image,
 .Plant__page-3-text-and-image,
 .Plant__page-4-text-and-image,
@@ -908,6 +931,8 @@ main a:focus {
     justify-content: space-between;
 }
 
+.Plant__page-15-text,
+.Plant__page-15-image,
 .Plant__page-2-text,
 .Plant__page-2-image,
 .Plant__page-3-text,
@@ -919,6 +944,35 @@ main a:focus {
     margin: 0 20px;
     width: 420px;
     object-fit: scale-down;
+}
+
+.Plant-page-15-text {
+    text-align: right;
+}
+
+.Plant__page-15-text-h2 {
+    font-size: 56px;
+    font-family: var(--cronos);
+    color: var(--forest);
+    text-align: right;
+}
+
+.Plant__page-15-text p {
+    font-size: 20px;
+    color: var(--americano);
+    text-align: right;
+}
+
+.Plant__page-15-text-p-a {
+    padding: 20px;
+    font-size: 16px;
+    font-family: var(--zeitung);
+    color: var(--coffee);
+}
+
+.Plant__page-15-text-p-a:hover {
+    color: var(--forest);
+    background: var(--silver);
 }
 
 .Plant__page-2-text-h2 {
@@ -2079,6 +2133,7 @@ body nav:last-of-type {
 }
 
 .trees-list-p {
+    max-height: 150px;
     width: 60vw;
     padding: 3vw;
     background: var(--forest);
@@ -2972,7 +3027,7 @@ footer {
         margin: 0 auto;
     }
 
-    .Plant__page-2-text-and-image,
+    .Plant__page-15-text-and-image .Plant__page-2-text-and-image,
     .Plant__page-3-text-and-image,
     .Plant__page-4-text-and-image,
     .Plant__page-5-text-and-image {
@@ -2989,7 +3044,8 @@ footer {
         text-align: left;
     }
 
-    .Plant__page-2-text,
+    .Plant__page-15-text,
+    .Plant__page-15-image .Plant__page-2-text,
     .Plant__page-2-image,
     .Plant__page-3-text,
     .Plant__page-3-image,
@@ -3278,6 +3334,8 @@ footer {
         margin: 0 auto;
     }
 
+    .Plant__page-15-text,
+    .Plant__page-15-image,
     .Plant__page-2-text,
     .Plant__page-2-image,
     .Plant__page-3-text,

@@ -13,6 +13,12 @@
         if ( get_field('masthead')[0]['tall']) {
           $mastheadClassList .= " tall-masthead";
         }
+        
+        $title = get_field('masthead')[0]['title'];
+        $subtitle = get_field('masthead')[0]['excerpt'];
+        if (!$title) {
+          $title = get_the_title();
+        } 
 ?>
 
 <div
@@ -23,15 +29,19 @@
       rgba(44, 16, 16, 0),
       rgba(44, 16, 16, 0),
       rgba(44, 16, 16, .4),
-      rgba(44, 16, 16, 1)
-      ),
+      rgba(44, 16, 16, 1)),
       url(<?php echo $mastheadSRC ?>);
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
   "
 >
-  <h1 class="Page__h1"><?php the_title();?></h1>
+  <div class="Page__heading-text">
+    <h1 class="Page__title"><?php echo $title ?></h1>
+    <?php if ($subtitle) { ?>
+      <p class="Page__subtitle"><?php echo $subtitle ?></p>
+    <?php }?>  
+  </div>
 </div>
 <div class="Page">
   <?php the_content();?>
