@@ -2762,7 +2762,81 @@ footer {
 
 
 /* -------------------------------------------------------------------------- */
-/*	20. Breadcrumbs (not in use)
+/*	20. Tribe Events (not in use)
+/* -------------------------------------------------------------------------- */
+
+.tribe-events-pg-template label,
+.tribe-events-pg-template input,
+.tribe-events-pg-template button,
+.tribe-events-pg-template .tribe-events-calendar th,
+.tribe-events-pg-template .tribe-events-calendar td,
+.tribe-events-cost,
+.tribe-events-single-section,
+.tribe-events-single-section-title {
+    font-family: var(--lato);
+}
+
+.tribe-events-pg-template .tribe-events-nav-pagination {
+    background: var(--paper);
+}
+
+.tribe-events-pg-template #tribe-events-footer {
+    display: none;
+}
+
+.tribe-events-ical,
+.tribe-events-gcal {
+    display: none !important;
+    /* why do we need !important here??  */
+}
+
+.tribe-events-single-event-description li {
+    list-style-position: inside;
+}
+
+.tribe-events-notices {
+    background: var(--forest);
+    border: none;
+    text-shadow: none;
+}
+
+.tribe-events-notices li {
+    color: var(--paper);
+}
+
+.tribe-events-single-section {
+    border-radius: 5px;
+    background: var(--moss);
+}
+
+/* 
+.tribe-events-single-section a {
+    text-decoration: underline !important;
+    color: var(--silver);
+} */
+
+.tribe-events-event-meta a {
+    text-decoration: underline !important;
+    color: var(--silver);
+}
+
+.tribe-events-event-meta a:hover,
+.tribe-events-event-meta a:focus {
+    color: var(--cobalt);
+}
+
+.tribe-events-single-section dt {
+    color: var(--coffee);
+    font-weight: bold;
+}
+
+.tribe-events-single-section dd {
+    color: var(--coffee);
+    margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*	21. Breadcrumbs (not in use)
 /* -------------------------------------------------------------------------- */
 
 .Breadcrumbs {
@@ -2781,7 +2855,7 @@ footer {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	21. Media Queries
+/*	22. Media Queries
 /* -------------------------------------------------------------------------- */
 
 /* Smaller than 1280, like a resized window on a laptop */
