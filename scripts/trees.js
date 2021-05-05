@@ -2,11 +2,11 @@ function loopOverTrees() {
   let checkbox = document.getElementsByClassName("tree-checkbox");
   let list = document.getElementsByClassName("tree-thumbnail");
 
-  for (i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i++) {
     let tree = list[i];
     let specs = tree.dataset.fields;
 
-    // console.log(specs);
+    console.log(specs);
 
     let sizeTF =
       (checkbox[0].checked && specs.includes("small")) ||
@@ -20,21 +20,38 @@ function loopOverTrees() {
       (checkbox[5].checked && specs.includes("full-sun")) ||
       !(checkbox[3].checked || checkbox[4].checked || checkbox[5].checked);
 
-    let otherTF =
-      (checkbox[6].checked && specs.includes("prominent_flower")) ||
-      (checkbox[7].checked && specs.includes("showy_seasonal_color")) ||
-      (checkbox[8].checked && specs.includes("fruitnut_producing")) ||
-      (checkbox[9].checked && specs.includes("evergreen")) ||
-      (checkbox[10].checked && specs.includes("tree_rebate")) ||
-      (checkbox[11].checked && specs.includes("riversmart_homes")) ||
-      !(
-        checkbox[6].checked ||
-        checkbox[7].checked ||
-        checkbox[8].checked ||
-        checkbox[9].checked ||
-        checkbox[10].checked ||
-        checkbox[11].checked
-      );
+    let otherTF = true;
+
+    if (checkbox[6].checked) {
+      if (specs.includes("prominent_flower") === false) {
+        otherTF = false;
+      }
+    }
+    if (checkbox[7].checked) {
+      if (specs.includes("showy_seasonal_color") === false) {
+        otherTF = false;
+      }
+    }
+    if (checkbox[8].checked) {
+      if (specs.includes("fruitnut_producing") === false) {
+        otherTF = false;
+      }
+    }
+    if (checkbox[9].checked) {
+      if (specs.includes("evergreen") === false) {
+        otherTF = false;
+      }
+    }
+    if (checkbox[10].checked) {
+      if (specs.includes("tree_rebate") === false) {
+        otherTF = false;
+      }
+    }
+    if (checkbox[11].checked) {
+      if (specs.includes("riversmart_homes") === false) {
+        otherTF = false;
+      }
+    }
 
     tree.style.display = "none";
 
@@ -71,4 +88,3 @@ window.addEventListener("load", function () {
   handleTrees();
   handleTreeSelection();
 });
-

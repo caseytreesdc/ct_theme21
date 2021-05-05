@@ -2,8 +2,8 @@
 
 <?php 
 
-// uncomment next line and make true to display tree properties
-// $debugTreeFilters = false;
+// uncomment next line to display tree properties
+// $debugTreeFilters = true;
 
 $sizes = get_field_object('field_585adaf7b2ac9');
 $lightConditions = get_field_object('field_585adabdb2ac4');
@@ -98,9 +98,11 @@ $otherOptions = array(
     </div>
 
     <div class="trees-list">
-        <p class="trees-list-p">
-            The trees in this guide are well adapted to the soil and conditions present in Washington, D.C. We encourage you to plant medium and larger-sized trees, as they provide greater benefits to the city than smaller trees. Young trees require 1.5 inches of rain or 25 gallons of water per week for the first three years to establish their roots.
-        </p>
+        <div class="tree-text-thumbnail">
+            <p>
+                The trees in this guide are well adapted to the soil and conditions present in Washington, D.C. We encourage you to plant medium and larger-sized trees, as they provide greater benefits to the city than smaller trees. Young trees require 1.5 inches of rain or 25 gallons of water per week for the first three years to establish their roots.
+            </p>
+        </div>
     <?php
         if( $treeQuery->have_posts() ) {
             while( $treeQuery->have_posts() ) {

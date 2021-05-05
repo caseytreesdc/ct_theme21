@@ -2091,7 +2091,7 @@ body nav:last-of-type {
     margin-top: 3vh;
     width: 90vw;
     display: none;
-    background: var(--moss);
+    background: var(--americano);
     border-radius: 5px;
 }
 
@@ -2163,15 +2163,6 @@ body nav:last-of-type {
     width: 75vw;
 }
 
-.trees-list-p {
-    max-height: 150px;
-    width: 60vw;
-    padding: 3vw;
-    background: var(--forest);
-    color: var(--paper);
-    border-radius: 5px;
-}
-
 .trees-list a {
     opacity: 1;
     text-decoration: none;
@@ -2185,6 +2176,25 @@ body nav:last-of-type {
 .trees-list a:hover h2,
 .trees-list a:focus h2 {
     color: var(--forest);
+}
+
+.tree-text-thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    max-height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 1vw;
+    background: var(--forest);
+}
+
+.tree-text-thumbnail>p {
+    margin: 0;
+    width: 85%;
+    color: var(--paper);
 }
 
 .tree-thumbnail {
@@ -3299,6 +3309,7 @@ footer {
         min-height: 100vh;
     }
 
+
     .tree-filter {
         display: none;
         position: static;
@@ -3314,10 +3325,6 @@ footer {
 
     .trees-list {
         width: 90vw;
-    }
-
-    .trees-list-p {
-        width: 100%;
     }
 
     .Tree__Obrien img {
