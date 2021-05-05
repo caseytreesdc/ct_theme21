@@ -177,8 +177,38 @@ input[type=button] {
 /* -------------------------------------------------------------------------- */
 
 .screen-reader-text {
-    /* applies to pagination adn search form */
+    /* applies to pagination and search form */
     display: none;
+}
+
+a.skip-main,
+a.skip-nav {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus,
+a.skip-main:active,
+a.skip-nav:focus,
+a.skip-nav:active {
+    color: var(--cobalt);
+    background-color: var(--silver);
+    left: auto;
+    top: auto;
+    width: max-content;
+    height: auto;
+    overflow: auto;
+    margin: 10px 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+    font-family: var(--lato);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -218,7 +248,8 @@ input[type=button] {
     text-decoration: none;
 }
 
-.Nav__ul li:hover>ul {
+.Nav__ul li:hover>ul,
+.Nav__ul li:focus-within>ul {
     display: block;
 }
 
@@ -2776,6 +2807,18 @@ footer {
     font-family: var(--lato);
 }
 
+.tribe-events-schedule h2 {
+    font-family: var(--lato);
+}
+
+.tribe-events-cost {
+    color: var(--forest);
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
 .tribe-events-pg-template .tribe-events-nav-pagination {
     background: var(--paper);
 }
@@ -2806,23 +2849,22 @@ footer {
 
 .tribe-events-single-section {
     border-radius: 5px;
-    background: var(--moss);
+    background: var(--silver);
 }
 
-/* 
-.tribe-events-single-section a {
-    text-decoration: underline !important;
-    color: var(--silver);
-} */
+.tribe-events-meta-group .tribe-events-single-section-title {
+    font-size: 20px;
+    color: var(--forest);
+}
 
 .tribe-events-event-meta a {
     text-decoration: underline !important;
-    color: var(--silver);
+    color: var(--cobalt);
 }
 
 .tribe-events-event-meta a:hover,
 .tribe-events-event-meta a:focus {
-    color: var(--cobalt);
+    color: var(--paarl);
 }
 
 .tribe-events-single-section dt {
@@ -2833,6 +2875,10 @@ footer {
 .tribe-events-single-section dd {
     color: var(--coffee);
     margin: 0;
+}
+
+.tribe-events-single {
+    margin: 5vh 0;
 }
 
 /* -------------------------------------------------------------------------- */

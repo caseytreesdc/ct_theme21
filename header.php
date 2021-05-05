@@ -9,6 +9,8 @@
     <?php wp_head(); ?>
   </head>
   <body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <a class="skip-nav" href="#navigation">Skip to navigation</a>
     <div class="Utility">
       <div class="Utility__social">
         <a target="_blank" href="https://www.facebook.com/CaseyTreesDC/"><?php get_template_part('svgs/inline', 'facebook') ?></a>
@@ -78,4 +80,4 @@
     <!-- end header MODULE -->
     
     <!-- Begin main content MODULE - closes at footer.php -->
-    <div class="Main-Content">
+    <div id="main" tabindex="-1" class="Main-Content">
