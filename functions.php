@@ -688,6 +688,13 @@ function ct2021_acf_add_local_field_groups()
                     'operator' => '==',
                     'value' => '20806',  // Caseytdev
                 )
+            ),
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '21091',  // Drafted in PRD
+                )
             )
         ),
         'menu_order' => 0,
@@ -935,6 +942,13 @@ function ct2021_acf_add_local_field_groups()
                     'value' => '20823', // Caseytdev
                 ),
             ),
+            array(
+                array(
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '36', // nmc Plant Page
+                ),
+            ),
         ),
         'menu_order' => 0,
         'position' => 'normal',
@@ -1013,6 +1027,13 @@ function ct2021_acf_add_local_field_groups()
                     'param' => 'page',
                     'operator' => '==',
                     'value' => '20805', // CaseytDev
+                ),
+            ),
+            array(
+                array(
+                    'param' => 'page_type',
+                    'operator' => '==',
+                    'value' => 'posts_page',
                 ),
             ),
         ),
