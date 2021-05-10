@@ -4,31 +4,43 @@
   <!-- being main page-1 MODULE -->
   <div class="main__page-1">
     <!-- begin main masthead section MODULE-->
-    <section
-    <?php
-    $masthead = get_field('masthead', get_the_ID())[0]['image'];
-    $mastheadSRC = wp_get_attachment_image_src( $masthead, 'full')[0];
-  ?>
-      style="
-        background: linear-gradient(
-            rgba(255, 255, 255, 0.3),
-            rgba(255, 255, 255, 0.3),
-            rgba(255, 255, 255, 0.3),
-            rgba(255, 255, 255, 0.3),
-            rgba(255, 255, 255, 1)
-          ),
-          url(<?php echo $mastheadSRC ?>);
-          background-size: cover;
-      "
-      class="main__page-1-section-1"
-    >
-      <h2 class="main__page-1-section-1-h2">
-        Empowering communities <br />
-        <i>through trees</i>
-      </h2>
-      <!-- Begin Module Typeform Button  -->
-    <a class="typeform-share button" href="https://form.typeform.com/to/mnnpM5l1?typeform-medium=embed-snippet" data-mode="popup" style="" data-size="100" target="_blank">FFS Typeform</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-      <!-- End Module Typeform Button  -->
+    <section class="main__page-1-section-1">
+      <div class="main__page-1-section-1-title-box">
+        <h2 class="main__page-1-section-1-h2">
+          <?php echo get_field('masthead')[0]['title']?>
+        </h2>
+        <p class="main__page-1-section-1-p">
+          <?php echo get_field('masthead')[0]['excerpt']?>
+        </p>
+        <!-- Begin Module Typeform Button  -->
+        <!-- <a class="typeform-share button" href="https://form.typeform.com/to/mnnpM5l1?typeform-medium=embed-snippet" data-mode="popup" style="" data-size="100" target="_blank">FFS Typeform</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
+        <a 
+          class="main__page-1-section-1-a" 
+          href="<?php echo get_field('masthead')[0]['button_link']['external_link']; ?>" 
+          target="_blank">
+            <?php echo get_field('masthead')[0]['button_label']; ?>
+          </a>
+        <!-- End Module Typeform Button  -->
+      </div>
+    <?php if (get_field('masthead')[0]['video']) {
+      $videoSRC = get_field('masthead')[0]['video']; ?>
+      <video loop autoplay muted
+        class="main__page-1-section-1-Video">
+        <source
+          src="<?php echo $videoSRC ?>"
+          type="video/mp4"
+          poster="<?php echo $mastheadSRC ?>"
+        />
+      </video>
+    <?php } else {
+      $masthead = get_field('masthead', get_the_ID())[0]['image'];
+      $mastheadSRC = wp_get_attachment_image_src( $masthead, 'full')[0];
+    ?>
+      <img 
+        class="main__page-1-section-1-img"
+        src="<?php echo $mastheadSRC ?>" />
+    <?php }
+    ?>
     </section>
     <!-- end main masthead section MODULE-->
     <!-- begin main motto section MODULE-->
