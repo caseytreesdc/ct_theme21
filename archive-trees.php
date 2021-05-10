@@ -74,7 +74,8 @@ $otherOptions = array(
                     $treeArgs = array(  
                         'post_type' => 'trees',
                         'orderby' => 'title',
-                        'order' => 'ASC'
+                        'order' => 'ASC',
+                        'posts_per_page'=>-1
                     );
 
                     $treeQuery = new WP_query($treeArgs);
