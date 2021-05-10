@@ -632,7 +632,7 @@ main a:focus {
 .main__page-1-section-1-a {
     text-decoration: none;
     background-color: rgba(55, 104, 178, .8);
-    color: var(--paper);
+    color: var(--silver);
     font-family: var(--lato);
     font-size: 20px;
     border-radius: 5px;
@@ -640,6 +640,12 @@ main a:focus {
     margin: 0 4vw;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.main__page-1-section-1-a:hover,
+.main__page-1-section-1-a:focus {
+    background-color: var(--forest);
+    color: var(--paper);
 }
 
 .typeform-share {
@@ -3440,6 +3446,8 @@ footer {
         width: 100%;
         height: 81vh;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .main__page-1-section-1-Video {
