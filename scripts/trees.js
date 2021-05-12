@@ -6,7 +6,7 @@ function loopOverTrees() {
     let tree = list[i];
     let specs = tree.dataset.fields;
 
-    console.log(specs);
+    // console.log(specs);
 
     let sizeTF =
       (checkbox[0].checked && specs.includes("small")) ||

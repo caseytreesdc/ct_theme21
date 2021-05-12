@@ -22,26 +22,39 @@
     <div class="down-arrow"></div>
   </div>
   <div class="Farm__page-4-icons">
-    <a href="#sustainability" class="Farm__page-4-icon-w-text">
-      <?php get_template_part('svgs/inline', 'house') ?>
-      <p class="Farm__page-4-p">SUSTAINABILITY</p>
+    <a href="#sustainability">
+      <div>
+        <img
+            src="<?php echo get_fields()['sustainability_image']['url']; ?>"
+        >
+        <p>SUSTAINABILITY</p>
+      </div>
     </a>
-    <a href="#partnership" class="Farm__page-4-icon-w-text">
-      <?php get_template_part('svgs/inline', 'grid') ?>
-      <p class="Farm__page-4-p">PARTNERSHIP WITH DC</p>
+    <a href="#partnership">
+      <div>
+        <img
+            src="<?php echo get_fields()['partnership_image']['url']; ?>"
+        >
+        <p>PARTNERSHIP WITH DC</p>
+      </div>
     </a>
-    <a  href="https://caseytreesdc.github.io/ct-farm/Trees#FarmTrees"
-        target="_blank"
-        class="Farm__page-4-icon-w-text">
-      <?php get_template_part('svgs/inline', 'document') ?>
-      <p class="Farm__page-4-p">TREES WE GROW</p>
+    <a target="_blank" href="https://caseytreesdc.github.io/ct-farm/Trees#FarmTrees">
+      <div>
+        <img
+            src="<?php echo wp_get_attachment_image_src(20088, 'full')[0]; ?>"
+        >
+        <p>TREES WE GROW</p>
+      </div>
     </a>
-    <a  href="https://caseytreesdc.github.io/ct-farm/Request#RequestForm"
-        target="_blank"
-        class="Farm__page-4-icon-w-text">
-      <?php get_template_part('svgs/inline', 'tape') ?>
-      <p class="Farm__page-4-p">AVAILABILITY & REQUESTS</p>
+    <a target="_blank" href="https://caseytreesdc.github.io/ct-farm/Request#RequestForm">
+      <div>
+        <img
+            src="<?php echo wp_get_attachment_image_src(19700, 'full')[0]; ?>"
+        >
+        <p>AVAILABILITY & REQUEST</p>
+      </div>
     </a>
+  </div>
   </div>
   <div id="sustainability" class="Farm__page-5">
     <!-- <div class="Farm__page-5-text-and-image"> -->

@@ -932,6 +932,7 @@ main a:focus {
 
 .Plant__page-1-section-2-icons p {
     max-width: 160px;
+    letter-spacing: 2px;
 }
 
 .Plant__page-1-section-2-icons a:nth-child(1):hover p,
@@ -990,11 +991,6 @@ main a:focus {
     background: var(--paarl);
 }
 
-.Plant__page-1-section-2-p {
-    font-family: var(--zeitung);
-    letter-spacing: 2px;
-}
-
 .Plant__page-1-section-3-p {
     font-size: 20px;
     color: var(--americano);
@@ -1035,7 +1031,14 @@ main a:focus {
 .Plant__page-5-image {
     margin: 0 20px;
     width: 420px;
-    object-fit: scale-down;
+}
+
+.Plant__page-15-image,
+.Plant__page-2-image,
+.Plant__page-3-image,
+.Plant__page-4-image,
+.Plant__page-5-image  {
+    border-radius: 10px;
 }
 
 .Plant-page-15-text {
@@ -1271,31 +1274,44 @@ main a:focus {
 }
 
 .Farm__page-4-icons {
-    margin: 7vh auto;
-    max-width: 70vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    text-align: center;
     flex-wrap: wrap;
-    text-align: center;
+    max-width: 75%;
+    margin: 2vh auto;
 }
 
-.Farm__page-4-icon-w-text {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Farm__page-4-icons a {
     text-decoration: none;
+    padding: 1vh 1vw;
 }
 
-.Farm__page-4-icons svg {
-    fill: var(--coffee);
+
+.Farm__page-4-icons img {
+    border-radius: 50%;
+    border: 2px solid var(--coffee);
+    padding: 4px;
+    width: 150px;
 }
 
-.Farm__page-4-p {
-    font-family: var(--zeitung);
+
+.Farm__page-4-icons p {
+    max-width: 160px;
     letter-spacing: 2px;
-    text-align: center;
+}
+
+.Farm__page-4-icons a:hover p,
+.Farm__page-4-icons a:focus p {
+    color: var(--forest);
+}
+
+
+.Farm__page-4-icons a:hover img,
+.Farm__page-4-icons a:focus img {
+    border-color: var(--forest);
+    background: var(--forest);
 }
 
 .Farm__page-5,
@@ -1312,6 +1328,11 @@ main a:focus {
 .Farm__page-6-text,
 .Farm__page-6-image {
     width: 45%;
+}
+
+.Farm__page-5-image, 
+.Farm__page-6-image {
+    border-radius: 10px;
 }
 
 .Farm__page-5-text-h2,
@@ -3021,16 +3042,6 @@ footer {
 
     .Farm__page-1-Video {
         opacity: .5;
-    }
-
-    .Farm__page-4-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Farm__page-4-icon-w-text {
-        width: 50%;
     }
 
     .Farm__page-5,
