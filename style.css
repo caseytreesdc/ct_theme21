@@ -930,6 +930,10 @@ main a:focus {
     width: 150px;
 }
 
+.Plant__page-1-section-2-icons p {
+    max-width: 160px;
+}
+
 .Plant__page-1-section-2-icons a:nth-child(1):hover p,
 .Plant__page-1-section-2-icons a:nth-child(1):focus p {
     color: var(--forest);
@@ -3214,7 +3218,8 @@ footer {
         margin: 0 auto;
     }
 
-    .Plant__page-15-text-and-image .Plant__page-2-text-and-image,
+    .Plant__page-15-text-and-image,
+    .Plant__page-2-text-and-image,
     .Plant__page-3-text-and-image,
     .Plant__page-4-text-and-image,
     .Plant__page-5-text-and-image {
@@ -3232,7 +3237,8 @@ footer {
     }
 
     .Plant__page-15-text,
-    .Plant__page-15-image .Plant__page-2-text,
+    .Plant__page-15-image,
+    .Plant__page-2-text,
     .Plant__page-2-image,
     .Plant__page-3-text,
     .Plant__page-3-image,
@@ -3466,6 +3472,8 @@ footer {
         margin: 0 auto;
     }
 
+    .Plant__page-15-text,
+    .Plant__page-15-image,
     .Plant__page-2-text,
     .Plant__page-2-image,
     .Plant__page-3-text,

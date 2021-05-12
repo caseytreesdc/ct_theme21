@@ -10,7 +10,7 @@
                 <img
                     src="<?php echo get_fields()['consultation_image']['url']; ?>"
                 >
-                <p class="Plant__page-1-section-2-p">CONSULTATION</p>
+                <p class="Plant__page-1-section-2-p">CONSULTATION SERVICES</p>
             </div></a>
             <a href="#home"><div class="Plant__page-1-section-2-icon-w-text">
                 <img
@@ -59,7 +59,7 @@
                 <?php echo get_fields()['consultation_text']?>
                 <p class="Plant__page-15-text-p">
                     <a href="/plant/school-tree-planting/" class="Plant__page-15-text-p-a">
-                        INQUIRY
+                        REQUEST CONSULTATION
                     </a>
                 </p>
             </div>
@@ -80,7 +80,7 @@
             >
         </div>
         <div class="Plant__page-2-links">
-            <a class="Plant__page-2-links-a" href="/resources-list/fee-for-service/">FFS</a>
+            <a class="Plant__page-2-links-a" href="/resources-list/fee-for-service/">REQUEST CONSULTATION</a>
             <a class="Plant__page-2-links-a" href="/plant/residential-planting/">RSH</a>
             <a class="Plant__page-2-links-a" href="/resources/tree-rebate/">REBATE</a>
             <a class="Plant__page-2-links-a" href="/plant/residential-planting/pepco-tree-application-form/">PEPCO</a>
