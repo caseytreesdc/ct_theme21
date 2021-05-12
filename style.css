@@ -217,7 +217,6 @@ a.skip-nav:active {
 
 .header__container {
     /* the 1% margin prevents the  header nav skew from exceeding the window width */
-    /* border: 2px solid brown; */
     height: 15vh;
     display: flex;
     justify-content: space-around;
