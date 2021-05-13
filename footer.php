@@ -32,11 +32,35 @@
         </div>
         <div class="footer__section-2">
             <div class="footer__column">
-                <a
-                    class="footer__button"
-                    href="https://form.typeform.com/to/mnnpM5l1?typeform-medium=embed-snippet"
-                    >GET UPDATES</a
-                >
+            <a
+                class="typeform-share footer__button"
+                href="https://form.typeform.com/to/yJULOLCM?typeform-medium=embed-snippet"
+                data-mode="popup"
+                data-size="100"
+                target="_blank"
+                >GET UPDATES
+                </a>
+                <script>
+                (function () {
+                    var qs,
+                    js,
+                    q,
+                    s,
+                    d = document,
+                    gi = d.getElementById,
+                    ce = d.createElement,
+                    gt = d.getElementsByTagName,
+                    id = "typef_orm_share",
+                    b = "https://embed.typeform.com/";
+                    if (!gi.call(d, id)) {
+                    js = ce.call(d, "script");
+                    js.id = id;
+                    js.src = b + "embed.js";
+                    q = gt.call(d, "script")[0];
+                    q.parentNode.insertBefore(js, q);
+                    }
+                })();
+                </script>
             </div>
             <div class="footer__column footer__nav">
                 <?php 

@@ -647,39 +647,10 @@ main a:focus {
     color: var(--paper);
 }
 
-.typeform-share {
-    display: inline-block;
-    text-decoration: none;
-    background-color: rgba(55, 104, 178, .8);
-    color: var(--paper);
-    cursor: pointer;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-    margin: 0 4vw;
-    height: 50px;
-    padding: 0px 33px;
-    border-radius: 5px;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.typeform-share:hover {
-    background-color: rgba(55, 104, 178, 1);
-    color: var(--paper);
-}
-
 .main__page-1-section-1-Video {
     max-height: 100%;
     width: 100%;
     object-fit: cover;
-    /* opacity: .7; */
 }
 
 .main__page-1-section-1-img {
