@@ -24,7 +24,7 @@
       </div>
     <?php if (get_field('masthead')[0]['video']) {
       $videoSRC = get_field('masthead')[0]['video']; ?>
-      <video loop autoplay muted playsinline
+      <video loop autoplay muted
         class="main__page-1-section-1-Video">
         <source
           src="<?php echo $videoSRC ?>"
