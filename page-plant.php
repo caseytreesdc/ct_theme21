@@ -120,18 +120,16 @@
             >
         </div>
         <div class="Plant__page-2-links">
-            <a class="Plant__page-2-links-a" href="/plant/residential-planting/">RSH</a>
-            <a class="Plant__page-2-links-a" href="/resources/tree-rebate/">REBATE</a>
+            <a class="Plant__page-2-links-a" href="/plant/residential-planting/">RIVERSMART HOMES</a>
+            <a class="Plant__page-2-links-a" href="/resources/tree-rebate/">TREE REBATE</a>
             <a class="Plant__page-2-links-a" href="/plant/residential-planting/pepco-tree-application-form/">PEPCO</a>
         </div>
         <div class="Plant__page-2-form-excerpt">
-            <p><?php echo get_the_excerpt(2215) ?></p>
             <p><?php echo get_the_excerpt(53) ?></p>
             <p><?php echo get_the_excerpt(55) ?></p>
             <p><?php echo get_the_excerpt(14356) ?></p>
             <p>
-                Hover over the above options, or follow the link to learn more about Fee-For Service,
-                Riversmart Homes, Tree Rebate, and Pepco tree planting opportunities.
+                Hover over the above options, or follow the link to learn more about Riversmart Homes, Tree Rebate, and Pepco tree planting opportunities.
             </p>
         </div>
     </div>
