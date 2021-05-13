@@ -57,11 +57,54 @@
             <div class="Plant__page-15-text">
                 <h2 class="Plant__page-15-text-h2">Consultation</h2>
                 <?php echo get_fields()['consultation_text']?>
-                <p class="Plant__page-15-text-p">
-                    <a href="/plant/school-tree-planting/" class="Plant__page-15-text-p-a">
-                        REQUEST CONSULTATION
+                <a
+                    class="typeform-share button"
+                    href="https://form.typeform.com/to/mnnpM5l1?typeform-medium=embed-snippet"
+                    data-mode="popup"
+                    style="
+                        display: inline-block;
+                        text-decoration: none;
+                        background-color: var(--forest);
+                        color: var(--paper);
+                        cursor: pointer;
+                        font-family: var(--lato);
+                        font-size: 20px;
+                        line-height: 50px;
+                        text-align: center;
+                        margin: 0;
+                        height: 50px;
+                        padding: 0px 33px;
+                        border-radius: 5px;
+                        max-width: 100%;
+                        font-weight: bold;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                    "
+                    data-size="100"
+                    target="_blank"
+                    >REQUEST CONSULTATION
                     </a>
-                </p>
+                    <script>
+                    (function () {
+                        var qs,
+                        js,
+                        q,
+                        s,
+                        d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm_share",
+                        b = "https://embed.typeform.com/";
+                        if (!gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q);
+                        }
+                    })();
+                    </script>
             </div>
         </div>
     </div>
@@ -70,9 +113,6 @@
             <div class="Plant__page-2-text">
                 <h2 class="Plant__page-2-text-h2">Home</h2>
                 <?php echo get_fields()['home_text']?>
-                <a class="Plant__page-2-text-a" href="https://form.typeform.com/to/mnnpM5l1?typeform-medium=embed-snippet" data-mode="popup" style="" data-size="100" target="_blank">
-                    Not sure which program is best for you? Take this quiz!
-                </a>
             </div>
             <img 
                 class="Plant__page-2-image"
@@ -80,7 +120,6 @@
             >
         </div>
         <div class="Plant__page-2-links">
-            <a class="Plant__page-2-links-a" href="/resources-list/fee-for-service/">REQUEST CONSULTATION</a>
             <a class="Plant__page-2-links-a" href="/plant/residential-planting/">RSH</a>
             <a class="Plant__page-2-links-a" href="/resources/tree-rebate/">REBATE</a>
             <a class="Plant__page-2-links-a" href="/plant/residential-planting/pepco-tree-application-form/">PEPCO</a>
@@ -118,9 +157,9 @@
             <div class="Plant__page-4-text">
                 <h2 class="Plant__page-4-text-h2">Community</h2>
                 <?php echo get_fields()['community_text']?>
-                <a href="/events/month/" class="Plant__page-4-text-a">
+                <!-- <a href="/events/month/" class="Plant__page-4-text-a">
                     Calendar of Upcoming Events
-                </a>
+                </a> -->
             </div>
             <img 
                 class="Plant__page-4-image" 
@@ -128,9 +167,9 @@
             >
         </div>
         <div class="Plant__page-4-links">
-            <a class="Plant__page-4-links-a" href="/plant/community-tree-planting/">APPLY NOW</a>
-            <a class="Plant__page-4-links-a">GROUP VOLUNTEERS</a>
-            <a class="Plant__page-4-links-a">COMMUNITY PARTNERSHIPS</a>
+            <a class="Plant__page-4-links-a" href="/plant/community-tree-planting/">APPLY FOR COMMUNITY TREE PLANTING</a>
+            <a class="Plant__page-4-links-a" href="/volunteer/group/">GROUP VOLUNTEERS</a>
+            <!-- <a class="Plant__page-4-links-a">COMMUNITY PARTNERSHIPS</a> -->
         </div>
     </div>
     <div id="dedication" class="Plant__page-5">

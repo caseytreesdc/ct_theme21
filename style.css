@@ -1027,7 +1027,7 @@ main a:focus {
 .Plant__page-3,
 .Plant__page-4,
 .Plant__page-5 {
-    margin: 30px 0;
+    margin: 10vh 0;
 }
 
 .Plant__page-15-text-and-image,
@@ -1062,7 +1062,7 @@ main a:focus {
     border-radius: 10px;
 }
 
-.Plant-page-15-text {
+.Plant__page-15-text {
     text-align: right;
 }
 
