@@ -1078,3 +1078,12 @@ function enqueue_month_view_scripts() {
     Tribe_Template_Factory::asset_package('events-css');    
 }
 add_action('wp_enqueue_scripts', 'enqueue_month_view_scripts');
+
+// /*
+//     ===================================
+//     Hide Admin bar on front end when 
+//     signed in to WP
+//     ===================================
+// */
+
+show_admin_bar( false );

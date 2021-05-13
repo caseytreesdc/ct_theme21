@@ -765,13 +765,6 @@ main a:focus {
     margin: 0 auto;
 }
 
-.main__page-2-section-icons,
-.main__page-3-section-icons,
-.main__page-3-section-icons,
-.main__page-4-section-icons {
-    margin-bottom: 4vh;
-}
-
 .main__page-2-section-1-h2,
 .main__page-3-section-1-h2,
 .main__page-4-section-1-h2,
@@ -834,31 +827,60 @@ main a:focus {
 
 .main__page-2-section-icons,
 .main__page-3-section-icons,
-.main__page-4-section-icons {
+.main__page-4-section-icons,
+.main__page-5-section-icons {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    margin-bottom: 4vh;
 }
 
-.main__page-2-section-icons svg,
-.main__page-3-section-icons svg,
-.main__page-4-section-icons svg,
-.main__page-5-section-icons svg {
-    width: 6vw;
-    height: 6vw;
-    padding: 1vh 1vh;
+.main__page-2-section-icons img,
+.main__page-3-section-icons img,
+.main__page-4-section-icons img,
+.main__page-5-section-icons img {
+    border-radius: 50%;
+    padding: 4px;
+    width: 110px;
+    height: 110px;
+    margin: 4px;
+    object-fit: cover;
 }
 
-.main__page-2-section-icons svg {
-    fill: var(--paarl);
+.main__page-2-section-icons img {
+    border: 2px solid var(--paarl);
 }
 
-.main__page-3-section-icons svg {
-    fill: var(--orange);
+.main__page-3-section-icons img {
+    border: 2px solid var(--orange);
 }
 
-.main__page-4-section-icons svg {
-    fill: var(--moss);
+.main__page-4-section-icons img {
+    border: 2px solid var(--moss);
+}
+
+.main__page-5-section-icons img {
+    border: 2px solid var(--cobalt);
+}
+
+.main__page-2-section-icons img:hover,
+.main__page-2-section-icons img:focus {
+    background: var(--paarl);
+}
+
+.main__page-3-section-icons img:hover,
+.main__page-3-section-icons img:focus {
+    background: var(--orange);
+}
+
+.main__page-4-section-icons img:hover,
+.main__page-4-section-icons img:focus {
+    background: var(--moss);
+}
+
+.main__page-5-section-icons img:hover,
+.main__page-5-section-icons img:focus {
+    background: var(--cobalt);
 }
 
 .main__page-2-section-3,
@@ -1036,7 +1058,7 @@ main a:focus {
 .Plant__page-2-image,
 .Plant__page-3-image,
 .Plant__page-4-image,
-.Plant__page-5-image  {
+.Plant__page-5-image {
     border-radius: 10px;
 }
 
@@ -1329,7 +1351,7 @@ main a:focus {
     width: 45%;
 }
 
-.Farm__page-5-image, 
+.Farm__page-5-image,
 .Farm__page-6-image {
     border-radius: 10px;
 }
@@ -3151,12 +3173,12 @@ footer {
         width: 100%;
     }
 
-    .main__page-2-section-icons svg,
-    .main__page-3-section-icons svg,
-    .main__page-4-section-icons svg,
-    .main__page-5-section-icons svg {
-        width: 15vw;
-        height: 15vw;
+    .main__page-2-section-icons img,
+    .main__page-3-section-icons img,
+    .main__page-4-section-icons img,
+    .main__page-5-section-icons img {
+        width: 100px;
+        height: 100px;
     }
 
     .footer__section-1 {

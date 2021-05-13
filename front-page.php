@@ -74,9 +74,21 @@
       </p>
     </section>
     <section class="main__page-2-section-icons">
-      <?php get_template_part('svgs/inline', 'house') ?>
-      <?php get_template_part('svgs/inline', 'shovel') ?>
-      <?php get_template_part('svgs/inline', 'megaphone') ?>
+      <a href="/plant/#consultation">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2020/12/step-up-tree-tag-snow-email.png"
+          >
+      </a>
+      <a href="/plant/residential-planting/">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2021/04/tree-walk-2021-email.png"
+          >
+      </a>
+      <a href="/plant/school-tree-planting/">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2021/01/Screen-Shot-2021-01-29-at-7.45.11-AM.png"
+          >
+      </a>
     </section>
     <section class="main__page-2-section-3">
       <img
@@ -95,18 +107,28 @@
       <p class="main__page-3-section-2-p">
         OUR PROGRAMS + CLASSES EQUIP DC RESIDENTS WITH THE
         <a
-          href="/resources-list/"
+          href="/resources/"
           class="main__page-3-section-2-a grey-highlight"
           >TECHNICAL SKILLS + KNOWLEDGE</a
         > TO FOSTER A HEALTHY, MATURE TREE CANOPY.
       </p>
     </section>
     <section class="main__page-3-section-icons">
-      <?php get_template_part('svgs/inline', 'house') ?>
-      <?php get_template_part('svgs/inline', 'wateringcan') ?>
-      <?php get_template_part('svgs/inline', 'tape') ?>
-      <?php get_template_part('svgs/inline', 'megaphone') ?>
-      <?php get_template_part('svgs/inline', 'document') ?>
+      <a href="/the-leaflet/">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2021/05/comp-plan-email.png"
+          >
+      </a>
+      <a target="_blank" href="https://caseytreesdc.github.io/treereportcard2020/">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2020/10/chestnuut-email.png"
+          >
+      </a>
+      <a target="_blank" href="https://casey-trees.myshopify.com/products/tree-species-guide">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2020/12/tree-issue-rust-browser.png"
+          >
+      </a>
     </section>
     <section class="main__page-3-section-3">
       <img
@@ -125,13 +147,13 @@
       <p class="main__page-4-section-2-p">
         THIS IS WHERE WE WILL DISCUSS
         <a
-          href="/resources-list/"
+          href="/take-action/advocate/"
           class="main__page-4-section-2-a grey-highlight"
           >ADVOCACY ACTIONS</a
         >
         AND
         <a
-          href="/resources-list/"
+          href="/take-action/conservation-easements/"
           class="main__page-4-section-2-a grey-highlight"
           >CONSERVATION INITIATIVES</a
         >
@@ -139,9 +161,21 @@
       </p>
     </section>
     <section class="main__page-4-section-icons">
-      <?php get_template_part('svgs/inline', 'grid') ?>
-      <?php get_template_part('svgs/inline', 'megaphone') ?>
-      <?php get_template_part('svgs/inline', 'document') ?>
+      <a href="/take-action/citizen-science/">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2020/08/arborist-thumbnail.jpg"
+          >
+      </a>
+      <a href="/take-action/water/">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2017/05/stormwater-filter1.jpg"
+          >
+      </a>
+      <a target="_blank" href="https://caseytreesdc.github.io/advocacyworks/climatereadydc.html">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2020/11/urbantreesummit-browser.png"
+          >
+      </a>
     </section>
     <section class="main__page-4-section-3">
       <img
@@ -159,15 +193,43 @@
       <span class="cobalt-text">the benefits are endless</span>.
     </h2>
     <div>
-      <p class="main__page-5-section-2-p">HERE ARE A FEW OF OUR FAVORITES:</p>
+      <!-- <p class="main__page-5-section-2-p">HERE ARE A FEW OF OUR FAVORITES:</p> -->
       <div class="main__page-5-section-icons">
-        <?php get_template_part('svgs/inline', 'grid') ?>
-        <?php get_template_part('svgs/inline', 'megaphone') ?>
-        <?php get_template_part('svgs/inline', 'document') ?>
-        <?php get_template_part('svgs/inline', 'wateringcan') ?>
-        <?php get_template_part('svgs/inline', 'tape') ?>
-        <?php get_template_part('svgs/inline', 'shovel') ?>
-        <?php get_template_part('svgs/inline', 'house') ?>
+        <a href="/plant/#consultation">
+            <img
+                src="https://caseytrees.org/wp-content/uploads/2020/12/step-up-tree-tag-snow-email.png"
+            >
+        </a>
+        <a href="/plant/residential-planting/">
+            <img
+                src="https://caseytrees.org/wp-content/uploads/2021/04/tree-walk-2021-email.png"
+            >
+        </a>
+        <a href="/the-leaflet/">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2021/05/comp-plan-email.png"
+          >
+        </a>
+        <a target="_blank" href="https://casey-trees.myshopify.com/products/tree-species-guide">
+            <img
+                src="https://caseytrees.org/wp-content/uploads/2020/12/tree-issue-rust-browser.png"
+            >
+        </a>
+        <a href="/take-action/citizen-science/">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2020/08/arborist-thumbnail.jpg"
+          >
+        </a>
+        <a href="/take-action/water/">
+            <img
+                src="https://caseytrees.org/wp-content/uploads/2017/05/stormwater-filter1.jpg"
+            >
+        </a>
+        <a target="_blank" href="https://caseytreesdc.github.io/advocacyworks/climatereadydc.html">
+          <img
+              src="https://caseytrees.org/wp-content/uploads/2020/11/urbantreesummit-browser.png"
+          >
+        </a>
       </div>
     </div>
   </div>

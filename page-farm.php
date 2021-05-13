@@ -55,7 +55,6 @@
       </div>
     </a>
   </div>
-  </div>
   <div id="sustainability" class="Farm__page-5">
     <!-- <div class="Farm__page-5-text-and-image"> -->
       <div class="Farm__page-5-text">
