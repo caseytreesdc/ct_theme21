@@ -75,7 +75,7 @@ $otherOptions = array(
                         'post_type' => 'trees',
                         'orderby' => 'title',
                         'order' => 'ASC',
-                        'posts_per_page'=>-1
+                        'posts_per_page' => -1
                     );
 
                     $treeQuery = new WP_query($treeArgs);
@@ -214,4 +214,5 @@ $otherOptions = array(
     ?>
     </div>
 </div>
+
 <?php get_footer(); ?>
