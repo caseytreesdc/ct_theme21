@@ -30,7 +30,7 @@
             <div class="Resources__Top-image">
                 <img class="Resources__Top-image-img" src="<?php echo $topResources[$i]['imageSrc'] ?>" alt="" />
             </div>
-            <a class="Resources__Top-text-title-a" href="<?php get_post_permalink($topResources[$i]['ID']) ?>"
+            <a class="Resources__Top-text-title-a" href="<?php echo get_post_permalink($topResources[$i]['ID']) ?>"
                 ><?php echo $topResources[$i]['title'] ?></a
             >            
             <p class="Resources__Top-description">

@@ -39,6 +39,32 @@
                 <div class="Tree__content">
                   <?php the_content();?>
                 </div>
+                <form>
+                  <select class="tree-dropdown">
+                      <option value="/trees-list/">Select a Tree</option>
+                      <?php
+                          $treeArgs = array(  
+                              'post_type' => 'trees',
+                              'orderby' => 'title',
+                              'order' => 'ASC',
+                              'posts_per_page' => -1
+                          );
+
+                          $treeQuery = new WP_query($treeArgs);
+                          if ( $treeQuery->have_posts() ) {
+                              while ( $treeQuery->have_posts() ) {
+                                  $treeQuery->the_post(); ?>
+                                  <option
+                                      class="tree-select"
+                                      value="<?php the_permalink();?>"
+                                  >
+                                      <?php the_title()?>
+                                  </option>
+                          <?php };
+                      }
+                      ?>
+                  </select>
+              </form>
               </div>
               
               <?php 
@@ -71,3 +97,4 @@
   </div>
 </div>
 <?php get_footer(); ?>
+ 

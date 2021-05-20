@@ -537,7 +537,8 @@ ul li:focus-within>ul {
 /* -------------------------------------------------------------------------- */
 
 .Page {
-    max-width: 780px;
+    max-width: 92vw;
+    width: 780px;
     margin: 30px auto;
 }
 
@@ -1770,7 +1771,8 @@ main a:focus {
 .Leaflet__loop {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    width: 800px;
+    max-width: 90vw;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -1810,7 +1812,7 @@ main a:focus {
 
 .Leaflet__loop-content p {
     font-size: 16px;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .Leaflet__loop-content a {
@@ -1874,6 +1876,7 @@ a img.aligncenter {
 p.wp-caption-text {
     color: var(--coffee);
     font-size: 14px;
+    margin-bottom: 0px;
 }
 
 
@@ -1938,6 +1941,7 @@ p.wp-caption-text {
     text-transform: uppercase;
     background: linear-gradient(to top, rgb(240, 209, 63) 50%, transparent 50%);
     width: max-content;
+    margin: 1em 0;
 }
 
 .Archive__img {
@@ -2197,7 +2201,7 @@ body nav:last-of-type {
     margin: 2vh 0 0 0;
 }
 
-.tree-dropdown {
+.tree-filter .tree-dropdown {
     border: solid 2px var(--silver);
     border-radius: 5px;
     width: 100%;
@@ -2346,14 +2350,15 @@ body nav:last-of-type {
 .Tree__content {
     width: 60%;
 }
+.Tree__content .go-to-tree {
+    display: none;
+}
 
-.Tree__content select {
-    border: solid 2px var(--silver);
+.Tree .tree-dropdown {
+    border: solid 2px var(--forest);
     border-radius: 5px;
-    width: 50%;
-    height: 6vh;
+    height: 50px;
     padding: 5px 20px 5px 5px;
-    margin: 2vh 0;
     font-family: var(--lato);
     display: flex;
     justify-content: center;
@@ -2770,7 +2775,9 @@ footer {
 }
 
 .Module__full-width-cta {
-    height: 66vh;
+    min-height: 66vh;
+    display: flex;
+    align-items: center;
 }
 
 .Module__full-width-cta div {
@@ -2779,7 +2786,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 66vh;
 }
 
 .Module__full-width-cta h2 {
@@ -2807,7 +2813,7 @@ footer {
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
-
+    margin-bottom: 2em;
 }
 
 .Module__full-width-cta a:hover {
@@ -2834,7 +2840,7 @@ footer {
     background: var(--paper);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 2px;
     margin: 5px;
@@ -2843,7 +2849,7 @@ footer {
 
 .Module__four-column-ctas-a>img {
     width: 300px;
-    height: auto;
+    height: 200px;
     object-fit: cover;
     opacity: .8;
     border-radius: 5%;
@@ -3468,6 +3474,21 @@ footer {
 
     .motto {
         text-align: center;
+    }
+
+    .main__page-1-section-1-img,
+    .main__page-2-section-3-img,
+    .main__page-3-section-3-img,
+    .main__page-4-section-3-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .main__page-2-section-icons,
+    .main__page-3-section-icons,
+    .main__page-4-section-icons,
+    .main__page-5-section-icons {
+        display: none;
     }
 
     .Plant {

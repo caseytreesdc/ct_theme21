@@ -85,6 +85,6 @@ function handleTreeSelection() {
 }
 
 window.addEventListener("load", function () {
-  handleTrees();
   handleTreeSelection();
+  handleTrees();
 });
