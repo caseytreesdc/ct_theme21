@@ -137,12 +137,14 @@ ul {
 
 a {
     color: var(--cobalt);
+    transition: all .3s;
 }
 
 a:hover,
 a:focus {
     color: var(--cobalt);
     text-decoration-style: double;
+    transition: all .3s;
 }
 
 .hidden {
@@ -240,22 +242,42 @@ a.skip-nav:active {
     width: 60vw;
 }
 
+.Nav__ul li ul {
+    max-height: 0;    
+    overflow: hidden;
+    transition: all .3s;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: max-content;
+    background: var(--paper);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
+    z-index: 4;
+}
+
 .Nav__ul li a {
     color: var(--coffee);
     padding: 3px 2vw;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all .35s;
 }
 
 .Nav__ul li:hover>ul,
 .Nav__ul li:focus-within>ul {
-    display: block;
+    height: auto;
+    max-height: 350px;
+}
+
+.Nav__ul>li>div>p>a {
+    background: var(--paper);
+    color: var(--coffee);
+    border-radius: 3px;
 }
 
 .Nav__ul>li>div>p>a:hover,
 .Nav__ul>li>div>p>a:focus {
     background: var(--forest);
-    border-radius: 3px;
     color: var(--paper);
 }
 
@@ -276,21 +298,6 @@ a.skip-nav:active {
     font-family: var(--lato);
 }
 
-.Nav__ul li {
-    position: relative;
-}
-
-.Nav__ul ul {
-    display: none;
-    position: absolute;
-    list-style: none;
-    padding: 0;
-    width: max-content;
-    background: var(--paper);
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.6);
-    z-index: 4;
-}
-
 .sub-menu>li>div>p>a:hover,
 .sub-menu>li>div>p>a:focus {
     background: var(--forest);
@@ -301,22 +308,10 @@ a.skip-nav:active {
     text-transform: capitalize;
 }
 
-
 #menu-item-18039 .sub-menu {
     /* right: 0px; */
     /* uncomment the above line to make the sub-menu open to the left  */
 }
-
-/*
-What's up with this?! we need accessibililty 
-ul li:focus-within>ul {
-    display: block
-} */
-
-/* li ul li div p {
-    padding: 3px;
-    width: 100%;
-} */
 
 .Nav__ul li ul li div p a {
     display: block;
@@ -821,38 +816,46 @@ main a:focus {
 
 .main__page-2-section-icons img {
     border: 2px solid var(--paarl);
+    transition: all .3s;
 }
 
 .main__page-3-section-icons img {
     border: 2px solid var(--orange);
+    transition: all .3s;
 }
 
 .main__page-4-section-icons img {
     border: 2px solid var(--moss);
+    transition: all .3s;
 }
 
 .main__page-5-section-icons img {
     border: 2px solid var(--cobalt);
+    transition: all .3s;
 }
 
 .main__page-2-section-icons img:hover,
 .main__page-2-section-icons img:focus {
     background: var(--paarl);
+    transition: all .3s;
 }
 
 .main__page-3-section-icons img:hover,
 .main__page-3-section-icons img:focus {
     background: var(--orange);
+    transition: all .3s;
 }
 
 .main__page-4-section-icons img:hover,
 .main__page-4-section-icons img:focus {
     background: var(--moss);
+    transition: all .3s;
 }
 
 .main__page-5-section-icons img:hover,
 .main__page-5-section-icons img:focus {
     background: var(--cobalt);
+    transition: all .3s;
 }
 
 .main__page-2-section-3,
@@ -921,6 +924,7 @@ main a:focus {
     border: 2px solid var(--coffee);
     padding: 4px;
     width: 150px;
+    transition: all .3s;
 }
 
 .Plant__page-1-section-2-icons p {
@@ -1287,12 +1291,14 @@ main a:focus {
     border: 2px solid var(--coffee);
     padding: 4px;
     width: 150px;
+    transition: all .3s;
 }
 
 
 .Farm__page-4-icons p {
     max-width: 160px;
     letter-spacing: 2px;
+    transition: all .3s;
 }
 
 .Farm__page-4-icons a:hover p,
@@ -1403,6 +1409,7 @@ main a:focus {
 .About__page-1-link-module-a {
     text-decoration: none;
     background: var(--cobalt);
+    border-radius: 5px;
 }
 
 .About__page-1-link-module-a:hover,
@@ -1437,7 +1444,6 @@ main a:focus {
 }
 
 .About__page-2-link-module-h2 {
-    /* margin: 0; */
     font-family: var(--cronos);
     font-size: 36px;
     color: var(--paper);
@@ -1453,6 +1459,7 @@ main a:focus {
     padding: 14px;
     text-align: center;
     letter-spacing: 2px;
+    border-radius: 5px;
 }
 
 .About__page-2-link-module-a:hover {
@@ -2045,6 +2052,7 @@ body nav:last-of-type {
     padding: 0;
     font-size: 18px;
     width: 30%;
+    transition: all .3s;
 }
 
 .Searchform__submit:hover,
@@ -2081,13 +2089,12 @@ body nav:last-of-type {
     letter-spacing: normal;
 }
 
-/*
 
 .Resources__section-tagslist li ul a:hover,
 .Resources__section-tagslist li ul a:focus {
     color: var(--cobalt);
     text-decoration: underline;
-} */
+}
 
 .Resources__section-top {
     display: flex;
@@ -2350,6 +2357,7 @@ body nav:last-of-type {
 .Tree__content {
     width: 60%;
 }
+
 .Tree__content .go-to-tree {
     display: none;
 }
@@ -2370,6 +2378,8 @@ body nav:last-of-type {
 
 .Tree__image {
     max-width: 100%;
+    transition: all .3s;
+    border-radius: 5px;
 }
 
 .Tree__image:hover,
@@ -2620,7 +2630,7 @@ footer {
 .footer__nav>.menu-primary-nav-container>ul>li a:hover,
 .footer__nav>.menu-primary-nav-container>ul>li a:focus {
     text-decoration: underline;
-    text-decoration-color: var(--coffee);
+    text-decoration-color: var(--paper);
     text-decoration-style: double;
 }
 
@@ -2745,18 +2755,21 @@ footer {
     height: 176px;
     object-fit: cover;
     opacity: .8;
+    transition: all .3s;
 }
 
 .Module__three-column-articles h3 {
     margin: 0;
     font-family: var(--lato);
     color: var(--coffee);
+    transition: all .3s;
 }
 
 .Module__three-column-articles p {
     color: var(--paarl);
     margin: 0;
     font-weight: bold;
+    transition: all .3s;
 }
 
 .Module__three-column-articles a:hover img,
@@ -2814,6 +2827,7 @@ footer {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 2em;
+    border-radius: 5px;
 }
 
 .Module__full-width-cta a:hover {
@@ -2853,16 +2867,19 @@ footer {
     object-fit: cover;
     opacity: .8;
     border-radius: 5%;
+    transition: all .3s;
 }
 
 .Module__four-column-ctas-a>h3 {
     font-family: var(--lato);
     border-radius: 5px;
     padding: 5px 10px;
+    transition: all .3s;
 }
 
 .Module__four-column-ctas-a>p {
     width: 250px;
+    transition: all .3s;
 }
 
 .Module__four-column-ctas-a:hover>img,
