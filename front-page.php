@@ -78,16 +78,19 @@
           <img
               src="https://caseytrees.org/wp-content/uploads/2020/12/step-up-tree-tag-snow-email.png"
           >
+          <p>Consultation</p>
       </a>
       <a href="/plant/residential-planting/">
           <img
               src="https://caseytrees.org/wp-content/uploads/2021/04/tree-walk-2021-email.png"
           >
+          <p>Home</p>
       </a>
       <a href="/plant/school-tree-planting/">
           <img
               src="https://caseytrees.org/wp-content/uploads/2021/01/Screen-Shot-2021-01-29-at-7.45.11-AM.png"
           >
+          <p>School</p>
       </a>
     </section>
     <section class="main__page-2-section-3">
@@ -118,16 +121,19 @@
           <img
               src="https://caseytrees.org/wp-content/uploads/2021/05/comp-plan-email.png"
           >
+          <p>Leaflet</p>
       </a>
       <a target="_blank" href="https://caseytreesdc.github.io/treereportcard2020/">
           <img
               src="https://caseytrees.org/wp-content/uploads/2020/10/chestnuut-email.png"
           >
+          <p>Tree Report Card</p>
       </a>
       <a target="_blank" href="https://casey-trees.myshopify.com/products/tree-species-guide">
           <img
               src="https://caseytrees.org/wp-content/uploads/2020/12/tree-issue-rust-browser.png"
           >
+          <p>Species Guide</p>
       </a>
     </section>
     <section class="main__page-3-section-3">
@@ -165,16 +171,19 @@
           <img
               src="https://caseytrees.org/wp-content/uploads/2020/08/arborist-thumbnail.jpg"
           >
+          <p>Citizen Science</p>
       </a>
       <a href="/take-action/water/">
           <img
               src="https://caseytrees.org/wp-content/uploads/2017/05/stormwater-filter1.jpg"
           >
+          <p>Water</p>
       </a>
       <a target="_blank" href="https://caseytreesdc.github.io/advocacyworks/climatereadydc.html">
           <img
               src="https://caseytrees.org/wp-content/uploads/2020/11/urbantreesummit-browser.png"
           >
+          <p>Climate Ready DC</p>
       </a>
     </section>
     <section class="main__page-4-section-3">
@@ -199,36 +208,43 @@
             <img
                 src="https://caseytrees.org/wp-content/uploads/2020/12/step-up-tree-tag-snow-email.png"
             >
+            <p>Consultation</p>
         </a>
         <a href="/plant/residential-planting/">
             <img
                 src="https://caseytrees.org/wp-content/uploads/2021/04/tree-walk-2021-email.png"
             >
+            <p>Home</p>
         </a>
         <a href="/the-leaflet/">
           <img
               src="https://caseytrees.org/wp-content/uploads/2021/05/comp-plan-email.png"
           >
+          <p>Leaflet</p>
         </a>
         <a target="_blank" href="https://casey-trees.myshopify.com/products/tree-species-guide">
             <img
                 src="https://caseytrees.org/wp-content/uploads/2020/12/tree-issue-rust-browser.png"
             >
+            <p>Store</p>
         </a>
         <a href="/take-action/citizen-science/">
           <img
               src="https://caseytrees.org/wp-content/uploads/2020/08/arborist-thumbnail.jpg"
           >
+          <p>Citizen Science</p>
         </a>
         <a href="/take-action/water/">
             <img
                 src="https://caseytrees.org/wp-content/uploads/2017/05/stormwater-filter1.jpg"
             >
+            <p>Water</p>
         </a>
         <a target="_blank" href="https://caseytreesdc.github.io/advocacyworks/climatereadydc.html">
           <img
               src="https://caseytrees.org/wp-content/uploads/2020/11/urbantreesummit-browser.png"
           >
+          <p>Climate Ready DC</p>
         </a>
       </div>
     </div>

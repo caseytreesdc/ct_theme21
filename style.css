@@ -243,7 +243,7 @@ a.skip-nav:active {
 }
 
 .Nav__ul li ul {
-    max-height: 0;    
+    max-height: 0;
     overflow: hidden;
     transition: all .3s;
     position: absolute;
@@ -814,6 +814,37 @@ main a:focus {
     object-fit: cover;
 }
 
+.main__page-2-section-icons a,
+.main__page-3-section-icons a,
+.main__page-4-section-icons a,
+.main__page-5-section-icons a {
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    height: 160px;
+}
+
+.main__page-2-section-icons a>p,
+.main__page-3-section-icons a>p,
+.main__page-4-section-icons a>p,
+.main__page-5-section-icons a>p {
+    text-align: center;
+    margin: 6px 0;
+    font-size: 0px;
+    transition: all .3s;
+}
+
+.main__page-2-section-icons a:hover>p,
+.main__page-2-section-icons a:focus>p,
+.main__page-3-section-icons a:hover>p,
+.main__page-3-section-icons a:focus>p,
+.main__page-4-section-icons a:hover>p,
+.main__page-4-section-icons a:focus>p,
+.main__page-5-section-icons a:hover>p,
+.main__page-5-section-icons a:focus>p {
+    font-size: 16px;
+}
+
 .main__page-2-section-icons img {
     border: 2px solid var(--paarl);
     transition: all .3s;
@@ -834,26 +865,26 @@ main a:focus {
     transition: all .3s;
 }
 
-.main__page-2-section-icons img:hover,
-.main__page-2-section-icons img:focus {
+.main__page-2-section-icons a:hover>img,
+.main__page-2-section-icons a:focus>img {
     background: var(--paarl);
     transition: all .3s;
 }
 
-.main__page-3-section-icons img:hover,
-.main__page-3-section-icons img:focus {
+.main__page-3-section-icons a:hover>img,
+.main__page-3-section-icons a:focus>img {
     background: var(--orange);
     transition: all .3s;
 }
 
-.main__page-4-section-icons img:hover,
-.main__page-4-section-icons img:focus {
+.main__page-4-section-icons a:hover>img,
+.main__page-4-section-icons a:focus>img {
     background: var(--moss);
     transition: all .3s;
 }
 
-.main__page-5-section-icons img:hover,
-.main__page-5-section-icons img:focus {
+.main__page-5-section-icons a:hover>img,
+.main__page-5-section-icons a:focus>img {
     background: var(--cobalt);
     transition: all .3s;
 }
